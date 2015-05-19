@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Tue May 19 11:47:16 EDT 2015
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=MohammadShayganfar-IJSR2015.tex
+outputFile=MohammadShayganfar-IJSR2015.pdf
+langSpell=en
+markDer=true
+srcDir=

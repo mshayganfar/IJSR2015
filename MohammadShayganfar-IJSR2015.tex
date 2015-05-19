@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is a general template file for the LaTeX package SVJour3
+% for Springer journals.          Springer Heidelberg 2010/09/16
+%
+% Copy it to a new file with a new name and use it as the basis
+% for your article. Delete % signs as needed.
+%
+% This template includes a few options for different layouts and
+% content for various journals. Please consult a previous issue of
+% your journal as needed.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% First comes an example EPS file -- just ignore it and
+% proceed on the \documentclass line
+% your LaTeX will extract the file if required
+\begin{filecontents*}{example.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 19 19 221 221
+%%CreationDate: Mon Sep 29 1997
+%%Creator: programmed by hand (JK)
+%%EndComments
+gsave
+newpath
+  20 20 moveto
+  20 220 lineto
+  220 220 lineto
+  220 20 lineto
+closepath
+2 setlinewidth
+gsave
+  .4 setgray fill
+grestore
+stroke
+grestore
+\end{filecontents*}
+%
+\RequirePackage{fix-cm}
+%
+%\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+%
+\begin{document}
+
+\title{Emotion-Awareness Improves Human-Robot Collaboration}%\thanks{Grants or
+% other notes about the article that should go on the front page should be
+%placed here. General acknowledgments should be placed at the end of the article.}
+%}
+
+%\subtitle{Do you have a subtitle?\\ If so, write it here}
+
+%\titlerunning{Short form of title}        % if too long for running head
+
+\author{Mohammad Shayganfar \and
+        Charles Rich \and
+        Candace L. Sidner
+}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Mohammad Shayganfar \and Charles Rich \and Candace L. Sidner \at
+              100 Institute Road, Worcester, MA, USA 01609-2280 \\
+              Tel.: +1 508-831-5357\\
+              Fax: +1 508-831-5776\\
+              \email{mshayganfar@wpi.edu}\\
+              \email{rich@wpi.edu}\\
+              \email{sidner@wpi.edu}\\
+%             \emph{Present address:} of F. Author  %  if needed
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
+\maketitle
+
+\begin{abstract}\ldots
+
+
+\keywords{Human-Robot/Agent Collaboration \and Emotion-Awareness \and Affective
+Motivational Collaboration Theory}
+% \PACS{PACS code1 \and PACS code2 \and more}
+% \subclass{MSC code1 \and MSC code2 \and more}
+\end{abstract}
+
+\section{Introduction}
+\label{intro}
+
+\ldots
+
+\section{Related Work}
+
+\subsection{Emotions in Social Context}
+
+\subsection{Social Functions of Emotions}
+
+\subsection{Affect and Motives}
+
+\subsection{Collaboration Theory}
+
+\section{Example Scenario}
+\label{sec:1}
+%Text with citations \cite{RefB} and \cite{RefJ}.
+
+\subsection{The Backstory}
+
+The scenario transpires in a NASA's research center. Light, temperature and
+other environmental factors are simulated based on conditions on the surface of
+the moon. The mission is to finish installing the required solar panels to
+provide energy for the operation of NASA's science lab on the moon. Ninety
+percent of these panels have already been installed. However, the operation is
+now faced with low batteries which forces everyone to be cautious about
+consuming energy. The astronaut is inspecting the working conditions in the
+field and planning the installation of the remaining panels in collaboration
+with the robot. He determines that the sun will cast shadows over the
+installation structure, leading to potential difficulties. The astronaut asks
+control base to go through the final checks of the robot and prepare it for the
+operation.
+
+\subsection{Astronaut-Robot Interaction}
+
+The robot and the astronaut will collaborate with each other to achieve their
+shared goal, which is to install two solar panels. They will face various
+difficulties, ranging from the task being unpleasant and challenging to
+conflicts of their private and/or shared goals occurring because of a blocked or
+a protracted sub-task. The robot and the astronaut will go through a series of
+assessment processes to figure out a) how did the current blocking happen? b)
+why is the current task is blocked? and c) what is the next action they are
+going to take? The robot uses its cognitive abilities and its communication
+skills to overcome these problems and to motivate the astronaut to propose
+alternative tasks. The following is part of an interaction between the astronaut
+and the robot during their collaboration on installing solar panels.
+
+\small{
+\begin{description}
+  \item \textit{\textbf{A1. Astronaut:}} Oh no! Finishing the quality check of
+  our installation with this measurement problem is so frustrating. I think we
+  should stop now!
+
+  [\textit{Astronaut is frustrated.}]\\
+
+  \item \textit{\textbf{A2. Robot:}} I see. This is frustrating. But, I can help
+  you with the measurement tool and we can finish the task as originally
+  planned.
+
+  [\textit{Robot perceives Astronaut's frustration and acknowledges that.}]\\
+  
+  \item \textit{\textbf{A3. Astronaut:}} Can you fix the measurement tool?
+
+  [\textit{Astronaut's emotion is neutral.}]\\
+  
+  \item \textit{\textbf{A4. Robot:}} The next task is fixing the panel and it
+  needs you to prepare and attach the welding rod to your welding tool. To save
+  our time, I will fetch another measurement tool while you are preparing your
+  welding tool.
+
+  [\textit{Robot perceives Astronaut's neutral emotion, and tries to negotiate
+  and provide a fair offer.}]\\
+
+  \item \textit{\textbf{A5. Astronaut:}} That would be great!
+  
+  [\textit{Astronaut is content.}]
+  
+\end{description}
+}
+
+\section{Affective Motivational Collaboration Theory}
+
+\section{Computational Framework}
+
+\section{Walk Through Computational Examples}
+
+\subsection{Agreeing on Shared Goal (Emotion-Awareness)}
+
+\subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
+
+\subsection{Delegation of a Task (Emotion-Awareness)}
+
+\subsection{Delegation of a Task (Emotion-Ignorance)}
+
+\section{Conclusion and Future Work}
+
+%\label{sec:2} ~\ref{sec:1}
+
+%\paragraph{Paragraph headings} 
+
+
+% For one-column wide figures use
+%\begin{figure}
+% Use the relevant command to insert your figure file.
+% For example, with the graphicx package use
+%  \includegraphics{example.eps}
+% figure caption is below the figure
+%\caption{Please write your figure caption here}
+%\label{fig:1}       % Give a unique label
+%\end{figure}
+%
+% For two-column wide figures use
+%\begin{figure*}
+% Use the relevant command to insert your figure file.
+% For example, with the graphicx package use
+%  \includegraphics[width=0.75\textwidth]{example.eps}
+% figure caption is below the figure
+%\caption{Please write your figure caption here}
+%\label{fig:2}       % Give a unique label
+%\end{figure*}
+%
+
+
+
+% For tables use
+%\begin{table}
+% table caption is above the table
+%\caption{Please write your table caption here}
+%\label{tab:1}       % Give a unique label
+% For LaTeX tables use
+%\begin{tabular}{lll}
+%\hline\noalign{\smallskip}
+%first & second & third  \\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%number & number & number \\
+%number & number & number \\
+%\noalign{\smallskip}\hline
+%\end{tabular}
+%\end{table}
+
+
+%\begin{acknowledgements}
+%If you'd like to thank anyone, place your comments here
+%and remove the percent signs.
+%\end{acknowledgements}
+
+% BibTeX users please use one of
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+%\bibliography{}   % name your BibTeX data base
+
+% Non-BibTeX users please use
+\begin{thebibliography}{}
+%
+% and use \bibitem to create references. Consult the Instructions
+% for authors for reference list style.
+%
+\bibitem{RefJ}
+% Format for Journal Reference
+Author, Article title, Journal, Volume, page numbers (year)
+% Format for books
+\bibitem{RefB}
+Author, Book title, page numbers. Publisher, place (year)
+% etc
+\end{thebibliography}
+
+\end{document}
+% end of file template.tex
+
