@@ -46,6 +46,7 @@ grestore
 \smartqed  % flush right qed marks, e.g. at end of proof
 %
 \usepackage{graphicx}
+\usepackage{varwidth}
 %
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
@@ -160,11 +161,12 @@ and the robot during their collaboration on installing solar panels.
 
   [\textit{Astronaut is frustrated.}]\\
 
-  \item \textit{\textbf{A2. Robot:}} I see. This is frustrating. But, I can help
-  you with the measurement tool and we can finish the task as originally
-  planned.
+  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{A2. Robot:}} I
+  see. This is frustrating. But, I can help you with the measurement tool and we
+  can finish the task as originally planned.
 
-  [\textit{Robot perceives Astronaut's frustration and acknowledges that.}]\\
+  [\textit{Robot perceives Astronaut's frustration and acknowledges that.}]
+  \end{varwidth}}\\
   
   \item \textit{\textbf{A3. Astronaut:}} Can you fix the measurement tool?
 
@@ -195,10 +197,11 @@ and the robot during their collaboration on installing solar panels.
 
   [\textit{Astronaut is frustrated.}]\\
 
-  \item \textit{\textbf{B2. Robot:}} I can help you with the measurement tool,
-  or we can terminate this task. What do you want me to do?
+  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{B2. Robot:}} I can
+  help you with the measurement tool, or we can terminate this task. What do you
+  want me to do?
 
-  [\textit{Robot does not perceive Astronaut's frustration.}]\\
+  [\textit{Robot does not perceive Astronaut's frustration.}] \end{varwidth}}\\
   
   \item \textit{\textbf{B3. Astronaut:}} As I said the measurement tool does not
   work properly. We can not continue!
@@ -224,15 +227,16 @@ and the robot during their collaboration on installing solar panels.
   
   [\textit{Astronaut is angry.}]\\
   
-  \item \textit{\textbf{B8. Robot:}} Okay. You want me to terminate this task.
-  Terminating this task can influence the quality of installing this solar panel
-  which can cause the mission to fail. Or, do you want us to work on another
-  task? This can help us to install the panel using your welding tool, but I do
-  not know whether the quality of our installation will be acceptable.
+  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{B8. Robot:}} Okay.
+  You want me to terminate this task. Terminating this task can influence the
+  quality of installing this solar panel which can cause the mission to fail.
+  Or, do you want us to work on another task? This can help us to install the
+  panel using your welding tool, but I do not know whether the quality of our
+  installation will be acceptable.
   
   [\textit{Not only the Robot does not perceive Astronaut's anger, but also
   continues to negotiate the next step based on the shared plan to select proper
-  action.}]\\
+  action.}] \end{varwidth}}\\
   
   \item \textit{\textbf{B9. Astronaut:}} I told you we have this problem and we
   should terminate the mission! We cannot continue without the measurement tool!
@@ -252,7 +256,8 @@ and the robot during their collaboration on installing solar panels.
 
   [\textit{Astronaut is worried.}]\\
 
-  \item \textit{\textbf{A2. Robot:}} Okay. Don't worry. I can handle that.
+  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{A2. Robot:}} Okay.
+  Don't worry. I can handle that.
 
   [\textit{Robot perceives Astronaut's worriedness and acknowledges that. Also,
   it doesn't ask the Astronaut (because of perceiving worriedness) if it is okay
@@ -260,7 +265,7 @@ and the robot during their collaboration on installing solar panels.
   panel.}]\\
   
   [\textit{Robot perceives the Astronaut's request as on “open planning” (as
-  oppose to specific executive) task delegation.}]\\
+  oppose to specific executive) task delegation.}]\end{varwidth}}\\
   
   \item \textit{\textbf{A3. Astronaut:}} I will try to fix it asap.
 
@@ -297,13 +302,13 @@ and the robot during their collaboration on installing solar panels.
 
   [\textit{Astronaut is worried.}]\\
 
-  \item \textit{\textbf{B2. Robot:}} Okay. I can handle that. Is it okay if I
-  leave the current task though?
+  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{B2. Robot:}}
+  Okay. I can handle that. Is it okay if I leave the current task though?
 
   [\textit{Robot does not perceive Astronaut's worriedness.}]\\
   
   [\textit{Robot perceives the Astronaut's request as on “open planning” (as
-  oppose to specific executive) task delegation.}]\\
+  oppose to specific executive) task delegation.}] \end{varwidth}}\\
   
   \item \textit{\textbf{B3. Astronaut:}} Yes, that's fine. I can finish it by my
   own.
@@ -351,10 +356,11 @@ and the robot during their collaboration on installing solar panels.
   
   [\textit{Astronaut becomes more frustrated.}]\\
   
-  \item \textit{\textbf{B10. Robot:}} Do you want me to provide some examples?
+  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{B10. Robot:}} Do
+  you want me to provide some examples?
   
   [\textit{Robot does not perceive Astronaut's strong frustration. So, it
-  doesn't stop asking questions.}]\\
+  doesn't stop asking questions.}] \end{varwidth}}\\
 
   \item \textit{\textbf{B11. Astronaut:}} We don't have time for this anymore!
   
