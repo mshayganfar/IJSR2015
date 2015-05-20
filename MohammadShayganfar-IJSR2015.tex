@@ -205,7 +205,7 @@ and the robot during their collaboration on installing solar panels.
 
   [\textit{Astronaut is frustrated.}]\\
   
-  \item \textit{\textbf{B4. Robot:}} TOkay. Do you want me to fix this problem
+  \item \textit{\textbf{B4. Robot:}} Okay. Do you want me to fix this problem
   or terminate the task?
 
   [\textit{Robot does not perceive Astronaut's frustration.}]\\
@@ -242,7 +242,135 @@ and the robot during their collaboration on installing solar panels.
 \end{description}
 }
 
+\subsection{Delegation of a Task (Emotion-Awareness)}
+
+\small{
+\begin{description}
+  \item \textit{\textbf{A1. Astronaut:}} I still have some problems with
+  attaching the first panel! We do not have enough time. You should begin to
+  install the second panel.
+
+  [\textit{Astronaut is worried.}]\\
+
+  \item \textit{\textbf{A2. Robot:}} Okay. Don't worry. I can handle that.
+
+  [\textit{Robot perceives Astronaut's worriedness and acknowledges that. Also,
+  it doesn't ask the Astronaut (because of perceiving worriedness) if it is okay
+  to leave the current task which was helping the Astronaut to install the first
+  panel.}]\\
+  
+  [\textit{Robot perceives the Astronaut's request as on “open planning” (as
+  oppose to specific executive) task delegation.}]\\
+  
+  \item \textit{\textbf{A3. Astronaut:}} I will try to fix it asap.
+
+  [\textit{Astronaut's is still worried.}]\\
+  
+  \item \textit{\textbf{A4. Robot:}} I might need to ask some questions while I
+  am installing the second panel.
+
+  [\textit{Robot perceives Astronaut's worriedness.}]\\
+
+  [\textit{Robot checks a) dependencies of the task (a sub-task might need to be
+  done by both parties), b) preconditions, c) required resources, d) possible
+  future conflicts.}]\\
+  
+  [\textit{Robot needs to ask several questions to remove uncertainties, but
+  because of the Astronaut's emotion, Robot decided to postpone questions about
+  the details to when the Astronaut's answers are necessary to make progress.
+  Robot modifies its utterance in a proper way.}]\\
+  
+  \item \textit{\textbf{A5. Astronaut:}} That's fine. Just let me know.
+  
+  [\textit{Astronaut is neutral.}]
+  
+\end{description}
+}
+
+\subsection{Delegation of a Task (Emotion-Ignorance)}
+
+\small{
+\begin{description}
+  \item \textit{\textbf{B1. Astronaut:}} I still have some problems with
+  attaching the first panel! We do not have enough time. You should begin to
+  install the second panel.
+
+  [\textit{Astronaut is worried.}]\\
+
+  \item \textit{\textbf{B2. Robot:}} Okay. I can handle that. Is it okay if I
+  leave the current task though?
+
+  [\textit{Robot does not perceive Astronaut's worriedness.}]\\
+  
+  [\textit{Robot perceives the Astronaut's request as on “open planning” (as
+  oppose to specific executive) task delegation.}]\\
+  
+  \item \textit{\textbf{B3. Astronaut:}} Yes, that's fine. I can finish it by my
+  own.
+
+  [\textit{Astronaut is still worried.}]\\
+  
+  \item \textit{\textbf{B4. Robot:}} Okay. But according to the plan, I need
+  your help when we need to weld the panel. Will you be able to help me?
+
+  [\textit{Robot does not perceive Astronaut's worriedness.}]\\
+
+  [\textit{Robot checks a) dependencies of the task (a sub-task might need to be
+  done by both parties), b) preconditions, c) required resources, d) possible
+  future conflicts.}]\\
+  
+  [\textit{Robot needs to ask several questions to remove uncertainties, so it
+  does, since it misses the Astronaut's negative emotion.}]\\
+  
+  \item \textit{\textbf{B5. Astronaut:}} Yes, I will.
+  
+  [\textit{Astronaut is more worried about finishing the first panel.}]\\
+  
+  \item \textit{\textbf{B6. Robot:}} We also need your welding tool and supplies
+  as well as the measuring tool to install the second panel.
+  
+  [\textit{Robot does not perceive Astronaut's worriedness. So, it continues to
+  ask question.}]\\
+  
+  \item \textit{\textbf{B7. Astronaut:}} Just let me know whenever you need
+  something!
+  
+  [\textit{Astronaut becomes frustrated, since he thinks the Robot's questions
+  are killing time.}]\\
+  
+  \item \textit{\textbf{B8. Robot:}} Thanks. I will. How about the conflict that
+  might occur while I am trying to fix the second panel? You are going to need
+  my help at the same time. Last time this issue terminated our mission.
+  
+  [\textit{Not only the Robot does not perceive Astronaut's frustration, but
+  also asks about some possible future problems based on reflection of the same
+  tasks in the past.}]\\
+  
+  \item \textit{\textbf{B9. Astronaut:}} Robot, I really don't understand what
+  you are talking about!
+  
+  [\textit{Astronaut becomes more frustrated.}]\\
+  
+  \item \textit{\textbf{B10. Robot:}} Do you want me to provide some examples?
+  
+  [\textit{Robot does not perceive Astronaut's strong frustration. So, it
+  doesn't stop asking questions.}]\\
+
+  \item \textit{\textbf{B11. Astronaut:}} We don't have time for this anymore!
+  
+  [\textit{Astronaut becomes angry.}]\\
+
+\end{description}
+}
+
 \section{Affective Motivational Collaboration Theory}
+
+\begin{figure}[h!]
+  \includegraphics[scale=0.78]{figure/theory-general-croped.pdf}
+  \caption{Roadmap of \textit{Affective Motivational Collaboration Theory}
+  showing primary influences between processes.}
+  \label{fig:theory}
+\end{figure}
 
 \section{Computational Framework}
 
