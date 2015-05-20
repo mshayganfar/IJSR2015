@@ -47,6 +47,7 @@ grestore
 %
 \usepackage{graphicx}
 \usepackage{varwidth}
+\usepackage{setspace}
 %
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
@@ -153,7 +154,8 @@ and the robot during their collaboration on installing solar panels.
 
 \subsection{Agreeing on Shared Goal (Emotion-Awareness)}
 
-\small{
+\begin{spacing}{1.2}
+\small{ 
 \begin{description}
   \item \textit{\textbf{A1. Astronaut:}} Oh no! Finishing the quality check of
   our installation with this measurement problem is so frustrating. I think we
@@ -161,9 +163,9 @@ and the robot during their collaboration on installing solar panels.
 
   [\textit{Astronaut is frustrated.}]\\
 
-  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{A2. Robot:}} I
-  see. This is frustrating. But, I can help you with the measurement tool and we
-  can finish the task as originally planned.
+  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{A2. Robot:}}
+  \underline{I see. This is frustrating.} But, I can help you with the
+  measurement tool and we can finish the task as originally planned.
 
   [\textit{Robot perceives Astronaut's frustration and acknowledges that.}]
   \end{varwidth}}\\
@@ -186,9 +188,12 @@ and the robot during their collaboration on installing solar panels.
   
 \end{description}
 }
+\end{spacing}
+
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 
+\begin{spacing}{1.2}
 \small{
 \begin{description}
   \item \textit{\textbf{B1. Astronaut:}} Oh no! Finishing the quality check of
@@ -198,8 +203,8 @@ and the robot during their collaboration on installing solar panels.
   [\textit{Astronaut is frustrated.}]\\
 
   \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{B2. Robot:}} I can
-  help you with the measurement tool, or we can terminate this task. What do you
-  want me to do?
+  help you with the measurement tool, or we can terminate this task.
+  \underline{What do you want me to do?}
 
   [\textit{Robot does not perceive Astronaut's frustration.}] \end{varwidth}}\\
   
@@ -230,9 +235,9 @@ and the robot during their collaboration on installing solar panels.
   \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{B8. Robot:}} Okay.
   You want me to terminate this task. Terminating this task can influence the
   quality of installing this solar panel which can cause the mission to fail.
-  Or, do you want us to work on another task? This can help us to install the
-  panel using your welding tool, but I do not know whether the quality of our
-  installation will be acceptable.
+  Or, \underline{do you want us to work on another task?} This can help us to
+  install the panel using your welding tool, but I do not know whether the
+  quality of our installation will be acceptable.
   
   [\textit{Not only the Robot does not perceive Astronaut's anger, but also
   continues to negotiate the next step based on the shared plan to select proper
@@ -245,19 +250,21 @@ and the robot during their collaboration on installing solar panels.
   
 \end{description}
 }
+\end{spacing}
 
 \subsection{Delegation of a Task (Emotion-Awareness)}
 
+\begin{spacing}{1.2}
 \small{
 \begin{description}
-  \item \textit{\textbf{A1. Astronaut:}} I still have some problems with
+  \item \textit{\textbf{C1. Astronaut:}} I still have some problems with
   attaching the first panel! We do not have enough time. You should begin to
   install the second panel.
 
   [\textit{Astronaut is worried.}]\\
 
-  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{A2. Robot:}} Okay.
-  Don't worry. I can handle that.
+  \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{C2. Robot:}} Okay.
+  \underline{Don't worry.} I can handle that.
 
   [\textit{Robot perceives Astronaut's worriedness and acknowledges that. Also,
   it doesn't ask the Astronaut (because of perceiving worriedness) if it is okay
@@ -267,11 +274,11 @@ and the robot during their collaboration on installing solar panels.
   [\textit{Robot perceives the Astronaut's request as on “open planning” (as
   oppose to specific executive) task delegation.}]\end{varwidth}}\\
   
-  \item \textit{\textbf{A3. Astronaut:}} I will try to fix it asap.
+  \item \textit{\textbf{C3. Astronaut:}} I will try to fix it asap.
 
   [\textit{Astronaut's is still worried.}]\\
   
-  \item \textit{\textbf{A4. Robot:}} I might need to ask some questions while I
+  \item \textit{\textbf{C4. Robot:}} I might need to ask some questions while I
   am installing the second panel.
 
   [\textit{Robot perceives Astronaut's worriedness.}]\\
@@ -285,37 +292,40 @@ and the robot during their collaboration on installing solar panels.
   the details to when the Astronaut's answers are necessary to make progress.
   Robot modifies its utterance in a proper way.}]\\
   
-  \item \textit{\textbf{A5. Astronaut:}} That's fine. Just let me know.
+  \item \textit{\textbf{C5. Astronaut:}} That's fine. Just let me know.
   
   [\textit{Astronaut is neutral.}]
   
 \end{description}
 }
+\end{spacing}
 
 \subsection{Delegation of a Task (Emotion-Ignorance)}
 
+\begin{spacing}{1.2}
 \small{
 \begin{description}
-  \item \textit{\textbf{B1. Astronaut:}} I still have some problems with
+  \item \textit{\textbf{D1. Astronaut:}} I still have some problems with
   attaching the first panel! We do not have enough time. You should begin to
   install the second panel.
 
   [\textit{Astronaut is worried.}]\\
 
-  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{B2. Robot:}}
-  Okay. I can handle that. Is it okay if I leave the current task though?
+  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{D2. Robot:}}
+  Okay. I can handle that. \underline{Is it okay if I leave the current task
+  though?}
 
   [\textit{Robot does not perceive Astronaut's worriedness.}]\\
   
   [\textit{Robot perceives the Astronaut's request as on “open planning” (as
   oppose to specific executive) task delegation.}] \end{varwidth}}\\
   
-  \item \textit{\textbf{B3. Astronaut:}} Yes, that's fine. I can finish it by my
+  \item \textit{\textbf{D3. Astronaut:}} Yes, that's fine. I can finish it by my
   own.
 
   [\textit{Astronaut is still worried.}]\\
   
-  \item \textit{\textbf{B4. Robot:}} Okay. But according to the plan, I need
+  \item \textit{\textbf{D4. Robot:}} Okay. But according to the plan, I need
   your help when we need to weld the panel. Will you be able to help me?
 
   [\textit{Robot does not perceive Astronaut's worriedness.}]\\
@@ -327,23 +337,23 @@ and the robot during their collaboration on installing solar panels.
   [\textit{Robot needs to ask several questions to remove uncertainties, so it
   does, since it misses the Astronaut's negative emotion.}]\\
   
-  \item \textit{\textbf{B5. Astronaut:}} Yes, I will.
+  \item \textit{\textbf{D5. Astronaut:}} Yes, I will.
   
   [\textit{Astronaut is more worried about finishing the first panel.}]\\
   
-  \item \textit{\textbf{B6. Robot:}} We also need your welding tool and supplies
+  \item \textit{\textbf{D6. Robot:}} We also need your welding tool and supplies
   as well as the measuring tool to install the second panel.
   
   [\textit{Robot does not perceive Astronaut's worriedness. So, it continues to
   ask question.}]\\
   
-  \item \textit{\textbf{B7. Astronaut:}} Just let me know whenever you need
+  \item \textit{\textbf{D7. Astronaut:}} Just let me know whenever you need
   something!
   
   [\textit{Astronaut becomes frustrated, since he thinks the Robot's questions
   are killing time.}]\\
   
-  \item \textit{\textbf{B8. Robot:}} Thanks. I will. How about the conflict that
+  \item \textit{\textbf{D8. Robot:}} Thanks. I will. How about the conflict that
   might occur while I am trying to fix the second panel? You are going to need
   my help at the same time. Last time this issue terminated our mission.
   
@@ -351,23 +361,24 @@ and the robot during their collaboration on installing solar panels.
   also asks about some possible future problems based on reflection of the same
   tasks in the past.}]\\
   
-  \item \textit{\textbf{B9. Astronaut:}} Robot, I really don't understand what
+  \item \textit{\textbf{D9. Astronaut:}} Robot, I really don't understand what
   you are talking about!
   
   [\textit{Astronaut becomes more frustrated.}]\\
   
-  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{B10. Robot:}} Do
-  you want me to provide some examples?
+  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{D10. Robot:}}
+  \underline{Do you want me to provide some examples?}
   
   [\textit{Robot does not perceive Astronaut's strong frustration. So, it
   doesn't stop asking questions.}] \end{varwidth}}\\
 
-  \item \textit{\textbf{B11. Astronaut:}} We don't have time for this anymore!
+  \item \textit{\textbf{D11. Astronaut:}} We don't have time for this anymore!
   
   [\textit{Astronaut becomes angry.}]\\
 
 \end{description}
 }
+\end{spacing}
 
 \section{Affective Motivational Collaboration Theory}
 
