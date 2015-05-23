@@ -107,7 +107,10 @@ Motivational Collaboration Theory}
 \section{Introduction}
 \label{intro}
 
-\ldots
+- The importance of understanding collaboration.
+
+\noindent- The importance of understanding underlying processes of the
+collaboration process.
 
 \section{Related Work}
 
@@ -336,6 +339,7 @@ unsuccessful termination of their collaboration (B9).\\
 \end{spacing}
 
 \subsection{Delegation of a Task (Emotion-Awareness)}
+\label{sec:exp3}
 
 This and the next hypothetical examples show how delegation of a task critically
 depends on understanding how worried the other collaborator is and the necessity
@@ -423,15 +427,55 @@ on task delegation process.\\
 
 \subsection{Delegation of a Task (Emotion-Ignorance)}
 
-This and the next examples show how delegation of a task critically depends on
-understanding how worried the other collaborator is and the necessity of having
-sufficient time, which play together. The emotion-ignorant robot is doing
-planning in its most efficient manner (efficient because time is short): asking
-a lot of questions (i.e., B2, B4, B6, B8, B10) so that it can work out the plan.
-But asking questions exacerbates the Astronaut's worry, whereas when the robot
-knows about the Astronaut's worriedness, it can use its own motivation mechanism
-to come up with a way to alleviate that. Its methods are to exactly postpone any
-questions until such time as they are critical (i.e., A2, A4).
+This hypothetical example is also about task delegation (similar to the example
+in Section \ref{sec:exp3}) and it shows how ignoring the collaborator's emotions can
+impact the progress of a collaboration. In this example, the emotion-ignorant
+robot is doing planning in its most efficient manner (efficient because time is
+short): asking a lot of questions (see utterances in D2, D4, D6, D8, D10) so
+that it can work out the plan. But asking questions exacerbates the Astronaut's
+worry which leads to an unsuccessful collaboration due to the lack of time.
+As it is shown, the very first utterance of the Astronaut (D1) is the same as
+the first utterance in previous example (C1). The Astronaut is worried and
+expresses her worry. However, the Robot is not capable of perceiving and
+consequently acknowledging the Astronaut's emotion. As a result, the Robot
+responds to the Astronaut since the Astronaut's proposed task changes the
+Robot's focus of attention to a new task, and now, the Robot tries to determine
+a proper solution for an action selection problem. The reason that the Robot
+perceives the Astronaut's proposal as an action selection problem is primarily
+caused by the shift in the Robot's focus of attention from an unfinished
+ongoing task (unsatisfied postconditions) to a new partially known nonprimitive
+task (i.e., installing the second panel). Therefore, the Robot immediately tries
+to confirm leaving the current unfinished task (D2). Notice the absence of
+acknowledging the Astronaut's emotion by the Robot in this turn (compare C2 in
+Section \ref{sec:exp3} and D2 here). This vacancy of the emotional awareness
+is the beginning of the failure of the task delegaton process. As we can see,
+the Robot's response does not mitigate the Astronaut's worriedness about the
+future of the collaboration. Next, the Astronaut tries to help the Robot to
+select the proper action by responsing possitively about the Robot leaving
+the current task (D3). Now, the Robot shifts its focus of attention to the new
+task and uses the Collaboration mechanism (see Section \ref{sec:AMCT}) to obtain
+required information such as task dependencies, existing preconditions and
+required resources as well as the existance of a plan. Subsequently, the absence
+of the required information and dependencies to the Astronaut's actions causes
+the Robot to ask a question about whether the Astronaut will be able to help in
+some parts of the task (D4). Although, the Robot's interactive behavior is
+crucial in many collaborative context, the Astronaut's worriedness caused by the
+lack of time is ignored by the Robot. This ignorance of the Astronaut's
+emotional state influences her mental states and consequently her behavior.
+Thus, she succinctly responds to the Robot's question (D5). The Robot asks
+another question about the required inputs for the task which are dependent
+to the Astronaut without considering her worriedness (D6). At this point, since
+the Astronaut believes that the Robot's questions are unneccessary, she becomes
+frustrated and impatiently answers the Robot's question (D7). However, once
+again, not only the Robot misses the Astronaut's emotion, but it also uses a
+collaboration function (i.e., Reflection - see Section \ref{sec:AMCT}) to
+prevent failure of a task in the future based on reflection of the same task in
+similar situation in the past (D8). Then, the Astronaut does not recall the
+event referenced by the Robot and since she is frustrated, she does not even
+try to remove the ambiguity of the existing issue (D9). Therefore, the Robot
+tries to see whether the Astronaut wants the Robot to clarify the issue for her
+by providing her some examples (D10). At last, the Astronaut terminates the
+collaboration task because of the lack of time (D11).\\
 
 \begin{spacing}{1.2}
 \small{
@@ -484,13 +528,14 @@ questions until such time as they are critical (i.e., A2, A4).
   [\textit{Astronaut becomes frustrated, since he thinks the Robot's questions
   are killing time.}]\\
   
-  \item \textit{\textbf{D8. Robot:}} Thanks. I will. How about the conflict that
-  might occur while I am trying to fix the second panel? You are going to need
-  my help at the same time. Last time this issue terminated our mission.
+  \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{D8. Robot:}}
+  Thanks. I will. \underline{How about the conflict that might occur while I am
+  trying} \underline{to fix the second panel?} You are going to need my help at
+  the same time. Last time this issue terminated our mission.
   
   [\textit{Not only the Robot does not perceive Astronaut's frustration, but
   also asks about some possible future problems based on reflection of the same
-  tasks in the past.}]\\
+  tasks in the past.}] \end{varwidth}}\\
   
   \item \textit{\textbf{D9. Astronaut:}} Robot, I really don't understand what
   you are talking about!
