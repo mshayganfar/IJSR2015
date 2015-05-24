@@ -98,7 +98,7 @@ grestore
 \begin{abstract}\ldots
 
 
-\keywords{Human-Robot/Agent Collaboration \and Emotion-Awareness \and Affective
+\keywords{Human-Robot Collaboration \and Emotion-Awareness \and Affective
 Motivational Collaboration Theory}
 % \PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
@@ -160,7 +160,7 @@ and the robot during their collaboration on installing solar panels.
 \label{sec:exp1}
 
 This and the next hypothetical examples show that agreeing on a shared goal
-requires the robot to be aware of its collaborator's emotions (here it is
+requires the Robot to be aware of its collaborator's emotions (here it is
 frustration). In this example, the Astronaut's first turn (A1), shows her
 verbally conveying her frustration with respect to the disfunctioning
 measurement tool for checking the quality of the installed panel. In return, the
@@ -180,7 +180,7 @@ frustration to neutral. Now that the Astronaut does not express a negative
 emotion (i.e., frustration), and she is asking for instrumental support, the
 Robot can provide the alternative task as a potential solution. Here is another
 advantage of the emotion-awareness in this hypothetical example. Although, the
-robot, according to the shared plan (see Sections \ref{sec:collaboration-theory}
+Robot, according to the shared plan (see Sections \ref{sec:collaboration-theory}
 and \ref{sec:AMCT}), could provide the same alternative task as solution to the
 Astronaut, instead, it procrastinated providing the potential solution based on
 the Astronaut's negative emotional state, i.e., frustration. Finally, since
@@ -239,12 +239,12 @@ that it begins with the same utterance (B1) as it appears (A1) in previous
 example. As mentioned earlier in Section \ref{sec:exp1}, the emotion-awareness
 is beneficial in collaboration by channeling the collaboration process towards
 the shared goal in the right direction. Without the emotion-awareness a
-collaborative robot will try to maintain the status of the shared goal and
+collaborative Robot will try to maintain the status of the shared goal and
 prevent it from failure without considering its collaborator's negative emotion
 which can be a direct result of a type of task failure during collaboration.
-First, the emotion-ignorant robot does not acknowledge the Astronaut's
+First, the emotion-ignorant Robot does not acknowledge the Astronaut's
 frustration (i.e., B2 in compare to A2 in Section \ref{sec:exp1}), since it does
-not perceive that emotion. Then, while negotiating the shared goal the robot
+not perceive that emotion. Then, while negotiating the shared goal the Robot
 fails to offer a potential solution based on the Astronaut's emotional state,
 resulting in the failure of the negotiation during collaboration.
 
@@ -344,7 +344,7 @@ unsuccessful termination of their collaboration (B9).\\
 This and the next hypothetical examples show how delegation of a task critically
 depends on understanding how worried the other collaborator is and the necessity
 of having sufficient time, which play together. This example shows when the
-robot is aware of the Astronaut's worriedness, it can use its own motivation
+Robot is aware of the Astronaut's worriedness, it can use its own motivation
 mechanism drived by emotions to come up with a way to alleviate that. Its
 methods are to exactly postpone any questions until such time as they are
 critical (effects are appeared in C2, C4). At the beginning of this example
@@ -430,7 +430,7 @@ on task delegation process.\\
 This hypothetical example is also about task delegation (similar to the example
 in Section \ref{sec:exp3}) and it shows how ignoring the collaborator's emotions can
 impact the progress of a collaboration. In this example, the emotion-ignorant
-robot is doing planning in its most efficient manner (efficient because time is
+Robot is doing planning in its most efficient manner (efficient because time is
 short): asking a lot of questions (see utterances in D2, D4, D6, D8, D10) so
 that it can work out the plan. But asking questions exacerbates the Astronaut's
 worry which leads to an unsuccessful collaboration due to the lack of time.
@@ -556,8 +556,31 @@ collaboration task because of the lack of time (D11).\\
 }
 \end{spacing}
 
-\section{Affective Motivational Collaboration Theory}
+\section{Computational Framework}
+\label{sec:computational-framework}
+
+\subsection{Affective Motivational Collaboration Theory}
 \label{sec:AMCT}
+
+\textit{Affective Motivational Collaboration Theory} is about the interpretation
+and prediction of the observable behaviors in a dyadic collaborative
+interaction. The theory focuses on the processes regulated by emotional states.
+It aims to explain both rapid emotional reactions to events as well as
+slower, more deliberative responses. These observable behaviors represent the
+outcome of reactive and deliberative processes related to the interpretation of
+the self's relationship to the collaborative environment. These reactive and
+deliberative processes are triggered by two types of events: \textit{external}
+events, such as the other's \textit{utterances} and \textit{primitive actions},
+and \textit{internal} events, comprising changes in the self's mental states,
+such as belief formation and emotional changes. \textit{Affective Motivational
+Collaboration Theory} explains how emotions regulate the underlying processes in
+the occurrence of these events during collaboration.
+
+Emotion-regulated processes operate based on the self's mental states including
+the anticipated mental states of the other, generated according to the self's
+model of the other. These mental states include beliefs, intentions, goals,
+motives and emotion instances. Each of these mental states possesses multiple
+attributes impacting the relation between cognition and behavior or perception.
 
 \begin{figure}[h!]
   \includegraphics[scale=0.78]{figure/theory-general-croped.pdf}
@@ -566,7 +589,184 @@ collaboration task because of the lack of time (D11).\\
   \label{fig:theory}
 \end{figure}
 
-\section{Computational Framework}
+There are several theories which describe the underlying structure of a
+collaboration based on mental states of the collaborators. The collaboration
+structure of \textit{Affective Motivational Collaboration Theory} is based on
+the SharedPlans theory \cite{grosz:shared-plans}. \textit{Affective Motivational
+Collaboration Theory} focuses on the processes that generate, maintain and
+update this structure based on mental states. The collaboration structure is
+important because social robots ultimately need to co-exist with humans, and
+therefore need to consider humans mental states as well as their own internal
+states and operational goals.
+
+\subsection{Underlying Mechanisms}
+\label{sec:mechanisms}
+
+\subsubsection{Collaboration Mechanism}
+
+The \textit{Collaboration} mechanism (see Fig.~\ref{fig:theory}) maintains
+constraints on actions. These constraints include constraints on task states and
+on the ordering of tasks. The Collaboration mechanism also provides processes to
+update and monitor the shared plan. These processes depend on the Appraisal
+mechanism to evaluate the current Mental States with respect to the current
+status of the collaboration. The self also shifts its focus of attention
+according to the outcome of the Appraisal mechanism. Moreover, the Collaboration
+mechanism can help the self to identify the failure of a task. The Appraisal and
+Motivation mechanisms provide interpretation of task failure and the formation
+of new Mental States (e.g.\,intentions) respectively. Ultimately, the Coping
+mechanism allows the self to perform behavior appropriate to the current state
+of the collaboration.
+
+\subsubsection{Appraisal \& Coping Mechanism}
+
+The \textit{Appraisal \& Coping} mechanism (see Fig.~\ref{fig:theory}) consists
+of the two processes of Appraisal and Coping. The Appraisal mechanism is
+responsible for evaluating changes in the self's Mental States, the anticipated
+Mental States of the other, and the state of the collaboration environment.
+Consequently, the Appraisal mechanism (Fig.~\ref{fig:theory}) is connected to a)
+the Theory of Mind mechanism, to serve as an evaluator whenever the self applies
+the Appraisal mechanism in reverse appraisal \cite{gratch:reverse-appraisal}, b)
+the Collaboration mechanism, to interpret the progress and changes in the
+collaboration plan and associated Mental States, c) the Motivation mechanism, to
+generate and assess the self's new goal-driven motives whenever a new motive or
+intention is required, e.g., following the failure of a task, and d) the
+Perception mechanism, to interpret the external events from the collaboration
+environment. The Coping mechanism provides the self with different coping
+strategies associated with changes in the self's mental states with respect to
+the state of the collaboration. In other words, the Coping mechanism produces
+cognitive responses based on the appraisal patterns.
+
+\subsubsection{Motivation Mechanism}
+
+The \textit{Motivation} mechanism (see Fig.~\ref{fig:theory}) operates whenever
+the self a) requires a new motive to overcome an internal impasse in an ongoing
+task, or b) wants to provide an external motive to the other when the other
+faces a problem in a task. In both cases, the Motivation mechanism uses the
+Appraisal mechanism to compute attributes of the competing motives. Also, the
+Motivation mechanism can serve the Theory of Mind mechanism by helping the self
+to infer the motive behind the other's current action. Moreover, if there is an
+impasse in accomplishing a collaborative task, the self requires a new intention
+to take a new action no matter whether the self or the other is responsible for
+the task. In this case, the Motivation mechanism applies the beliefs associated
+with the blocked task as well as the Appraisal mechanism to generate and compare
+a new set of motives related to the status of the collaboration. Only one of
+these competing motives is most likely to become a new intention. The Motivation
+mechanism forms a new belief and ultimately a new intention based on the winning
+motive. As a result, the self can take an action based on the new intention to
+sustain the collaboration progress.
+
+\subsubsection{Theory of Mind Mechanism}
+
+The \textit{Theory of Mind} mechanism (see Fig.~\ref{fig:theory}) is the
+mechanism of inferring a model of the other's anticipated Mental States. The
+self will progressively update this model during the collaboration. The
+refinement of this model helps the self to anticipate the other's mental state
+more accurately, which ultimately impacts the quality of the collaboration and
+the achievement of the shared goal. Furthermore, the self can make inferences
+about the motive (or intention) behind the other's actions using the Motivation
+mechanism. This inference helps the self to update its own beliefs about the
+other's mental state. In the reverse appraisal process, the self also applies
+the Appraisal mechanism together with updated beliefs about the other's Mental
+States to make inferences about the other's current mental state based on the
+other's emotional expression. Finally, the Collaboration mechanism provides the
+collaboration structure, including status of the shared plan with respect to the
+shared goal and the mutual beliefs to the Theory of Mind mechanism.
+Consequently, any change to the self's model of the other will update the self's
+mental state.
+
+\subsection{Mental States}
+
+The Mental States shown in Figure \ref{fig:theory} comprise the knowledge base
+required for all the mechanisms in the overall model.
+
+\subsubsection{Beliefs}
+
+\textit{Beliefs} are a crucial part of the Mental States. I have two different
+perspectives on categorization of beliefs. In one perspective, I categorize
+beliefs based on whether they are shared or not between the collaborators. The
+SharedPlans \cite{grosz:plans-discourse} theory is the foundation of this
+categorization in which for any given proposition the agent may have: a) private
+beliefs (the agent believes the human does not know these), b) the inferred
+beliefs of the human (the agent believes the human collaborator has these
+beliefs), and c) mutual beliefs (the agent believes both the self and the human
+have these same beliefs and both of them believe that). From another
+perspective, I categorize beliefs based on who or what they are about. In this
+categorization, beliefs can be about the self, the other, or they can be about
+the environment. Beliefs about the environment can be about internal events,
+such as outcomes of a new appraisal or a new motivate, or external events such
+as the human's offer, question or request, and general beliefs about the
+environment in which the agent is situated. Beliefs can be created and updated
+by different processes. They also affect how these processes function as time
+passes.
+
+\subsubsection{Intentions}
+
+\textit{Intentions} are mental constructs directed at future actions. They play
+an essential role in: a) taking actions according to the collaboration plan, b)
+coordination of actions with human collaborator, c) formation of beliefs about
+self and anticipated beliefs about the other, and d) behavior selection in the
+Coping mechanism. First, taking actions means that the agent will intend to take
+an action for primitive tasks that have gained the focus of attention, possess
+active motives, have satisfied preconditions for which required temporal
+predecessors have been successfully achieved. Second, intentions are involved
+in action coordinations in which the human's behavior guides the agent to infer
+an anticipated behavior of the human. Third, intentions play a role in belief
+formation mainly as a result of the permanence and commitment inherent to
+intentions in subsequent processes, e.g., appraisal of the human's reaction to
+the current action and self regulation. And lastly, intentions are involved in
+selecting intention-related strategies, e.g., planning, seeking instrumental
+support and procrastination, which these strategies are an essential category of
+the strategies in the Coping mechanism. Intentions possess a set of attributes,
+e.g. \textit{Involvement, Certainty, Ambivalence} which moderate the consistency
+between intention and behavior. The issue of consistency between the intentions
+(in collaboration) and the behaviors (as a result of the Coping mechanism in the
+appraisal cycle) is important because neither of these two mechanisms alone
+provides solution for this concern.
+
+\subsubsection{Motives}
+
+\textit{Motives} are mental constructs which can initiate, direct and maintain
+goal-directed behaviors. They are created by the emotion-regulated Motivation
+mechanism. Motives can cause the formation of a new intention for the agent
+according to: a) its own emotional states (how the agent feels about something),
+b) its own private goal (how an action helps the agent to make progress), c) the
+collaboration goal (how an action helps to achieve the shared goal), and d)
+other's anticipated beliefs (how an action helps the other). Motives also
+possess a set of attributes, e.g., \textit{Insistence} or \textit{Failure
+Disruptiveness}. These attributes are involved in comparison of newly generated
+motives based on the current state of the collaboration. Ultimately, the agent
+forms or updates a belief about the winning motive in the Mental States.
+
+\subsubsection{Goals}
+
+\textit{Goals} help the agent to create and update its collaboration plan
+according to the current private and shared goal content and structure, i.e.,
+the \textit{Specificity, Proximity} and \textit{Difficulty} of the goal. Goals
+direct the formation of intentions to take appropriate corresponding actions
+during collaboration. Goals also drive the Motivation mechanism to generate
+required motive(s) in uncertain or ambiguous situations, e.g., to minimize the
+risk of impasse or to reprioritize goals. The \textit{Specificity} of goals has
+two functions for the agent. First, it defines the performance standard for
+evaluating the progress and quality of the collaboration. Second, it serves the
+agent to infer the winner of competing motives. The \textit{Proximity} of goals
+distinguishes goals according to how ``far'' they are from the ongoing task.
+Proximal (or short-term) goals are achievable more quickly, and result in higher
+motivation and better self-regulation than more temporally distant (or
+long-term) goals. Goals can influence the \textit{Strength} of beliefs, which is
+an important attribute for regulating the elicitation of social emotions. The
+\textit{Difficulty} of goals impacts collaborative events and decisions in the
+appraisal, reverse appraisal, motive generation and intention formation
+processes. For instance, overly easy goals do not motivate; neither are people
+motivated to attempt what they believe are impossible goals.
+
+\subsubsection{Emotions}
+
+\textit{Emotions} in Mental States are emotion instances that are elicited by
+the Appraisal mechanism. The agent also keeps beliefs about these emotion
+instances in the Mental States. The Belief Formation mechanism creates or
+updates these beliefs about emotions. These emotion instances include the
+agent's own emotions as well as the anticipated emotions of the other which are
+created with the help of the processes in the Theory of Mind mechanism.
 
 \section{Walk Through Computational Examples}
 
@@ -643,19 +843,25 @@ collaboration task because of the lack of time (D11).\\
 %\bibliography{}   % name your BibTeX data base
 
 % Non-BibTeX users please use
-\begin{thebibliography}{}
+%\begin{thebibliography}{}
 %
 % and use \bibitem to create references. Consult the Instructions
 % for authors for reference list style.
 %
-\bibitem{RefJ}
+%\bibitem{RefJ}
 % Format for Journal Reference
-Author, Article title, Journal, Volume, page numbers (year)
+%Author, Article title, Journal, Volume, page numbers (year)
+
 % Format for books
-\bibitem{RefB}
-Author, Book title, page numbers. Publisher, place (year)
+
+%\bibitem{RefB}
+%Author, Book title, page numbers. Publisher, place (year)
+
 % etc
-\end{thebibliography}
+%\end{thebibliography}
+
+\bibliographystyle{abbrv}
+\bibliography{mshayganfar.bib}
 
 \end{document}
 % end of file template.tex
