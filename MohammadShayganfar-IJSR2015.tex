@@ -48,6 +48,8 @@ grestore
 \usepackage{graphicx}
 \usepackage{varwidth}
 \usepackage{setspace}
+\usepackage{perpage}
+\MakePerPage{footnote}
 %
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
@@ -239,10 +241,10 @@ save the collaboration process from failure.\\
 
 This example shows the same process of agreeing on a shared goal as previous
 one except that it diverges from reaching to an agreement, despite the fact
-that it begins with the same utterance (B1) as it appears (A1) in previous
-example. As mentioned earlier in Section \ref{sec:exp1}, the emotion-awareness
-is beneficial in collaboration by channeling the collaboration process towards
-the shared goal in the right direction. Without the emotion-awareness a
+that it begins with the same utterance (B1) as it appears in previous example
+(A1). As mentioned earlier in Section \ref{sec:exp1}, the emotion-awareness is
+beneficial in collaboration by channeling the collaboration process towards the
+shared goal in the right direction. Without the emotion-awareness a
 collaborative Robot will try to maintain the status of the shared goal and
 prevent it from failure without considering its collaborator's negative emotion
 which can be a direct result of a type of task failure during collaboration.
@@ -253,35 +255,42 @@ fails to offer a potential solution based on the Astronaut's emotional state,
 resulting in the failure of the negotiation during collaboration.
 
 In this example, the Robot is not capable of perceiving the Astronaut's emotion,
-thus it does not apply this emotion (i.e., frustration) as an influential factor
-in its computational mechanisms (see Section \ref{sec:AMCT}). Hence, in the
-Robot's first response to the Astronaut's utterances (B2), first it does not
-acknowledge the Astronaut's emotion, and second, it immidiately conveys two
-available alternative actions according to the shared plan (see Section
-\ref{sec:collaboration-theory}) and asks the Astronaut to select between these
-two actions. As it appears in the Astronaut's response, the Robot's immidiate
-proposal does not make any progress in collaboration. As a result, the Astronaut
-just repeats himself about the task status (B3) while still expresses
-frustration. The Astronaut's response does not change the Robot's mental state
-and this causes the Robot to try to repeat its own question (B4). The Robot's
-utterance creates an ambiguious assumption for the Astronaut on whether the
-Robot can fix the broken measurement tool for her. This ambiguity makes the
-Astronaut even more frustrated and causes her to ask a question to remove the
-ambiguity of the Robot's proposal (B5). In return, the Robot not only misses the
-Astronaut's intensified frustration, but it also nullifies the Astronaut's
-assumption about fixing the disfunctional measurement tool and proposes the
-potentioal solution of replacing the broken tool and seeing whether the
-Astronaut agrees on that (B6). In B7, the Astronaut modifies its assumption and
-announces the shortage of time as justification of expressing her anger. At this
-point, the Robot's response becomes more crucial since its wrong way of
-interaction and emotion-ignorance behavior shift the Astronaut's emotional and
-mental states into a noncollaborative status. Consequently, again, the Robot
-wants to revive the collaboration process, therefore it provides more
-information about the repercussions of terminating the collaboration process and
-wants to see whether the Astronaut can pursue another task (B8). Finally, the
-incorrect interaction of the Robot caused by its emotion-ignorance behaviors
-which was developed since the Robot's very first response, leads to an
-unsuccessful termination of their collaboration (B9).\\
+thus it does not apply the Astronaut's emotion (i.e., frustration) as an
+influential factor in its computational mechanisms (see Section \ref{sec:AMCT}).
+Hence, in the Robot's first response to the Astronaut's utterances (B2), first
+it does not acknowledge the Astronaut' emotion, and second, it immidiately
+conveys two available alternative actions according to the existing shared plan
+(see Section \ref{sec:collaboration-theory}) and asks the Astronaut to select
+between these two actions. \footnote{Notice that the Robot's acknowledgement of
+the Astronaut's emotion is missing in B2 because of ignoring the Astronaut's
+emotion -- see the Robot's same turn (A2) in Section \ref{sec:exp1}. Also,
+notice (for the same reason) that the underlined uttrance in B2, reveals that
+the Robot requires the Astronaut's confirmation for the next step.} As it
+appears in the Astronaut's response, the Robot's immidiate proposal does not
+make any progress in collaboration. As a result, the Astronaut just repeats
+himself about the task status (B3) while still expresses frustration. The
+Astronaut's response does not change the Robot's mental state and this causes
+the Robot to try to repeat its own question (B4). The Robot's utterance creates
+an ambiguious assumption for the Astronaut on whether the Robot can fix the
+broken measurement tool for her. This ambiguity makes the Astronaut even more
+frustrated and causes her to ask a question to remove the ambiguity of the
+Robot's proposal (B5). In return, the Robot not only misses the Astronaut's
+intensified frustration, but it also nullifies the Astronaut's assumption about
+fixing the disfunctional measurement tool and proposes the potentioal solution
+of replacing the broken tool and seeing whether the Astronaut agrees on that
+(B6). In B7, the Astronaut modifies its assumption and announces the shortage of
+time as justification of expressing her anger. At this point, the Robot's
+response becomes more crucial since its wrong way of interaction and
+emotion-ignorance behavior shift the Astronaut's emotional and mental states
+into a noncollaborative status. Consequently, again, the Robot wants to revive
+the collaboration process, therefore it provides more information about the
+repercussions of terminating the collaboration process and wants to see whether
+the Astronaut can pursue another task (B8). \footnote{Notice the underlined
+section of the Robot's turn B8 indicates its dissociated reasoning about the
+problem from the Astronaut's mental state.} Finally, the incorrect interaction
+of the Robot caused by its emotion-ignorance behaviors which was developed since
+the Robot's very first response, leads to an unsuccessful termination of their
+collaboration (B9).\\
 
 \begin{spacing}{1.2}
 \small{

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  24 JUN 2015 11:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  24 JUN 2015 13:38
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -123,38 +123,43 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@roff=\dimen117
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (./MohammadShayganfar-IJSR2015.aux)
+) (./perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count107
+)
+\c@pp@a@footnote=\count108
+ (./MohammadShayganfar-IJSR2015.aux)
 \openout1 = `MohammadShayganfar-IJSR2015.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count109
 \scratchdimen=\dimen118
 \scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\nofMPsegments=\count110
+\nofMParguments=\count111
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count110
+\MPscratchCnt=\count112
 \MPscratchDim=\dimen119
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -206,63 +211,53 @@ e
 ))
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 96.
+(Font)              <7> on input line 98.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 96.
+(Font)              <5> on input line 98.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 98.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 98.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 162--199
+Underfull \hbox (badness 10000) in paragraph at lines 164--201
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--285
+Underfull \hbox (badness 10000) in paragraph at lines 257--294
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
@@ -277,32 +272,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--319
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--385
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \vbox (badness 1424) has occurred while \output is active []
+
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--394
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
 
  []
 
@@ -313,20 +321,7 @@ Missing character: There is no ‚ in font cmti8!
 Missing character: There is no Ä in font cmti8!
 Missing character: There is no ù in font cmti8!
 
-Underfull \hbox (badness 10000) detected at line 404
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) detected at line 413
 
  []
 
@@ -336,27 +331,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--418
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--423
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--484
+Underfull \hbox (badness 10000) in paragraph at lines 424--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--493
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
@@ -367,67 +372,67 @@ Missing character: There is no ‚ in font cmti8!
 Missing character: There is no Ä in font cmti8!
 Missing character: There is no ù in font cmti8!
 
-Underfull \hbox (badness 10000) detected at line 501
+Underfull \hbox (badness 10000) detected at line 510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--516
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 517--519
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--529
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 536--538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+Underfull \hbox (badness 10000) in paragraph at lines 542--544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
@@ -435,32 +440,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
 File: figure/theory-general-croped.pdf Graphic file (type pdf)
 
 <use figure/theory-general-croped.pdf>
-Package pdftex.def Info: figure/theory-general-croped.pdf used on input line 60
-3.
+Package pdftex.def Info: figure/theory-general-croped.pdf used on input line 61
+2.
 (pdftex.def)             Requested size: 335.87346pt x 229.39609pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./figure/theory-general-croped.pdf>] [11] [12]
-Overfull \hbox (0.63948pt too wide) in paragraph at lines 749--760
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 3138) has occurred while \output is active []
+
+ [10]
+Underfull \vbox (badness 2726) has occurred while \output is active []
+
+ [11 <./figure/theory-general-croped.pdf>] [12] [13]
+Overfull \hbox (0.63948pt too wide) in paragraph at lines 758--769
 \OT1/cmr/m/n/10 thing), b) its own pri-vate goal (how an ac-tion helps the agen
 t to make progress),
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
 [14] (./MohammadShayganfar-IJSR2015.bbl) [15]
 (./MohammadShayganfar-IJSR2015.aux) ) 
 Here is how much of TeX's memory you used:
- 2297 strings out of 495028
- 34597 string characters out of 6181497
- 93384 words of memory out of 5000000
- 5488 multiletter control sequences out of 15000+600000
+ 2343 strings out of 495028
+ 35158 string characters out of 6181497
+ 94767 words of memory out of 5000000
+ 5531 multiletter control sequences out of 15000+600000
  10191 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,8n,23p,260b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,260b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
@@ -474,7 +482,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti8.pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (15 pages, 217269 bytes).
+Output written on MohammadShayganfar-IJSR2015.pdf (15 pages, 217706 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
