@@ -1,4 +1,40 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{anscombe:intention}
+G.~E.~M. Anscombe.
+\newblock {\em Intention}.
+\newblock NY: Cornell University Press, 1963.
+
+\bibitem{bratman:intentions-plans}
+M.~E. Bratman.
+\newblock {\em Intention, Plans, and Practical Reason}.
+\newblock Cambridge, Mass.: Harvard University Press, 1987.
+
+\bibitem{bratman:intention}
+M.~E. Bratman.
+\newblock What is intention?
+\newblock In {\em Intentions in Communication}, Cognitive Technologies, pages
+  15--32. The MIT Press, Cambridge, MA, June 1990.
+
+\bibitem{bratman:plans-reasoning}
+M.~E. Bratman, D.~J. Israel, and M.~E. Pollack.
+\newblock Plans and resource-bounded practical reasoning.
+\newblock {\em Computational Intelligence}, 4(3):349--355, 1988.
+
+\bibitem{castaneda:thinking}
+H.-N. $Casta\tilde{n}eda$.
+\newblock {\em Thinking and Doing}.
+\newblock Dordrecht, Holland: D. Riedel, 1975.
+
+\bibitem{cohen:teamwork}
+P.~Cohen and H.~J. Levesque.
+\newblock {\em Teamwork}.
+\newblock SRI International, 1991.
+
+\bibitem{cohen:intention-commitment}
+P.~R. Cohen and H.~J. Levesque.
+\newblock Intention is choice with commitment.
+\newblock {\em Artificial Intelligence}, 42(2-3):213--261, 1990.
 
 \bibitem{gratch:reverse-appraisal}
 C.~M. de~Melo, J.~Gratch, P.~Carnevale, and S.~J. Read.
@@ -13,10 +49,66 @@ B.~Grosz and S.~Kraus.
 \newblock In {\em Foundations and Theories of Rational Agency}, pages 227--262,
   1998.
 
+\bibitem{grosz:collaborative-systems}
+B.~J. Grosz.
+\newblock {AAAI-94} presidential address: Collaborative systems.
+\newblock {\em {AI} Magazine}, 17(2):67--85, 1996.
+
+\bibitem{grosz:planning-acting}
+B.~J. Grosz, L.~Hunsberger, and S.~Kraus.
+\newblock Planning and acting together.
+\newblock {\em {AI} Magazine}, 20(4):23--34, 1999.
+
+\bibitem{grosz:collaboration}
+B.~J. Grosz and S.~Kraus.
+\newblock Collaborative plans for complex group action.
+\newblock {\em Artificial Intelligence}, 86(2):269--357, 1996.
+
 \bibitem{grosz:plans-discourse}
 B.~J. Grosz and C.~L. Sidner.
 \newblock Plans for discourse.
 \newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
   Intentions in Communication}, pages 417--444. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{Litman:discourse-commonsense}
+D.~J. Litman and J.~F. Allen.
+\newblock Discourse processing and commonsense plans.
+\newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
+  Intentions in Communication}, pages 365--388. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{lochbaum:plan-models}
+K.~E. Lochbaum, B.~J. Grosz, and C.~L. Sidner.
+\newblock Models of plans to support communication: An initial report.
+\newblock In {\em Proceedings of the Eighth National Conference on Artificial
+  Intelligence}, pages 485--490. AAAI Press, 1990.
+
+\bibitem{neale:grice-language}
+S.~Neale.
+\newblock Paul grice and the philosophy of language.
+\newblock {\em Linguistics and Philosophy}, 15(5):509--559, 1992.
+
+\bibitem{pollack:plan-inference}
+M.~E. Pollack.
+\newblock A model of plan inference that distinguishes between the beliefs of
+  actors and observers.
+\newblock In {\em Proceedings of the 24th Annual Meeting on Association for
+  Computational Linguistics}, pages 207--214. Association for Computational
+  Linguistics, 1986.
+
+\bibitem{pollack:plan-mental-attitudes}
+M.~E. Pollack.
+\newblock Plans as complex mental attitudes.
+\newblock In {\em Intentions in Communication}, pages 77--103. MIT Press, 1990.
+
+\bibitem{ravenscroft:folk}
+I.~Ravenscroft.
+\newblock {\em Folk Psychology as a Theory}.
+\newblock Stanford Encyclopedia of Philosophy, 2004.
+
+\bibitem{searle:collective}
+J.~R. Searle.
+\newblock Collective intentionality.
+\newblock In {\em Intentions in Communication}, pages 401--415. MIT Press,
+  1990.
 
 \end{thebibliography}

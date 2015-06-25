@@ -114,17 +114,6 @@ Motivational Collaboration Theory}
 \noindent- The importance of understanding underlying processes of the
 collaboration process.
 
-\section{Related Work}
-
-\subsection{Emotions in Social Context}
-
-\subsection{Social Functions of Emotions}
-
-\subsection{Affect and Motives}
-
-\subsection{Collaboration Theory}
-\label{sec:collaboration-theory}
-
 \section{Example Scenario}
 \label{sec:example-scenario}
 %Text with citations \cite{RefB} and \cite{RefJ}.
@@ -162,17 +151,17 @@ and the robot during their collaboration on installing solar panels.
 \label{sec:exp1}
 
 This and the next hypothetical examples show that agreeing on a shared goal
-requires the Robot to be aware of its collaborator's emotions (here it is
+requires the Robot to be aware of its collaborator's emotions (here,
 frustration). In this example, the Astronaut's first turn (A1), shows her
 verbally conveying her frustration with respect to the disfunctioning
 measurement tool for checking the quality of the installed panel. In return, the
 Robot's first turn (A2), as the crucial part of this interaction, shows the
-Robot perceiving the Astronaut's frustration and acknowledging that verbally.
-\footnote{The underlined section of the Robot's utterances (in turn A2) shows
-the influence of using emotion-driven processes which leads to acknowledgement
-of the Astronaut's emotion. See the absence of these utterances as
-the consequence of ignoring the Astronaut's emotions in the same turn in the
-next example in Section \ref{sec:exp2}.} Later on, in Section \ref{sec:wt-exp1},
+Robot perceiving the Astronaut's frustration and acknowledging that
+verbally.\footnote{The underlined section of the Robot's utterances (in turn A2)
+shows the influence of using emotion-driven processes which leads to
+acknowledgement of the Astronaut's emotion. See the absence of these utterances
+as the consequence of ignoring the Astronaut's emotions in the same turn in the
+next example (Section \ref{sec:exp2}).} Later on, in Section \ref{sec:wt-exp1},
 we are going to show how the computational mechanisms, discussed in Section
 \ref{sec:AMCT}, are involved in this process. In other words, we are going to
 discuss how the emotion-driven goal-directed mechanisms can work together and
@@ -831,6 +820,75 @@ collaboration procedure.
 
 \subsection{Delegation of a Task (Emotion-Ignorance)}
 \label{sec:wt-exp4}
+
+\section{Related Work}
+
+\subsection{Emotions in Social Context}
+
+\subsection{Social Functions of Emotions}
+
+\subsection{Affect and Motives}
+
+\subsection{Collaboration Theories}
+\label{sec:collaboration-theory}
+
+The prominent collaboration theories are mostly based on plans and joint
+intentions
+\cite{cohen:teamwork,grosz:plans-discourse,Litman:discourse-commonsense}, and
+they were derived from the BDI paradigm developed by Bratman
+\cite{bratman:intentions-plans} which is fundamentally reliant on folk
+psychology \cite{ravenscroft:folk}. The two theories, Joint Intentions
+\cite{cohen:teamwork} and SharedPlans \cite{grosz:plans-discourse}, have been
+extensively used to examine and describe teamwork and collaboration.
+
+The SharedPlans theory is based on the theories of Bratman and Pollack
+\cite{bratman:plans-reasoning,pollack:plan-inference,pollack:plan-mental-attitudes},
+who outline a mental-state view of plans in which having a plan is not just
+knowing how to do an action, but also having the intention to do the actions
+entailed. Bratman's views of intention goes back to the philosophical views of
+Anscombe \cite{anscombe:intention} and Casta$\tilde{n}$eda
+\cite{castaneda:thinking} about intention. Also, as Grosz and Sidner mention in
+\cite{grosz:plans-discourse} the natural segmentation of discourse reflects
+intentional behaviors in each segment. These intentions are designated as
+Discourse Segment Purposes (DSPs) which are the basic reasons for engaging in
+different segments of discourse. DSPs are a natural extension of Gricean
+intentions at the utterance level \cite{neale:grice-language}.
+
+Cohen and Levesque also mention that in Joint Intentions theory their view of
+intention is primarily future-directed \cite{cohen:intention-commitment} which
+makes their view similar to Bratman's theory of intention
+\cite{bratman:intention}, contra Searle \cite{searle:collective}.
+
+The SharedPlans model of collaborative action, presented by Grosz and Sidner
+\cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}, aims
+to provide the theoretical foundations needed for building collaborative
+robots/agents \cite{grosz:collaborative-systems}. SharedPlans is a general
+theory of collaborative planning that requires no notion of joint intentions,
+accommodates multi-level action decomposition hierarchies and allows the process
+of expanding and elaborating partial plans into full plans. SharedPlans theory
+explains how a group of agents can incrementally form and execute a shared plan
+that then guides and coordinates their activity towards the accomplishment of a
+shared goal. SharedPlans is rooted in the observation that collaborative plans
+are not simply a collection of individual plans, but rather a tight interleaving
+of mutual beliefs and intentions of different team members. In
+\cite{grosz:collaboration} Grosz and Kraus use first-order logic to present the
+formalization of SharedPlans.
+
+Grosz and Sidner in \cite{grosz:plans-discourse} present a model of plans to
+account for how agents with partial knowledge collaborate in the construction of
+a domain plan. They are interested in the type of plans that underlie discourse
+in which the agents are collaborating in order to achieve a shared goal. They
+propose that agents are building a shared plan in which participants have a
+collection of beliefs and intentions about the actions in the plan. Agents have
+a library of how to do their actions, i.e. recipes. These recipes might be
+partially specified as to how an action is executed, or contributes to a goal.
+Then, each agent communicates their beliefs and intentions by making utterances
+about what actions they can contribute to the shared plan. This communication
+leads to the construction of a shared plan, and ultimately termination of the
+collaboration with each agent mutually believing that there exists one agent who
+is going to execute an action in the plan, and the fact that that agent has
+intention to perform the action, and that each action in the plan contributes to
+the goal \cite{grosz:plans-discourse,lochbaum:plan-models}.
 
 \section{Conclusion and Future Work}
 
