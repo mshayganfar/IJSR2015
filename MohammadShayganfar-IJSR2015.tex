@@ -801,7 +801,7 @@ created with the help of the processes in the Theory of Mind mechanism.
 In this section, we are going to discuss how the individual computational
 mechanisms (see Section \ref{sec:mechanisms}) are involved in generating the
 Robot's collaborative behaviors discussed in each example in Section
-\ref{sec:example-scenario}. The following four walk through examples are in the
+\ref{sec:example-scenario}. The following four walkthrough examples are in the
 same order as the four examples in Section \ref{sec:example-scenario}. Notice
 that in emotional ignorance examples, we use the same mechanisms as in the
 emotional awareness examples. These examples can demonstrate the
@@ -811,6 +811,74 @@ collaboration procedure.
 
 \subsection{Agreeing on Shared Goal (Emotion-Awareness)}
 \label{sec:wt-exp1}
+
+This Section provides a step-by-step walkthrough explanation of the same
+example in Section \ref{sec:exp1}. We use a simple and straightforward
+representation to show which proceses (see Figure \ref{fig:theory}) are involved
+to generate the Robot's behaviors embodied in our example in Section
+\ref{sec:exp1}, and in what order:
+
+\begin{spacing}{1.15}
+\fontsize{9pt}{10pt}\selectfont
+\begin{enumerate}
+  \item \textbf{(Perception):} Robot perceives human's utterances and emotion.
+  (\textit{\textbf{A1}})\\
+  
+  \item \textbf{(Collaboration $\rightarrow$ Theory of Mind: Reverse
+  Appraisal):} Robot uses reverse appraisal to understand the meaning of
+  frustration according to the collaborative task status (e.g., precondition
+  status, postcondition status, required resources, shared goal). Robot updates
+  human's user model respectively.\\
+  
+  \item \textbf{(Appraisal):} Robot appraises Astronaut's utterances and
+  emotion.\\
+  
+  \item \textbf{(Collaboration $\rightarrow$ Motivation: Motive Formation:
+  Belief Formation: Intention Formation):} Robot forms new motives according to
+  the result of a) appraisal with respect to the shared goal, and b) reverse
+  appraisal of the human emotion. Robot forms new beliefs about a) human's
+  inferred mental states (belief, intention, motive, goal, emotion), and b) the
+  task status. Robot forms new intention(s) with respect to the new beliefs.\\
+  
+  \item \textbf{(Mental States $\rightarrow$ Coping):} Based on the current
+  mental states, Robot chooses an emotion-focused coping strategy and decides to
+  acknowledge Astronaut's emotion, and provide alternative solution.
+  (\textit{\textbf{A2}})\\
+\end{enumerate}
+\end{spacing}
+
+The processes in the awareness function will be run again (similar to what we
+had above) for the new utterance of the Astronaut (A3) before the following
+processes:
+
+\begin{spacing}{1.15}
+\fontsize{9pt}{10pt}\selectfont
+\begin{enumerate}
+  \item \textbf{(Collaboration $\rightarrow$ Mental States: Attributes):} Robot
+  extracts the current focus of attention during collaboration and also computes
+  the distance between its own and human's mental states (distance is a function
+  of mental states' attributes and human's emotion).\\
+  
+  \item \textbf{(Collaboration $\rightarrow$ Appraisal $\rightarrow$ Belief
+  Formation: Intention Formation):} Robot appraises the human's perceived
+  emotion with respect to the current focus of attention (on a task) and
+  distance between collaborators' mental states. Robot forms/updates its mental
+  states (beliefs and intentions) with respect to the result of appraising
+  human's perceived emotion.\\
+  
+  \item \textbf{(Theory of Mind: User Model):} Robot uses its new mental states
+  to update human's user model.\\
+  
+  \item \textbf{(Mental States , Collaboration $\rightarrow$ Theory of Mind
+  $\rightarrow$ Motivation: Motive Formation: Belief Formation: Intention
+  Formation):} Robot forms a new motive based on how the collaboration can
+  proceed with respect to the Astronaut's inferred mental states.\\
+  
+  \item \textbf{(Mental  States $\rightarrow$ Coping):} Based on the current
+  mental states, Robot chooses to negotiate and offer an alternative action to
+  the Astronaut. (\textit{\textbf{A4}})
+\end{enumerate}
+\end{spacing}
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:wt-exp2}
