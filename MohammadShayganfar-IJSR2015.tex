@@ -631,6 +631,7 @@ mechanisms (see Fig.~\ref{fig:theory}) most of which directly store and
 fetch the data in the Mental States.
 
 \subsubsection{Collaboration Mechanism}
+\label{sec:collaboration-mech}
 
 The \textit{Collaboration} mechanism (see Fig.~\ref{fig:theory}) maintains
 constraints on actions. These constraints include constraints on task states and
@@ -646,6 +647,7 @@ mechanism allows the self to perform behavior appropriate to the current state
 of the collaboration.
 
 \subsubsection{Appraisal \& Coping Mechanism}
+\label{sec:appraisal-coping-mech}
 
 The \textit{Appraisal \& Coping} mechanism (see Fig.~\ref{fig:theory}) consists
 of the two processes of Appraisal and Coping. The Appraisal mechanism is
@@ -665,6 +667,7 @@ the state of the collaboration. In other words, the Coping mechanism produces
 cognitive responses based on the appraisal patterns.
 
 \subsubsection{Motivation Mechanism}
+\label{sec:motivation-mech}
 
 The \textit{Motivation} mechanism (see Fig.~\ref{fig:theory}) operates whenever
 the self a) requires a new motive to overcome an internal impasse in an ongoing
@@ -684,6 +687,7 @@ motive. As a result, the self can take an action based on the new intention to
 sustain the collaboration progress.
 
 \subsubsection{Theory of Mind Mechanism}
+\label{sec:tom-mech}
 
 The \textit{Theory of Mind} mechanism (see Fig.~\ref{fig:theory}) is the
 mechanism of inferring a model of the other's anticipated Mental States. The
@@ -708,6 +712,7 @@ The Mental States shown in Figure \ref{fig:theory} comprise the knowledge base
 required for all the mechanisms in the overall model.
 
 \subsubsection{Beliefs}
+\label{sec:beliefs}
 
 \textit{Beliefs} are a crucial part of the Mental States. I have two different
 perspectives on categorization of beliefs. In one perspective, I categorize
@@ -728,6 +733,7 @@ by different processes. They also affect how these processes function as time
 passes.
 
 \subsubsection{Intentions}
+\label{sec:intentions}
 
 \textit{Intentions} are mental constructs directed at future actions. They play
 an essential role in: a) taking actions according to the collaboration plan, b)
@@ -752,6 +758,7 @@ appraisal cycle) is important because neither of these two mechanisms alone
 provides solution for this concern.
 
 \subsubsection{Motives}
+\label{sec:motives}
 
 \textit{Motives} are mental constructs which can initiate, direct and maintain
 goal-directed behaviors. They are created by the emotion-regulated Motivation
@@ -766,6 +773,7 @@ motives based on the current state of the collaboration. Ultimately, the agent
 forms or updates a belief about the winning motive in the Mental States.
 
 \subsubsection{Goals}
+\label{sec:goals}
 
 \textit{Goals} help the agent to create and update its collaboration plan
 according to the current private and shared goal content and structure, i.e.,
@@ -815,37 +823,87 @@ collaboration procedure.
 This Section provides a step-by-step walkthrough explanation of the same
 example in Section \ref{sec:exp1}. We use a simple and straightforward
 representation to show which proceses (see Figure \ref{fig:theory}) are involved
-to generate the Robot's behaviors embodied in our example in Section
-\ref{sec:exp1}, and in what order:
+to generate the Robot's behaviors based on our example in Section
+\ref{sec:exp1}, and in what order.
 
-\begin{spacing}{1.15}
-\fontsize{9pt}{10pt}\selectfont
+%\fontsize{9pt}{10pt}\selectfont
 \begin{enumerate}
   \item \textbf{(Perception):} Robot perceives human's utterances and emotion.
-  (\textit{\textbf{A1}})\\
+  (\textit{\textbf{A1}})
+\end{enumerate}
   
+First, the Robot perceives the Astronaut's utterances as well as her emotion in
+the first turn (A1). The perception process (see Section \ref{sec:AMCT}) forms
+beliefs about the task being under the Astronaut's focus of attention, and also
+the Astronaut's emotion which is expressed both verbally and nonverbally by her.
+The beliefs about the task (i.e., installing the panel) include:
+
+\begin{itemize}
+  \item[$\bullet$] the Astronaut's proposal of \textbf{stoping} the task,
+  \item[$\bullet$] which is a \textbf{future} event,
+  \item[$\bullet$] and is \textbf{caused by} measurement tool problem.
+\end{itemize}
+
+\noindent Also, beliefs about the Astronaut's emotion (i.e., frustration)
+include:
+
+\begin{itemize}
+  \item[$\bullet$] the existence of a \textbf{negative valenced} emotion,
+  \item[$\bullet$] which maps into a three-value vector of \textbf{pleasure},
+  \textbf{arousal}, and \textbf{dominance},
+  \item[$\bullet$] and is verbally conveyed as \textbf{frustration}.\\
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item \textbf{(Collaboration):} Robot uses the Collaboration mechanism (see
+  Section \ref{sec:collaboration-mech}) to form new beliefs about the
+  collaboration status based on its perception. These new beliefs are about: 
+\end{enumerate}
+
+\begin{itemize}
+  \item[$\bullet$] the \textbf{unsatisfied} precondition of the Astronaut's
+  current \textbf{task},
+  \item[$\bullet$] and the \textbf{blocked} status of the Astronaut's current
+  \textbf{task},
+  \item[$\bullet$] and consequently the \textbf{blocked} status of the
+  \textbf{shared goal},
+  \item[$\bullet$] which causes the change in the Robot's \textbf{focus of
+  attention} to the Astronaut's task.
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
   \item \textbf{(Collaboration $\rightarrow$ Theory of Mind: Reverse
   Appraisal):} Robot uses reverse appraisal to understand the meaning of
   frustration according to the collaborative task status (e.g., precondition
   status, postcondition status, required resources, shared goal). Robot updates
-  human's user model respectively.\\
-  
+  human's user model respectively.
+\end{enumerate}
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
   \item \textbf{(Appraisal):} Robot appraises Astronaut's utterances and
-  emotion.\\
-  
+  emotion.
+\end{enumerate}
+
+\begin{enumerate}
+  \setcounter{enumi}{3}
   \item \textbf{(Collaboration $\rightarrow$ Motivation: Motive Formation:
   Belief Formation: Intention Formation):} Robot forms new motives according to
   the result of a) appraisal with respect to the shared goal, and b) reverse
   appraisal of the human emotion. Robot forms new beliefs about a) human's
   inferred mental states (belief, intention, motive, goal, emotion), and b) the
-  task status. Robot forms new intention(s) with respect to the new beliefs.\\
-  
+  task status. Robot forms new intention(s) with respect to the new beliefs.
+\end{enumerate}
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
   \item \textbf{(Mental States $\rightarrow$ Coping):} Based on the current
   mental states, Robot chooses an emotion-focused coping strategy and decides to
   acknowledge Astronaut's emotion, and provide alternative solution.
-  (\textit{\textbf{A2}})\\
+  (\textit{\textbf{A2}})
 \end{enumerate}
-\end{spacing}
 
 The processes in the awareness function will be run again (similar to what we
 had above) for the new utterance of the Astronaut (A3) before the following

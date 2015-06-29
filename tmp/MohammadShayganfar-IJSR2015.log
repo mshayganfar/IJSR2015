@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  25 JUN 2015 15:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  29 JUN 2015 11:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -438,68 +438,53 @@ Package pdftex.def Info: figure/theory-general-croped.pdf used on input line 61
 0.
 (pdftex.def)             Requested size: 335.87346pt x 229.39609pt.
  [10 <./figure/theory-general-croped.pdf>] [11] [12]
-Overfull \hbox (0.63948pt too wide) in paragraph at lines 756--767
+Overfull \hbox (0.63948pt too wide) in paragraph at lines 763--774
 \OT1/cmr/m/n/10 thing), b) its own pri-vate goal (how an ac-tion helps the agen
 t to make progress),
  []
 
 [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 824--826
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 828.
-
-Underfull \hbox (badness 10000) in paragraph at lines 828--832
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 833--835
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 837--842
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--847
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 857--861
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--868
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 869--871
+Underfull \hbox (badness 10000) in paragraph at lines 854--855
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 874--876
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 915.
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--919
 
  []
 
-[16] (./MohammadShayganfar-IJSR2015.bbl [17]) [18]
+
+Underfull \hbox (badness 10000) in paragraph at lines 921--926
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--934
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+[17] (./MohammadShayganfar-IJSR2015.bbl [18]) [19]
 (./MohammadShayganfar-IJSR2015.aux) ) 
 Here is how much of TeX's memory you used:
- 2376 strings out of 495028
- 35733 string characters out of 6181497
- 93872 words of memory out of 5000000
- 5559 multiletter control sequences out of 15000+600000
- 12115 words of font info for 41 fonts, out of 8000000 for 9000
+ 2385 strings out of 495028
+ 35888 string characters out of 6181497
+ 93976 words of memory out of 5000000
+ 5568 multiletter control sequences out of 15000+600000
+ 12474 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,23p,260b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,260b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
@@ -517,10 +502,10 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (18 pages, 281442 bytes).
+Output written on MohammadShayganfar-IJSR2015.pdf (19 pages, 283746 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
