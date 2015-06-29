@@ -49,6 +49,7 @@ grestore
 \usepackage{varwidth}
 \usepackage{setspace}
 \usepackage{perpage}
+\usepackage{enumerate}
 \MakePerPage{footnote}
 %
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
@@ -833,10 +834,11 @@ to generate the Robot's behaviors based on our example in Section
 \end{enumerate}
   
 First, the Robot perceives the Astronaut's utterances as well as her emotion in
-the first turn (A1). The perception process (see Section \ref{sec:AMCT}) forms
-beliefs about the task being under the Astronaut's focus of attention, and also
-the Astronaut's emotion which is expressed both verbally and nonverbally by her.
-The beliefs about the task (i.e., installing the panel) include:
+the first turn, i.e., \textit{\textbf{A1}}. The perception process (see Section
+\ref{sec:AMCT}) forms beliefs about the task being under the Astronaut's focus
+of attention, and also the Astronaut's emotion which is expressed both verbally
+and nonverbally by her. The beliefs about the task (i.e., installing the panel)
+include:
 
 \begin{itemize}
   \item[$\bullet$] the Astronaut's proposal of \textbf{stoping} the task,
@@ -856,9 +858,10 @@ include:
 
 \begin{enumerate}
   \setcounter{enumi}{1}
-  \item \textbf{(Collaboration):} Robot uses the Collaboration mechanism (see
-  Section \ref{sec:collaboration-mech}) to form new beliefs about the
-  collaboration status based on its perception. These new beliefs are about: 
+  \item \textbf{(Collaboration: \textit{Monitoring \& Focus Shifting}):} Robot
+  uses the Collaboration mechanism (see Section \ref{sec:collaboration-mech}) to
+  form new beliefs about the collaboration status based on its perception. These
+  new beliefs are about:
 \end{enumerate}
 
 \begin{itemize}
@@ -873,36 +876,67 @@ include:
 \end{itemize}
 
 \begin{enumerate}
-  \setcounter{enumi}{1}
-  \item \textbf{(Collaboration $\rightarrow$ Theory of Mind: Reverse
-  Appraisal):} Robot uses reverse appraisal to understand the meaning of
-  frustration according to the collaborative task status (e.g., precondition
-  status, postcondition status, required resources, shared goal). Robot updates
-  human's user model respectively.
+  \setcounter{enumi}{2}
+  \item \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling}):}
+  Robot uses reverse appraisal to understand the meaning of frustration
+  according to the collaborative task status (e.g., precondition shared goal
+  status). Robot updates human's user model respectively.
 \end{enumerate}
 
+The reverse appraisal process (see Section \ref{sec:appraisal-coping-mech})
+forms beliefs about the anticipated appraisals of the Astronaut with respect to
+the current task's status based on the Astonaut's utterances and emotion in
+\textit{\textbf{A1}}, and the output of the collaboration mechanism. Some of
+these anticipated appraisal values indicate that the event is interpreted as
+\textbf{relevant}, \textbf{undesirable}, \textbf{uncontrollable},
+\textbf{urgent}, and \textbf{unexpected} by the Astronaut. Furthermore, the user
+modeling process updates the Astronaut's user model based on the output of the
+reverse appraisal process and collaboration mechanism, and forms beliefs about
+the Astronaut as the one with \textbf{low autonomy} and a \textbf{highly
+communicative} collaborator.
+
 \begin{enumerate}
-  \setcounter{enumi}{2}
+  \setcounter{enumi}{3}
   \item \textbf{(Appraisal):} Robot appraises Astronaut's utterances and
   emotion.
 \end{enumerate}
 
-\begin{enumerate}
-  \setcounter{enumi}{3}
-  \item \textbf{(Collaboration $\rightarrow$ Motivation: Motive Formation:
-  Belief Formation: Intention Formation):} Robot forms new motives according to
-  the result of a) appraisal with respect to the shared goal, and b) reverse
-  appraisal of the human emotion. Robot forms new beliefs about a) human's
-  inferred mental states (belief, intention, motive, goal, emotion), and b) the
-  task status. Robot forms new intention(s) with respect to the new beliefs.
-\end{enumerate}
+The Appraisal mechanism simultaneously uses distinct processes to compute values
+for each individual appraisal variable. The output of these processes provide a
+vector of these values describing the Robot's interpretation of the current
+event, i.e., \textit{\textbf{A1}}. The outcome will be mapped to a particular
+emotion instance. The robot can choose to express this emotion as part of its
+communication if it is required,
 
 \begin{enumerate}
   \setcounter{enumi}{4}
-  \item \textbf{(Mental States $\rightarrow$ Coping):} Based on the current
-  mental states, Robot chooses an emotion-focused coping strategy and decides to
-  acknowledge Astronaut's emotion, and provide alternative solution.
-  (\textit{\textbf{A2}})
+  \item \textbf{(Motivation: \textit{Motive \& Intention Formation}):} Robot
+  forms new motives according to the result of:
+\end{enumerate}
+
+\begin{enumerate}[a)]
+  \item appraisal with respect to the shared goal,
+  \item reverse appraisal of the Astronaut's emotion,
+  \item and user model of the Astronaut. 
+\end{enumerate}
+
+Then, the motive comparator process compares current available motives and
+sorts them based on their distance to the Astronaut's emotional state and
+the achievement of the shared goal.\footnote{The distance function is a
+function of a) the Astronaut's emotional state as an admissible approximation
+of her mental state, and b) how taking an action based on the corresponding
+intention to a particular motive improves the possibility of the collaborators
+reaching to their mutually accepted shared goal.} The Robot also forms new
+beliefs about these motives and ultimately selects and forms new intention with
+respect to these new beliefs and the most relevant motive.
+
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \textbf{(Coping):} Based on the current mental state, the Robot chooses
+  an emotion-focused coping strategy (see Section
+  \ref{sec:appraisal-coping-mech}) and decides to acknowledge Astronaut's
+  emotion, and provide alternative solution. Subsequently, the Robot responds to
+  the Astronaut with appropriate utterances appeared in \textit{\textbf{A2}}.
 \end{enumerate}
 
 The processes in the awareness function will be run again (similar to what we
@@ -910,7 +944,7 @@ had above) for the new utterance of the Astronaut (A3) before the following
 processes:
 
 \begin{spacing}{1.15}
-\fontsize{9pt}{10pt}\selectfont
+%\fontsize{9pt}{10pt}\selectfont
 \begin{enumerate}
   \item \textbf{(Collaboration $\rightarrow$ Mental States: Attributes):} Robot
   extracts the current focus of attention during collaboration and also computes
