@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  29 JUN 2015 15:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  30 JUN 2015 10:10
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -256,12 +256,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
@@ -337,12 +337,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 416--419
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 420--424
 
  []
@@ -447,33 +447,33 @@ t to make progress),
  []
 
 [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
+Underfull \hbox (badness 10000) in paragraph at lines 857--858
 
  []
 
 [15]
-Overfull \hbox (7.13907pt too wide) in paragraph at lines 935--940
+Overfull \hbox (7.13907pt too wide) in paragraph at lines 936--942
 [][]\OT1/cmr/bx/n/10 (Coping): \OT1/cmr/m/n/10 Based on the cur-rent men-tal st
 ate, the Robot chooses an emotion-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 949--953
+Underfull \hbox (badness 10000) in paragraph at lines 951--955
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 955--960
+Underfull \hbox (badness 10000) in paragraph at lines 957--962
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 961--963
+Underfull \hbox (badness 10000) in paragraph at lines 963--965
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--968
+Underfull \hbox (badness 10000) in paragraph at lines 968--970
 
  []
 
@@ -482,7 +482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 966--968
 Here is how much of TeX's memory you used:
  2394 strings out of 495028
  36099 string characters out of 6181497
- 94357 words of memory out of 5000000
+ 93357 words of memory out of 5000000
  5579 multiletter control sequences out of 15000+600000
  10550 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -502,7 +502,7 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti8.pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (19 pages, 253807 bytes).
+Output written on MohammadShayganfar-IJSR2015.pdf (19 pages, 253966 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
