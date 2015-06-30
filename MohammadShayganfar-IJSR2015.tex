@@ -175,56 +175,44 @@ measurement tool. Notice that the proper acknowledgement of the Astronaut's
 emotion helps to change her emotion from frustration to neutral. Now that the
 Astronaut does not express a negative emotion (i.e., frustration), and she is
 asking for instrumental support, the Robot can provide the alternative task as a
-potential solution. Here is another advantage of the emotion-awareness in this
-hypothetical example. Although, the Robot, according to the shared plan (see
-Sections \ref{sec:collaboration-theory} and \ref{sec:AMCT}), could provide the
-same alternative task as a solution to the Astronaut immediately, it
+potential solution (A4). Here is another advantage of the emotion-awareness in
+this hypothetical example. Although, the Robot, according to the shared plan
+(see Sections \ref{sec:collaboration-theory} and \ref{sec:AMCT}), could provide
+the same alternative task as a solution to the Astronaut immediately, it
 procrastinated instead, providing the potential solution based on the
 Astronaut's negative emotional state, i.e., frustration. Finally, since agreeing
 on a shared goal is a collaborative negotiation process, emotion-awareness plays
 a crucial role in providing a fair offer to the collaborator during negotiation.
 As a result, the Astronaut's response in the last turn (A5) shows the acceptance
 of the Robot's potential solution to continue collaboration and agreement on the
-shared goal. In the next example we are going to show what happens to the same
-hypothetical example when the Robot ignores the Astronaut's emotion and tries to
-save the collaboration process from failure.\\
+shared goal while she is content. In the next example we are going to show what
+happens to the same hypothetical example when the Robot ignores the Astronaut's
+emotion and tries to save the collaboration process from failure.\\
 
-\begin{spacing}{1.2}
+\begin{spacing}{1.3}
 \small{ 
 \begin{description}
   \item \textit{\textbf{A1. Astronaut:}} Oh no! Finishing the quality check of
   our installation with this measurement problem is so frustrating. I think we
-  should stop now!
-
-  [\textit{Astronaut is frustrated.}]\\
+  should stop now!\\
 
   \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{A2. Robot:}}
   \underline{I see. This is frustrating.} But, I can help you with the
   measurement tool and we can finish the task as originally planned.
-
-  [\textit{Robot perceives Astronaut's frustration and acknowledges that.}]
   \end{varwidth}}\\
   
-  \item \textit{\textbf{A3. Astronaut:}} Can you fix the measurement tool?
+  \item \textit{\textbf{A3. Astronaut:}} Can you fix the measurement tool?\\
 
-  [\textit{Astronaut's emotion is neutral.}]\\
-  
   \item \textit{\textbf{A4. Robot:}} The next task is fixing the panel and it
   needs you to prepare and attach the welding rod to your welding tool. To save
   our time, I will fetch another measurement tool while you are preparing your
-  welding tool.
-
-  [\textit{Robot perceives Astronaut's neutral emotion, and tries to negotiate
-  and provide a fair offer.}]\\
+  welding tool.\\
 
   \item \textit{\textbf{A5. Astronaut:}} That would be great!
-  
-  [\textit{Astronaut is content.}]
   
 \end{description}
 }
 \end{spacing}
-
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:exp2}
@@ -825,95 +813,85 @@ This Section provides a step-by-step walkthrough explanation of the same
 example presented in Section \ref{sec:exp1}. We use a simple and straightforward
 representation to show which processes (see Figure \ref{fig:theory}) are
 involved in generating the Robot's behaviors based on our example in Section
-\ref{sec:exp1}, and in what order.
+\ref{sec:exp1}, and in what order.\\
+
+\noindent\fbox{\begin{varwidth}{0.98\textwidth}
+\textit{\textbf{A1. Astronaut:}} Oh no! Finishing the quality check of our
+installation with this measurement problem is so frustrating. I think we should
+stop now!\end{varwidth}}\\ \\
 
 %\fontsize{9pt}{10pt}\selectfont
-\begin{enumerate}
-  \item \textbf{(Perception):} Robot perceives Astronaut's utterances and
-  emotion.
-  (\textit{\textbf{A1}})
-\end{enumerate}
+\noindent\item \textbf{(Perception)} Robot perceives Astronaut's utterances and
+emotion.\\
   
 First, the Robot perceives the Astronaut's utterances as well as her emotion in
-the first turn, i.e., \textit{\textbf{A1}}. The perception process (see Section
-\ref{sec:AMCT}) forms beliefs about the task under the Astronaut's focus of
-attention, and also the Astronaut's emotion which she has expressed both
-verbally and nonverbally. The beliefs formed about the task (i.e., installing
-the panel) include:
+the first turn, i.e., A1. The perception process (see Section \ref{sec:AMCT})
+forms beliefs about the task under the Astronaut's focus of attention, and also
+the Astronaut's emotion which she has expressed both verbally and nonverbally.
+The beliefs formed about the task (i.e., installing the panel) include:
 
 \begin{itemize}
-  \item[$\bullet$] the Astronaut's proposal of \textbf{stopping} the task,
-  \item[$\bullet$] which is a \textbf{future} event,
-  \item[$\bullet$] and is \textbf{caused by} the measurement tool problem.
+  \item[$\bullet$] the Astronaut's proposal of \textit{stopping} the task,
+  \item[$\bullet$] which is a \textit{future} event,
+  \item[$\bullet$] and is \textit{caused by} the measurement tool problem.
 \end{itemize}
 
 \noindent Also, beliefs formed about the Astronaut's emotion (i.e., frustration)
 include:
 
 \begin{itemize}
-  \item[$\bullet$] the existence of a \textbf{negative valenced} emotion,
-  \item[$\bullet$] which maps into a three-value vector of \textbf{pleasure},
-  \textbf{arousal}, and \textbf{dominance},
-  \item[$\bullet$] and is verbally conveyed as \textbf{frustration}.\\
+  \item[$\bullet$] the existence of a \textit{negative valenced} emotion,
+  \item[$\bullet$] which maps into a three-value vector of \textit{pleasure},
+  \textit{arousal}, and \textit{dominance},
+  \item[$\bullet$] and is verbally conveyed as \textit{frustration}.\\
 \end{itemize}
 
-\begin{enumerate}
-  \setcounter{enumi}{1}
-  \item \textbf{(Collaboration: \textit{Monitoring \& Focus Shifting}):} Robot
-  uses the Collaboration mechanism (see Section \ref{sec:collaboration-mech}) to
-  form new beliefs about the collaboration status based on its perception. These
-  new beliefs are about:
-\end{enumerate}
+\noindent\textbf{(Collaboration: \textit{Monitoring \& Focus Shifting})} Robot
+uses the Collaboration mechanism (see Section \ref{sec:collaboration-mech}) to
+form new beliefs about the collaboration status based on its perception. These
+new beliefs are about:
 
 \begin{itemize}
-  \item[$\bullet$] the \textbf{unsatisfied} precondition of the Astronaut's
-  current \textbf{task},
-  \item[$\bullet$] the \textbf{blocked} status of the Astronaut's current
-  \textbf{task},
-  \item[$\bullet$] and consequently the \textbf{blocked} status of the
-  \textbf{shared goal},
-  \item[$\bullet$] which causes the change in the Robot's \textbf{focus of
+  \item[$\bullet$] the \textit{unsatisfied} precondition of the Astronaut's
+  current \textit{task},
+  \item[$\bullet$] the \textit{blocked} status of the Astronaut's current
+  \textit{task},
+  \item[$\bullet$] and consequently the \textit{blocked} status of the
+  \textit{shared goal},
+  \item[$\bullet$] which causes the change in the Robot's \textit{focus of
   attention} to the Astronaut's task.
 \end{itemize}
 
-\begin{enumerate}
-  \setcounter{enumi}{2}
-  \item \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling}):}
-  Robot uses reverse appraisal to understand the meaning of Astronaut's
-  frustration according to the collaborative task status (e.g., precondition
-  shared goal status). Robot updates Astronaut's user model respectively.
-\end{enumerate}
+\noindent\item \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User
+Modeling})} Robot uses reverse appraisal to understand the meaning of
+Astronaut's frustration according to the collaborative task status (e.g.,
+precondition shared goal status). Robot updates Astronaut's user model
+respectively.\\
 
 The reverse appraisal process (see Section \ref{sec:appraisal-coping-mech})
 forms beliefs about the anticipated appraisals of the Astronaut with respect to
-the current task's status based on the Astonaut's utterances and emotion in
-\textit{\textbf{A1}}, and the output of the collaboration mechanism. Some of
-these anticipated appraisal values indicate that the event is interpreted as
-\textbf{relevant}, \textbf{undesirable}, \textbf{uncontrollable},
-\textbf{urgent}, and \textbf{unexpected} by the Astronaut. Furthermore, the user
-modeling process updates the Astronaut's user model based on the output of the
-reverse appraisal process and the collaboration mechanism; this user modeling
-process forms beliefs that a) Astronaut has \textbf{low autonomy}, and b)
-Astronaut is a \textbf{highly communicative} collaborator.
+the current task's status based on the Astronaut's utterances and emotion in A1,
+and the output of the collaboration mechanism. Some of these anticipated
+appraisal values indicate that the event is interpreted as \textit{relevant},
+\textit{undesirable}, \textit{uncontrollable}, \textit{urgent}, and
+\textit{unexpected} by the Astronaut. Furthermore, the user modeling process
+updates the Astronaut's user model based on the output of the reverse appraisal
+process and the collaboration mechanism; this user modeling process forms
+beliefs that a) Astronaut has \textit{low autonomy}, and b) Astronaut is a
+\textit{highly communicative} collaborator.\\
 
-\begin{enumerate}
-  \setcounter{enumi}{3}
-  \item \textbf{(Appraisal):} Robot appraises Astronaut's utterances and
-  emotion.
-\end{enumerate}
+\noindent\item \textbf{(Appraisal)} Robot appraises Astronaut's utterances and
+emotion.\\
 
 The Appraisal mechanism simultaneously uses distinct processes to compute values
 for each individual appraisal variable. The output of these processes provides a
 vector of these values describing the Robot's interpretation of the current
-event, i.e., \textit{\textbf{A1}}. The outcome will be mapped to a particular
-emotion instance. The robot can choose to express this emotion as part of its
-communication if it is required,
+event, i.e., A1. The outcome will be mapped to a particular emotion instance.
+The robot can choose to express this emotion as part of its communication if it
+is required,\\
 
-\begin{enumerate}
-  \setcounter{enumi}{4}
-  \item \textbf{(Motivation: \textit{Motive \& Intention Formation}):} Robot
-  forms new motives according to the result of:
-\end{enumerate}
+\noindent\item \textbf{(Motivation: \textit{Motive \& Intention Formation})}
+Robot forms new motives according to the result of:
 
 \begin{enumerate}[a)]
   \item appraisal with respect to the shared goal,
@@ -929,17 +907,17 @@ of her mental state, and b) how taking an action based on the corresponding
 intention to a particular motive improves the possibility of the collaborators
 reaching to their mutually accepted shared goal.} The Robot also forms new
 beliefs about these motives and ultimately selects and forms new intention with
-respect to these new beliefs and the most relevant motive.
+respect to these new beliefs and the most relevant motive.\\
 
-\begin{enumerate}
-  \setcounter{enumi}{5}
-  \item \textbf{(Coping):} Based on the current mental state, the Robot chooses
-  an emotion-focused coping strategy (see Section
-  \ref{sec:appraisal-coping-mech}) and decides to acknowledge Astronaut's
-  emotion, and provide an alternative solution. Subsequently, the Robot responds
-  to the Astronaut with appropriate utterances appearing in
-  \textit{\textbf{A2}}.
-\end{enumerate}
+\noindent\item \textbf{(Coping)} Based on the current mental state, the Robot
+chooses an emotion-focused coping strategy (see Section
+\ref{sec:appraisal-coping-mech}) and decides to acknowledge Astronaut's emotion,
+and provide an alternative solution. Subsequently, the Robot responds to the
+Astronaut with appropriate utterances appearing in A2.\\
+
+\noindent \fbox{\begin{varwidth}{0.98\textwidth}\textit{\textbf{A2. Robot:}}
+\underline{I see. This is frustrating.} But, I can help you with the measurement
+tool and we can finish the task as originally planned. \end{varwidth}}\\
 
 The processes in the awareness function will be run again (similar to what we
 had above) for the new utterance of the Astronaut (A3) before the following
@@ -947,56 +925,59 @@ processes are run. They provide the Robot with the Astronaut's new question
 about whether the Robot can fix the measurement tool. The followings show how
 the robot use the same mechanisms to negotiate on agreeing on the shared goal.
 
+\noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{A3.
+Astronaut:}} Can you fix the measurement tool?\end{varwidth}}
+
 %\begin{spacing}{1.15}
 %\fontsize{9pt}{10pt}\selectfont
-\begin{enumerate}
-  \item \textbf{(Collaboration):} The new beliefs as the output of the awareness
-  function based on the Astronaut's new utterance (i.e., A3) are:
-\end{enumerate}
+\noindent\textbf{(Collaboration)} The new beliefs as the output of the awareness
+function based on the Astronaut's new utterance (i.e., A3) are:
 
 \begin{itemize}
   \item[$\bullet$] the precondition associated to the Astronaut's current
-  \textbf{task} is still \textbf{unsatisfied},
-  \item[$\bullet$] the status of the Astronaut's current \textbf{task} is still
-  \textbf{blocked},
-  \item[$\bullet$] and similarly the status of the \textbf{shared goal} is
-  still \textbf{blocked},
+  \textit{task} is still \textit{unsatisfied},
+  \item[$\bullet$] the status of the Astronaut's current \textit{task} is still
+  \textit{blocked},
+  \item[$\bullet$] and similarly the status of the \textit{shared goal} is
+  still \textit{blocked},
   \item[$\bullet$] however, the Astronaut's question changes the Robot's
-  \textbf{focus of attention} to the measurement tool,
-  \item[$\bullet$] also, the Astronaut's \textbf{emotion} has changed to
-  \textbf{neutral}.
-  \item[$\bullet$] but, her user model \textbf{stays the same}, i.e.,
+  \textit{focus of attention} to the measurement tool,
+  \item[$\bullet$] also, the Astronaut's \textit{emotion} has changed to
+  \textit{neutral}.
+  \item[$\bullet$] but, her user model \textit{stays the same}, i.e.,
   having low-autonomy and being highly communicative.
 \end{itemize}
 
 The change in the focus of attention to the measurement tool causes the Robot to
 check the availability of a recipe to fix or replace the disfunctioning
-measurement tool. Robot finds a recipe to replace the measurement tool.\\
+measurement tool. Robot finds a recipe to replace the measurement tool.
 
-\begin{enumerate}
-  \setcounter{enumi}{1}
-  \item \textbf{(Appraisal):} Robot appraises the possibility of replacing the
-  measurement tool with respect to: a) the status of the shared goal, and b) the
-  Astronaut's user model. Robot finds the replacement of the measurement tool
-  desirable and controllable.\\
-\end{enumerate}
+\noindent\textbf{(Appraisal)} Robot appraises the possibility of
+replacing the measurement tool with respect to: a) the status of the shared
+goal, and b) the Astronaut's user model. Robot finds the replacement of the
+measurement tool \textit{desirable} and \textit{controllable}.
 
-\begin{enumerate}
-  \setcounter{enumi}{2}
-  \item \textbf{(Motivation: \textit{Motive, Belief \& Intention Formations}):}
-  Robot forms new motives based on the next task according to the shared plan
-  and outcome of the appraisal of thepossibility of replacing the measurement
-  tool. Robot forms the corresponding beliefs and intentions with respect to
-  the new motives.\\
-\end{enumerate}
+\noindent\textbf{(Motivation: \textit{Motive \& Intention Formations})} Robot
+forms new motives based on the next task according to the shared plan and
+outcome of the appraisal of thepossibility of replacing the measurement tool.
+Robot forms the corresponding intentions with respect to the new motives.
 
-\begin{enumerate}
-  \setcounter{enumi}{3}
-  \item \textbf{(Coping):} Based on the current mental states, Robot chooses to
-  negotiate and offer an alternative action to the Astronaut.
-  (\textit{\textbf{A4}})
-\end{enumerate}
+\noindent\textbf{(Coping)} Based on the current mental states, Robot
+chooses to negotiate and offer an alternative action to the Astronaut. (A4)
 %\end{spacing}
+
+\noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{A4. Robot:}} The
+next task is fixing the panel and it needs you to prepare and attach the welding
+rod to your welding tool. To save our time, I will fetch another measurement
+tool while you are preparing your welding tool.\end{varwidth}}
+
+At this point, Astronaut is content with the way Robot outlined the shared goal
+and responds respectively (A5). Robot uses the same awareness function as we
+discussed above, therefore, Robot percieves and interprets the Astronauts
+response as an agreement on their new shared goal.
+
+\noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{A5. Astronaut:}}
+That would be great!\end{varwidth}}
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:wt-exp2}
