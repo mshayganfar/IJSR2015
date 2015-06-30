@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  30 JUN 2015 16:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  30 JUN 2015 17:06
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -678,7 +678,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
 
  []
 
-[19] (./MohammadShayganfar-IJSR2015.bbl [20]) [21]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1051
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1057
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1060
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1071
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1074
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1082
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1085
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1089
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1092
+
+ []
+
+[20] (./MohammadShayganfar-IJSR2015.bbl [21]) [22]
 (./MohammadShayganfar-IJSR2015.aux) ) 
 Here is how much of TeX's memory you used:
  2394 strings out of 495028
@@ -703,10 +763,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti8.pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (21 pages, 259055 bytes).
+Output written on MohammadShayganfar-IJSR2015.pdf (22 pages, 261465 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
