@@ -892,7 +892,7 @@ these anticipated appraisal values indicate that the event is interpreted as
 \textbf{relevant}, \textbf{undesirable}, \textbf{uncontrollable},
 \textbf{urgent}, and \textbf{unexpected} by the Astronaut. Furthermore, the user
 modeling process updates the Astronaut's user model based on the output of the
-reverse appraisal process and the collaboration mechanism; this use modeling
+reverse appraisal process and the collaboration mechanism; this user modeling
 process forms beliefs that a) Astronaut has \textbf{low autonomy}, and b)
 Astronaut is a \textbf{highly communicative} collaborator.
 
@@ -923,7 +923,7 @@ communication if it is required,
 
 Then, the motive comparator process compares current available motives and
 sorts them based on their distance to the Astronaut's emotional state and
-the achievement of the shared goal.\footnote{The distance function is a
+the achievement of the shared goal.\footnote{Here, the distance function is a
 function of a) the Astronaut's emotional state as an admissible approximation
 of her mental state, and b) how taking an action based on the corresponding
 intention to a particular motive improves the possibility of the collaborators
@@ -943,36 +943,60 @@ respect to these new beliefs and the most relevant motive.
 
 The processes in the awareness function will be run again (similar to what we
 had above) for the new utterance of the Astronaut (A3) before the following
-processes are run:
+processes are run. They provide the Robot with the Astronaut's new question
+about whether the Robot can fix the measurement tool. The followings show how
+the robot use the same mechanisms to negotiate on agreeing on the shared goal.
 
-\begin{spacing}{1.15}
+%\begin{spacing}{1.15}
 %\fontsize{9pt}{10pt}\selectfont
 \begin{enumerate}
-  \item \textbf{(Collaboration $\rightarrow$ Mental States: Attributes):} Robot
-  extracts the current focus of attention during collaboration and also computes
-  the distance between its own and human's mental states (distance is a function
-  of mental states' attributes and human's emotion).\\
-  
-  \item \textbf{(Collaboration $\rightarrow$ Appraisal $\rightarrow$ Belief
-  Formation: Intention Formation):} Robot appraises the human's perceived
-  emotion with respect to the current focus of attention (on a task) and
-  distance between collaborators' mental states. Robot forms/updates its mental
-  states (beliefs and intentions) with respect to the result of appraising
-  human's perceived emotion.\\
-  
-  \item \textbf{(Theory of Mind: User Model):} Robot uses its new mental states
-  to update human's user model.\\
-  
-  \item \textbf{(Mental States , Collaboration $\rightarrow$ Theory of Mind
-  $\rightarrow$ Motivation: Motive Formation: Belief Formation: Intention
-  Formation):} Robot forms a new motive based on how the collaboration can
-  proceed with respect to the Astronaut's inferred mental states.\\
-  
-  \item \textbf{(Mental  States $\rightarrow$ Coping):} Based on the current
-  mental states, Robot chooses to negotiate and offer an alternative action to
-  the Astronaut. (\textit{\textbf{A4}})
+  \item \textbf{(Collaboration):} The new beliefs as the output of the awareness
+  function based on the Astronaut's new utterance (i.e., A3) are:
 \end{enumerate}
-\end{spacing}
+
+\begin{itemize}
+  \item[$\bullet$] the precondition associated to the Astronaut's current
+  \textbf{task} is still \textbf{unsatisfied},
+  \item[$\bullet$] the status of the Astronaut's current \textbf{task} is still
+  \textbf{blocked},
+  \item[$\bullet$] and similarly the status of the \textbf{shared goal} is
+  still \textbf{blocked},
+  \item[$\bullet$] however, the Astronaut's question changes the Robot's
+  \textbf{focus of attention} to the measurement tool,
+  \item[$\bullet$] also, the Astronaut's \textbf{emotion} has changed to
+  \textbf{neutral}.
+  \item[$\bullet$] but, her user model \textbf{stays the same}, i.e.,
+  having low-autonomy and being highly communicative.
+\end{itemize}
+
+The change in the focus of attention to the measurement tool causes the Robot to
+check the availability of a recipe to fix or replace the disfunctioning
+measurement tool. Robot finds a recipe to replace the measurement tool.\\
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item \textbf{(Appraisal):} Robot appraises the possibility of replacing the
+  measurement tool with respect to: a) the status of the shared goal, and b) the
+  Astronaut's user model. Robot finds the replacement of the measurement tool
+  desirable and controllable.\\
+\end{enumerate}
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item \textbf{(Motivation: \textit{Motive, Belief \& Intention Formations}):}
+  Robot forms new motives based on the next task according to the shared plan
+  and outcome of the appraisal of thepossibility of replacing the measurement
+  tool. Robot forms the corresponding beliefs and intentions with respect to
+  the new motives.\\
+\end{enumerate}
+
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item \textbf{(Coping):} Based on the current mental states, Robot chooses to
+  negotiate and offer an alternative action to the Astronaut.
+  (\textit{\textbf{A4}})
+\end{enumerate}
+%\end{spacing}
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:wt-exp2}
