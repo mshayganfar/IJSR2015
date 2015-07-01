@@ -727,33 +727,36 @@ In this section, we are going to discuss how the individual computational
 mechanisms (see Section \ref{sec:mechanisms}) are involved in generating the
 Robot's collaborative behaviors discussed in each example in Section
 \ref{sec:example-scenario}. The following four walkthrough examples are in the
-same order as the four examples in Section \ref{sec:example-scenario}. Notice
-that in emotional ignorance examples, we use the same mechanisms as in the
-emotional awareness examples. These examples can demonstrate the
-applicability of the \textit{Affective Motivational Collaboration Theory} in
-modelling and understanding of the emotion-regulated underlying processes of a
-collaboration procedure.
+same order as the four examples in Section \ref{sec:example-scenario}. These
+examples can demonstrate the applicability of the \textit{Affective Motivational
+Collaboration Theory} in modelling and understanding of the emotion-regulated
+underlying processes of a collaboration procedure. Notice that in emotional
+ignorance examples (Sections \ref{sec:wt-exp2} and \ref{sec:wt-exp4}), we use
+the same mechanisms as in the emotional awareness examples.
+
+Also, the utterances in our examples in Section \ref{sec:example-scenario} are
+repeated here inside of boxes to help better understanding of the associated
+details in our walkthroughs. The walkthrough explanations between these boxes
+use a simple and straightforward representation to show how the underlying
+mechanisms (see Section \ref{sec:computational-framework}) are invloved to
+generate collaborative responses for the Robot.
 
 \subsection{Agreeing on Shared Goal (Emotion-Awareness)}
 \label{sec:wt-exp1}
 
 This Section provides a step-by-step walkthrough explanation of the same
-example presented in Section \ref{sec:exp1}. The utterances inside of the boxes
-are repeated to help better understanding of the associated details in our
-walkthrough. The walkthrough explanation between these boxes use a simple and
-straightforward representation to show how the underlying mechanisms (see
-Section \ref{sec:AMCT}) are invloved to generate collaborative responses for the
-Robot. Here, the description between Astronaut's utterance A1 and Robot's
-utterance A2 explains how the collaboration function of \textit{awareness} works
-to perceive and interpret events including other's utterances and emotional
-expressions, and how the collaboration function of \textit{engagement} works
-to help the Robot to take appropriate action whenever it is
-required.\footnote{Since our walkthrough explanation of underlying processes is
-based on collaborators' utterances, we use \textbf{verbal} expression of
-emotions within the utterances to emphasize their existance in certain parts of
-the collaboration. However, although the nonverbal emotional expressions (e.g.,
-facial expressions) can provide the same impact during collaboration, the
-automatic recognition of them is out of our research context.}\\
+example presented in Section \ref{sec:exp1}. In this example, the description
+between Astronaut's utterance A1 and Robot's utterance A2 explains how the
+collaboration function of \textit{awareness} works to perceive and interpret
+events including other's utterances and emotional expressions, and how the
+collaboration function of \textit{engagement} works to help the Robot to take
+appropriate action whenever it is required.\footnote{Since our walkthrough
+explanation of underlying processes is based on collaborators' utterances, we
+use \textbf{verbal} expression of emotions within the utterances to emphasize
+their existance in certain parts of the collaboration. However, although the
+nonverbal emotional expressions (e.g., facial expressions) can provide the same
+impact during collaboration, the automatic recognition of them is out of our
+research context.}\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{A1. Astronaut:}} Oh no! Finishing the quality check of our
@@ -826,9 +829,11 @@ emotion.\\
 The Appraisal mechanism simultaneously uses distinct processes to compute values
 for each individual appraisal variable. The output of these processes provides a
 vector of values describing the Robot's interpretation of the current event,
-i.e., A1. The outcome will be mapped to a particular emotion instance. The robot
-can choose to express this emotion verbally or nonverbally as part of its
-communication if it is required,\\
+(A1). The outcome will be mapped to a particular emotion instance, i.e.,
+worriedness, since the Astronaut is frustrated and the task is blocked which
+makes the Robot to properly express an appropriate emotion as a response to the
+Astronaut's emotional state. The robot can choose to express this emotion
+verbally or nonverbally as part of its communication if it is required.\\
 
 \noindent\item \textbf{(Motivation: \textit{Motive \& Intention Formation})}
 Robot forms new motives according to the result of:
@@ -932,6 +937,11 @@ That would be great!\end{varwidth}}
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:wt-exp2}
 
+This walkthrough example begins with the same exact utterance as the previous
+one, and it provides the corresponding details of the emotion-ignorant example
+in Section \ref{sec:exp2}. To avoid redundant explanations, we refer to similar
+procedures in previous walkthrough example.\\
+
 \noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{B1. Astronaut:}}
 Oh no! Finishing the quality check of our installation with this measurement
 problem is so frustrating. I think we should stop now!\end{varwidth}}\\
@@ -939,30 +949,93 @@ problem is so frustrating. I think we should stop now!\end{varwidth}}\\
 \noindent\textbf{(Perception)} Robot only perceives Astronaut's utterances.
 (B1)\\
 
-\noindent\textbf{(Collaboration , Theory of Mind $\rightarrow$ Reverse
-Appraisal)} Robot uses reverse appraisal to understand the meaning of neutral
-according to the collaborative task status (e.g., precondition status,
-postcondition status, required resources, shared goal). Robot updates human's
-user model respectively.\\
+Here, in the first step, Robot perceives the Astronaut's utterances and ignores
+her expressed emotion in B1, i.e., frustration. Similarly to previous
+example, the perception mechanism forms beliefs about the task under the
+Astronaut's focus of attention. These beliefs include:
+
+\begin{itemize}
+  \item[$\bullet$] the Astronaut's proposal of \textit{stopping} the task,
+  \item[$\bullet$] which is a \textit{future} event,
+  \item[$\bullet$] and is \textit{caused by} the measurement tool problem.
+\end{itemize}
+
+\noindent Notice that beliefs about the Astronaut's emotion are formed
+differently in compare to previous example, and they are based on neutral
+emotion of the Astronaut, since the Robot ignores the Astronaut's actual
+emotion instance, i.e., frustration.\footnote{In emotion-ignorant examples, we
+assume Robot always perceives neutral emotion expressed by the Astronaut.}
+
+\begin{itemize}
+  \item[$\bullet$] the existence of a \textit{neutral valenced} emotion,
+  \item[$\bullet$] which maps into a three-value vector of \textit{pleasure},
+  \textit{arousal}, and \textit{dominance},
+  \item[$\bullet$] and is verbally conveyed as \textit{neutral} emotion.\\
+\end{itemize}
+
+\noindent\textbf{(Collaboration)} Robot uses the collaboration mechanism to form
+new beliefs about the collaboration status based on its perception. These new
+beliefs are the same as the previous example:
+
+\begin{itemize}
+  \item[$\bullet$] the \textit{unsatisfied} precondition of the Astronaut's
+  current \textit{task},
+  \item[$\bullet$] the \textit{blocked} status of the Astronaut's current
+  \textit{task},
+  \item[$\bullet$] and consequently the \textit{blocked} status of the
+  \textit{shared goal},
+  \item[$\bullet$] which causes the change in the Robot's \textit{focus of
+  attention} to the Astronaut's task.
+\end{itemize}
+
+\noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
+Robot uses reverse appraisal to understand the meaning of Astronaut's neutral
+emotion according to the collaborative task status (e.g., precondition and
+shared goal status). Robot updates Astronaut's user model respectively.\\
+
+The reverse appraisal process, as we discussed in previous example, forms
+beliefs about the anticipated appraisals of the Astronaut with respect to the
+current task's status based on the Astronaut's utterances and emotion that the
+Robot perceives, as well as the output of the collaboration mechanism. In this
+example, since the Robot misses the actual expressed emotion by the Astronaut
+(i.e., frustration) and perceives her with amiss neutral emotion, the
+corresponding anticipated appraisal values indicate wrong interpretation of the
+event. For instance, the output of the reverse appraisal mechanism could
+indicate a \textit{relevant}, \textit{desirable}, \textit{controllable},
+\textit{non-urgent}, and \textit{expected} interpretation of the current event
+by the Astronaut. Furthermore, the user modeling process updates the Astronaut's
+user model based on the output of the reverse appraisal process and the
+collaboration mechanism; this user modeling process forms beliefs that a)
+Astronaut has \textit{high autonomy}, and b) Astronaut is a
+\textit{moderately communicative} collaborator.\\
 
 \noindent\textbf{(Appraisal)} Robot appraises Astronaut's utterances.\\
 
-\noindent\textbf{(Collaboration , Motivation $\rightarrow$ Motive Formation
-$\rightarrow$ Belief Formation $\rightarrow$ Intention Formation)} Robot forms
-new motives according to the result of a) appraisal with respect to the shared
-goal, and b) reverse appraisal of the human's wrong emotion (i.e., neutral).
-Robot forms new beliefs about a) human's inferred mental states (belief,
-intention, motive, goal, emotion), and b) the task status. Robot forms new
-intention(s) with respect to the new beliefs.\\
+The Appraisal mechanism operates similar to what we discussed in Section
+\ref{sec:exp1}. The output of these processes provides a vector of values
+describing the Robot's interpretation of the current event (B1). The outcome
+will be also mapped to a particular emotion instance, but since the Robot misses
+Astronaut's emotion, it maps the appraisals to a defferent emotion, i.e.,
+hope, than the one elicited in previous example. Robot elicits hope because it
+believes the Astronaut's emotion is neutral and the current task is blocked.
+Therefore, the Robot wants to immediately come up with an alternative
+solution.\\
 
-\noindent\textbf{(Mental States, Coping)} Based on the current mental states,
+\noindent\textbf{(Motivation: \textit{Motive \& Intention Formation})} Robot
+forms new motives according to the result of a) appraisal with respect to the
+shared goal, and b) reverse appraisal of the human's wrong emotion (i.e.,
+neutral). Robot forms new beliefs about a) human's inferred mental states
+(belief, intention, motive, goal, emotion), and b) the task status. Robot forms
+new intention(s) with respect to the new beliefs.\\
+
+\noindent\textbf{(Coping)} Based on the current mental states,
 Robot decides to use problem-focused coping strategy of seeking information to
 be able to choose between two available actions and reduce the current amount of
 uncertainty. (B2)\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}\textit{\textbf{B2. Robot:}} I
 can help you with the measurement tool, or we can terminate this task.
-\underline{What do you want me to do?}\end{varwidth}}\\
+What do you want me to do?\end{varwidth}}\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}\textit{\textbf{B3. Astronaut:}}
 As I said the measurement tool does not work properly. We can not continue!
