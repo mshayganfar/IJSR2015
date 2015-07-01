@@ -1079,29 +1079,50 @@ her to ask a clarification question (B5).\\
 \noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{B5. Astronaut:}}
 Can you fix my measurement tool?\end{varwidth}}\\
 
-\noindent\textbf{(Collaboration , Mental States $\rightarrow$ Attributes)} Robot
-extracts the current focus of attention during collaboration and also computes
-the distance between its own and human's mental states (distance is a function
-of mental states' attributes and human's emotion).\\
+Again, the same processes will be run again (similar to what we had above) for
+the new utterance of the Astronaut (B5) before the following process. The new
+beliefs as the output of the awareness function based on the Astronaut's new
+utterance are as it follows. Notice that the Robot still believes that the
+Astronaut's emotion is neutral.
 
-\noindent\textbf{(Collaboration , Appraisal $\rightarrow$ Belief Formation
-$\rightarrow$ Intention Formation)} Robot appraises the human's perceived
-emotion with respect to the current focus of attention (on a task) and distance
-between collaborators' mental states. Robot forms/updates its mental states
-(beliefs and intentions) with respect to the result of appraising human's
-perceived emotion.\\
+\begin{itemize}
+  \item[$\bullet$] the precondition associated to the Astronaut's current
+  \textit{task} is still \textit{unsatisfied},
+  \item[$\bullet$] the status of the Astronaut's current \textit{task} is still
+  \textit{blocked},
+  \item[$\bullet$] and similarly the status of the \textit{shared goal} is
+  still \textit{blocked},
+  \item[$\bullet$] however, the Astronaut's question changes the Robot's
+  \textit{focus of attention} to fixing the measurement tool,
+  \item[$\bullet$] also, the Astronaut's \textit{emotion} is still
+  \textit{neutral}.
+  \item[$\bullet$] but, her user model \textit{has changed} to having
+  medium-autonomy and being highly communicative.
+\end{itemize}
 
-\noindent\textbf{(Theory of Mind $\rightarrow$ User Model)} Robot uses its new
-mental states to update human's user model.\\
+%\begin{spacing}{1.15}
+%\fontsize{9pt}{10pt}\selectfont
+\noindent\textbf{(Collaboration)} The change in the focus of attention to fixing
+the measurement tool causes the Robot to check the availability of a recipe to
+fix or replace the disfunctioning measurement tool. Similar to previous
+example, Robot finds a recipe to replace the measurement tool.\\
 
-\noindent\textbf{(Mental States , Collaboration , Theory of Mind , Motivation
-$\rightarrow$ Motive Formation $\rightarrow$ Belief Formation $\rightarrow$
-Intention Formation)} Robot forms a new motive based on how the collaboration
-can proceed with respect to the Astronaut's inferred mental states.\\
+\noindent\textbf{(Appraisal)} Robot appraises the possibility of
+replacing the measurement tool with respect to: a) the status of the shared
+goal, and b) the Astronaut's user model. Robot finds the replacement of the
+measurement tool \textit{relevant}, \textit{desirable}, and
+\textit{controllable} just as before.\\
 
-\noindent\textbf{(Mental States, Coping)} Based on the current mental states,
-Robot chooses to negotiate and offer an alternative action to the Astronaut.
-(B6)\\
+\noindent\textbf{(Motivation: \textit{Motive \& Intention Formations})} Robot
+forms new motives based on the next task according to the shared plan and
+outcome of the appraisal of the possibility of replacing the measurement tool.
+Robot forms the corresponding intentions with respect to the new motives.\\
+
+Once again, the Robot decides to take an action based on the recent intention.\\
+
+\noindent\textbf{(Coping)} Based on the current mental states, first, Robot
+responds to the Astronaut's question, and then, chooses to negotiate and offer
+an alternative action to the Astronaut(B6).\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{B6. Robot:}} I
 cannot fix your measurement tool, but I can fetch another one for you if you
