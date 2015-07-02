@@ -1185,32 +1185,56 @@ mechanisms, as we showed above.
 \subsection{Delegation of a Task (Emotion-Awareness)}
 \label{sec:wt-exp3}
 
+This walkthrough example is focusing on delegation of a task by the Astronaut
+during collaboration (see also the example in Section \ref{sec:exp3}). In this
+example, the explanation between Astronaut's utterance C1 and Robot's utterance
+C2 provides the details of how different mechanisms discussed in Section
+\ref{sec:computational-framework} are involved making the Robot to show
+collaborative behaviors in acceptance of a new delegated task. To avoid
+redundant explanations, we refer to similar procedures in previous walkthrough
+examples.\\
+
 \noindent\fbox{\begin{varwidth}{0.98\textwidth} \textit{\textbf{C1. Astronaut:}}
 I still have some problems with attaching the first panel! We do not have enough
 time. You should begin to install the second panel.\end{varwidth}}\\
 
-\noindent\textbf{(Perception)} Robot perceives human's utterances and emotion.
-(C1)\\
+\noindent\textbf{(Perception)} Robot perceives Astronaut's utterances and
+emotion in C1.\\
 
-\noindent\textbf{(Collaboration , Theory of Mind $\rightarrow$ Reverse
-Appraisal)} Robot uses reverse appraisal to understand the meaning of
-worriedness according to the collaborative task status (e.g., precondition
-status, postcondition status, required resources, shared goal). Robot updates
-human's user model respectively.\\
+The perception mechanism forms beliefs based on the Astronaut's utterances and
+her emotion (i.e., worriedness) which she has expressed nonverbally. We have
+shown some examples of the beliefs formed by perception mechanism in the example
+in Section \ref{sec:wt-exp1}.\\
+
+\noindent\textbf{(Collaboration: \textit{Interruption \& Constraint
+Management})} Robot infers the interruption and uses the constraint management
+process to retrieve required resources and preconditions. Robot also checks
+whether there is an available associated recipe for the delegated task.\\
+
+\noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal})} Robot uses
+reverse appraisal to understand the meaning of the Astronaut's worriedness
+with respect to the collaborative task status retrieved in previous step (e.g.,
+precondition status, postcondition status, required resources, shared goal).
+Robot also updates the Astronaut's user model and froms belief that a) Astronaut
+has \textit{high autonomy}, and b) Astronaut is a highly communicative
+collaborator. We have discussed more details about reverse appraisal and user
+modeling processes in our example in Section \ref{sec:wt-exp1}.\\
 
 \noindent\textbf{(Appraisal)} Robot appraises Astronaut's utterances and
-emotion.\\
+emotion. The Robot interprets the Astronaut's utterances and emotional state as
+a \textit{relevant}, \textit{unexpected}, \textit{undesirable}, \textit{urgent},
+but \textit{controllable} event.\\
 
-\noindent\textbf{(Collaboration , Motivation $\rightarrow$ Motive Formation
-$\rightarrow$ Belief Formation $\rightarrow$ Intention Formation)} Robot forms
-new motives according to the Astronaut's request, and the result of a) appraisal
-with respect to the shared goal, and b) reverse appraisal of the human emotion.
-Robot forms new beliefs about a) status of the current tasks, and b) the new
-given task. Robot forms new intention(s) with respect to the new beliefs.\\
+\noindent\textbf{(Motivation: \textit{Motive \& Intention Formations})} Robot
+forms new motives according to the Astronaut's request, and the result of a)
+appraisal with respect to the shared goal, and b) reverse appraisal of the human
+emotion. Robot forms new beliefs about a) status of the current tasks, and b)
+the new given task. Robot forms new intention(s) with respect to the new
+beliefs.\\
 
-\noindent\textbf{(Mental States, Coping)} Based on the current mental states,
-Robot chooses an emotion-focused coping strategy and decides to acknowledge
-Astronaut's emotion, and provide a proper response. (C2)\\
+\noindent\textbf{(Coping)} Based on the current mental states, Robot chooses an
+emotion-focused coping strategy and decides to acknowledge Astronaut's emotion,
+and provide a proper response. (C2)\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}\textit{\textbf{C2. Robot:}}
 Okay. Don't worry. I can handle that.\end{varwidth}}\\
