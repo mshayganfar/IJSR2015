@@ -43,11 +43,10 @@ C.~M. de~Melo, J.~Gratch, P.~Carnevale, and S.~J. Read.
 \newblock In {\em Proceedings of the 34th Annual Meeting of the Cognitive
   Science Society ({CogSci})}, 2012.
 
-\bibitem{grosz:shared-plans}
-B.~Grosz and S.~Kraus.
-\newblock The evolution of shared plans.
-\newblock In {\em Foundations and Theories of Rational Agency}, pages 227--262,
-  1998.
+\bibitem{goffman:self-presentation}
+E.~Goffman.
+\newblock {\em The Presentation of Self in Everyday Life}.
+\newblock Anchor, 1959.
 
 \bibitem{grosz:collaborative-systems}
 B.~J. Grosz.
@@ -63,6 +62,11 @@ B.~J. Grosz, L.~Hunsberger, and S.~Kraus.
 B.~J. Grosz and S.~Kraus.
 \newblock Collaborative plans for complex group action.
 \newblock {\em Artificial Intelligence}, 86(2):269--357, 1996.
+
+\bibitem{grosz:discourse-structure}
+B.~J. Grosz and C.~L. Sidner.
+\newblock Attention, intentions, and the structure of discourse.
+\newblock {\em Computational Linguistics}, 12(3):175--204, July 1986.
 
 \bibitem{grosz:plans-discourse}
 B.~J. Grosz and C.~L. Sidner.
@@ -82,10 +86,26 @@ K.~E. Lochbaum, B.~J. Grosz, and C.~L. Sidner.
 \newblock In {\em Proceedings of the Eighth National Conference on Artificial
   Intelligence}, pages 485--490. AAAI Press, 1990.
 
+\bibitem{parkinson:emotion-social-interaction}
+C.~Marinetti, P.~Moore, P.~Lucas, and B.~Parkinson.
+\newblock Emotions in social interactions: Unfolding emotional experience.
+\newblock In {\em Emotion-Oriented Systems, Cognitive Technologies}, pages
+  31--46. Springer Berlin Heidelberg, 2011.
+
+\bibitem{marsella:ema-process-model}
+S.~C. Marsella and J.~Gratch.
+\newblock {EMA}: A process model of appraisal dynamics.
+\newblock {\em Cognitive Systems Research}, 10(1):70--90, March 2009.
+
 \bibitem{neale:grice-language}
 S.~Neale.
 \newblock Paul grice and the philosophy of language.
 \newblock {\em Linguistics and Philosophy}, 15(5):509--559, 1992.
+
+\bibitem{planalp:communicating-emotion}
+S.~Planalp.
+\newblock {\em Communicating Emotion: Social, Moral, and Cultural Processes}.
+\newblock Cambridge University Press, 1999.
 
 \bibitem{pollack:plan-inference}
 M.~E. Pollack.
@@ -110,5 +130,20 @@ J.~R. Searle.
 \newblock Collective intentionality.
 \newblock In {\em Intentions in Communication}, pages 401--415. MIT Press,
   1990.
+
+\bibitem{hooft:sharing-emotions}
+S.~van Hooft.
+\newblock Scheler on sharing emotions.
+\newblock {\em Philosophy Today}, 38(1):18--28, 1994.
+
+\bibitem{wisecup:sociology-emotions}
+A.~K. Wisecup, D.~T. Robinson, and L.~Smith-Lovin.
+\newblock {\em The Sociology of Emotions}.
+\newblock SAGE Publications, Inc., 2007.
+
+\bibitem{zajonc:social-facilitation}
+R.~B. Zajonc.
+\newblock Social facilitation.
+\newblock {\em Science}, 149(3681):269--274, 1965.
 
 \end{thebibliography}

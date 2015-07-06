@@ -98,10 +98,21 @@ grestore
 
 \maketitle
 
-\begin{abstract}\ldots
+\begin{abstract}
 
+Collaborative robots must be desinged to address the two challenging aspects of
+sociability and working with humans on shared activities in the same
+environement. The existing prominent collaboration theories provide frameworks
+for the collaboration structure, but leave the underlying processes used for
+generating and maintaining that structure unexplained. Humans are social and
+emotional beings. We posit that emotions can explain the underlying processes in
+a collaboration and provide mechanisms to model these in robots. In this paper,
+four collaboration examples are provided to highlight the roles of emotion in
+human-robot collaboration. The \textit{Affective Motivational Collaboration
+Theory} is provided by us to explain, in detail, the underlying processes and
+provide an approach for implementing them in robots. 
 
-\keywords{Human-Robot Collaboration \and Emotion-Awareness \and Affective
+\keywords{Human-Robot Collaboration \and Emotional-Awareness \and Affective
 Motivational Collaboration Theory}
 % \PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
@@ -110,10 +121,109 @@ Motivational Collaboration Theory}
 \section{Introduction}
 \label{intro}
 
-- The importance of understanding collaboration.
+One aspect of the sociability of robots is their ability to collaborate with
+humans in the same environment. Collaboration is a coordinated activity in which
+the participants work jointly to satisfy a shared goal
+\cite{grosz:plans-discourse}. There are many challenges in achieving a
+successful collaboration between robots and humans in the same environment.
+Therefore, It is crucial to understand what makes a collaboration not only
+successful, but also effective. The existing computational collaboration
+theories explain some of the important underlying concepts of collaboration such
+as the precense of a reason for collaborators' committment, and the necessity
+of communicating mental states between collaborators to maintain progress over
+the course of a collaboration. The existing prominent collaboration theories are
+mostly based on plans and joint intentions \cite{cohen:teamwork}
+\cite{grosz:plans-discourse} \cite{Litman:discourse-commonsense}, and they are
+derived from Bratman's BDI architecture \cite{bratman:intentions-plans}. The two
+theories, Joint Intentions \cite{cohen:teamwork} and SharedPlans
+\cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}, have
+been extensively used to examine and describe teamwork and collaboration in
+robots and virtual agents. However, these theories only explain the structure of
+a collaboration. For instance, in SharedPlans theory collaborators build a
+shared plan in which they have a collection of beliefs and intentions about the
+actions in the plan. Also, collaborators communicate their beliefs and
+intentions by making utterances about what actions they can contribute to the
+shared plan. This communication leads to the construction of a shared plan, and
+ultimately termination of the collaboration. On the other hand, in Joint
+Intentions theory, the notion of joint intention is viewed as a persistent
+commitment of the team members to a shared goal. In this theory, once an agent
+entered into a joint commitment with other agents, it should communicate its
+private beliefs with other team members.
 
-\noindent- The importance of understanding underlying processes of the
-collaboration process.
+We believe, although the existing collaboration theories exlain the necessity of
+the important elements within a collaboration structure, there is still a lack
+of a theory explaining the underlying processes required to dynamically create,
+use, and maintain the elements of this structure. For instance, a general
+mechanism has yet to be developed that allows an agent to effectively interact
+with a human in a collaboration environment in case of a shared task failure.
+Therefore, a theory comprising a process view of the collaboration requires to
+embrace some elements of which a) they are inherently involved in social
+interactions, and b) they essentially constitute processes capable of modifying
+the content of social interaction. We believe emotions inherit these two
+properties, and social functions of emotions can shed light on some aspects of
+underlying processes in collaboration.
+
+Humans are emotional and social being, therefore, emotions can also be social
+and they are involved in developing different social contexts including
+collaboration. Although emotions undeniably have personal aspects, they are
+usually experienced in a social context and acquire their significance in
+relation to this context \cite{parkinson:emotion-social-interaction}. For
+instance, humans feel the emotions of those around them. They have emotions
+about actions of those people around them. They have emotions about the things
+that happen to other people. Also, humans' concern about their relationship with
+others elicits emotion in them. The groups to which they belong can also elicit
+their emotions. They can also feel emotion about the success and failure of
+themselves, their own group, or of the others. Moreover, individuals sharing
+emotions might possess a shared understanding of their environment, and socially
+shared and regulated emotions can provide social meanings to the events
+happening in that environment \cite{wisecup:sociology-emotions}. There is also a
+communicative aspect of emotions. For instance, human behaviors around others
+are performative which is often intended to convey information to others
+\cite{goffman:self-presentation}. Or, when human's actions are visible in the
+social context, they behave differently in the presence of the others
+\cite{zajonc:social-facilitation}. Emotions are also invloved in one's verbal
+behaviors. For instance, an utterance can include content and relational
+meaning. An emotion might seem to be elicited by the content of the utterance,
+but in fact it is an individual's response to the relational meaning
+\cite{planalp:communicating-emotion}. The interpretation of these relational
+meanings are handled by the appraisal of the events. Appraisal processes also
+give us a way of viewing emotion as social \cite{hooft:sharing-emotions}.
+Meaning is created by an individual's social relationships and experiences in
+the social world, and individuals communicate these meanings through utterances.
+Consequently, the meaning of these utterances and the emotional communication
+change the dynamic of social interactions. A successful and effective emotional
+communication necessitates ongoing reciprocal adjustments between interactants
+that can happen by interpreting each other's behaviors
+\cite{parkinson:emotion-social-interaction}. This adjustment procedure
+fundamentally requires a baseline and an assessment process. While the
+components of the collaboration strcuture, e.g., shared shared, provide the
+baseline, emotions and underlying processes can provide the assessment
+procedures.
+
+We believe since collaboration is a special type of a social context, social
+functions of emotions are required for an agent to perform in such an
+environment. In this paper, we introduce two pairs of hypothetical examples.
+Each pair provides an emotional-awareness and emotional-ignorant robot based on
+our collaboration scenario. We also briefly discuss the \textit{Affective
+Motivational Collaboration Theory} in which we introduce underlying mechanisms
+each of which include one or multiple processes that we believe they are
+required to be involved to produce collaborative behaviors. The
+emotional-awareness examples show how these mechanisms are involved to
+successfully finish a collaboration considering a) agreeing on a shared goal
+with a robot (see Sections \ref{sec:exp1} and \ref{sec:wt-exp1}), and b)
+delegating a new task to the robot (see Sections \ref{sec:exp3} and
+\ref{sec:wt-exp3}). The emotional-ignorant examples are the same, except that
+they ignore the human's verbally or nonverbally expressed emotions. The example
+in Section \ref{sec:exp2} (see also Section \ref{sec:wt-exp2}) shows agreeing on
+a shared goal can fail if the robot ignores the human's emotion. Similarly, the
+example in Section \ref{sec:exp4} (see also Section \ref{sec:wt-exp4}) shows how
+the delegation of a new task can fail if the robot ignores human's emotion. The
+same four example in Sections \ref{sec:exp1} to \ref{sec:exp4} are discussed
+in more details in our walkthrough examples in Section \ref{sec:wtce}. In this
+section we use the same mechanisms introduced in Section
+\ref{sec:computational-framework} to show how each meachanism is invloved to
+produce the utterances within our examples in Section
+\ref{sec:example-scenario}.
 
 \section{Example Scenario}
 \label{sec:example-scenario}
@@ -172,8 +282,8 @@ Astronaut does not express a negative emotion (i.e., frustration), and she is
 asking for instrumental support, the Robot can provide the alternative task as a
 potential solution (A4). Here is another advantage of the emotion-awareness in
 this hypothetical example. Although, the Robot, according to the shared plan
-(see Sections \ref{sec:collaboration-theory} and \ref{sec:AMCT}), could provide
-the same alternative task as a solution to the Astronaut immediately, it
+(see Sections \ref{sec:collaboration-theories} and \ref{sec:AMCT}), could
+provide the same alternative task as a solution to the Astronaut immediately, it
 procrastinated instead, providing the potential solution based on the
 Astronaut's negative emotional state, i.e., frustration. Finally, since agreeing
 on a shared goal is a collaborative negotiation process, emotion-awareness plays
@@ -234,7 +344,7 @@ influential factor in its computational mechanisms (see Section \ref{sec:AMCT}).
 Hence, in the Robot's first response to the Astronaut's utterances (B2), first
 it does not acknowledge the Astronaut' emotion, and second, it immidiately
 conveys two available alternative actions according to the existing shared plan
-(see Section \ref{sec:collaboration-theory}) and asks the Astronaut to select
+(see Section \ref{sec:collaboration-theories}) and asks the Astronaut to select
 between these two actions.\footnote{Notice that the Robot's acknowledgement of
 the Astronaut's emotion is missing in B2 because of ignoring the Astronaut's
 emotion -- see the Robot's same turn (A2) in Section \ref{sec:exp1}. Also,
@@ -334,8 +444,8 @@ the Astronaut based on the \textit{Affective Motivational Collaboration Theory}
 (see Section \ref{sec:AMCT}). Continuing in this example, after acknowledging
 the Astronaut's emotion, the Robot infers that it needs to postpone asking
 questions about the missing parts of the shared plan (see Section
-\ref{sec:collaboration-theory}) since installing a panel is a collaborative task
-and some of the primitive tasks need to be done by the Astronaut. Then, the
+\ref{sec:collaboration-theories}) since installing a panel is a collaborative
+task and some of the primitive tasks need to be done by the Astronaut. Then, the
 Astronaut perceives the Robot's response as a proper acceptance of the task
 delegation and tries to communicate the status of her own, even though she is
 still worried about finishing the overall task (C3). Now, the Robot perceives
@@ -417,7 +527,7 @@ Astronaut will be able to help in some parts of the task (D4). Although, the
 Robot's interactive behavior is crucial in many collaborative contexts, here it
 implies that the Astronaut's worriedness caused by the lack of time is ignored
 by the Robot. This ignorance of the Astronaut's emotional state influences her
-mental states and consequently her behavior. Thus, she succinctly responds to
+mental state and consequently her behavior. Thus, she succinctly responds to
 the Robot's question while she is still worried about finishing of installing
 the first panel (D5). The Robot asks another question about the required inputs
 for the task which are dependent to the Astronaut without considering her
@@ -482,56 +592,62 @@ time (D11).\\
 \label{sec:computational-framework}
 
 As we mentioned in Section \ref{sec:example-scenario}, all provided examples in
-Sections \ref{sec:exp1} to \ref{sec:exp4} will be discussed in more detail using
-a computational theory which we call it the \textit{Affective Motivational
-Collaboration Theory}. There are several mechanisms involved in our
-computational framework applying different concepts of the \textit{Affective
-Motivational Collaboration Theory} to provide an emotion-regulated collaborative
-behavior for a robot. In this section, we are going to breifly describe all
-these mechanisms without elaborating the constructing processes involved in
-each mechanism since it is not in the scope of this paper. We also explain
-different types of associated mental states in our computational framework based
-on the \textit{Affective Motivational Collaboration Theory}.
+Sections \ref{sec:exp1} to \ref{sec:exp4} will be discussed in more details in
+Sections \ref{sec:wt-exp1} to \ref{sec:wt-exp4} using our computational theory
+called \textit{Affective Motivational Collaboration Theory}. There are several
+mechanisms (see Fig. \ref{fig:theory}) involved in our computational framework
+applying different concepts of the \textit{Affective Motivational Collaboration
+Theory} to provide an emotion-regulated collaborative behavior for a robot. In
+this section, we are going to breifly describe all these mechanisms. However, we
+will not elaborate the underlying processes involved in each mechanism due to
+the scope of this paper. We also explain different types of associated mental
+states in our computational framework based on the \textit{Affective
+Motivational Collaboration Theory}.
 
 \subsection{Affective Motivational Collaboration Theory}
 \label{sec:AMCT}
 
 \textit{Affective Motivational Collaboration Theory} is about the interpretation
 and prediction of the observable behaviors in a dyadic collaborative
-interaction. The theory focuses on the processes regulated by emotional states.
-It aims to explain both rapid emotional reactions to events as well as
-slower, more deliberative responses. These observable behaviors represent the
-outcome of reactive and deliberative processes related to the interpretation of
-the self's relationship to the collaborative environment. These reactive and
-deliberative processes are triggered by two types of events: \textit{external}
-events, such as the other's \textit{utterances} and \textit{primitive actions},
-and \textit{internal} events, comprising changes in the self's mental states,
-such as belief formation and emotional changes. \textit{Affective Motivational
-Collaboration Theory} explains how emotions regulate the underlying processes in
-the occurrence of these events during collaboration.
+interaction. There are several theories which describe the underlying structure
+of a collaboration based on mental states of the collaborators (see Section
+\ref{sec:collaboration-theories}). The collaboration structure of
+\textit{Affective Motivational Collaboration Theory} is based on the SharedPlans
+theory \cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}.
+\textit{Affective Motivational Collaboration Theory} focuses on the processes
+that generate, maintain and update this structure based on mental state. The
+collaboration structure is important because social robots ultimately need to
+co-exist with humans, and therefore need to consider humans mental state as
+well as their own internal states and operational goals. The processes involved
+in collaboration are important because they explain how the collaboration
+structure is formed and dynamically evolved based on the collaborators'
+interaction.
 
-Emotion-regulated processes operate based on the self's mental states including
-the anticipated mental states of the other, generated according to the self's
-model of the other. These mental states include beliefs, intentions, goals,
+The \textit{Affective Motivational Collaboration Theory} focuses on the
+processes regulated by emotional states. It aims to explain both rapid emotional
+reactions to events as well as slower, more deliberative responses. These
+observable behaviors represent the outcome of reactive and deliberative
+processes related to the interpretation of the Robot's relationship to the
+collaborative environment. These reactive and deliberative processes are
+triggered by two types of events: \textit{external} events, such as the human's
+\textit{utterances} and \textit{primitive actions}, and \textit{internal}
+events, comprising changes in the Robot's mental state, such as belief formation
+and emotional changes. \textit{Affective Motivational Collaboration Theory}
+explains how emotions regulate the underlying processes in the occurrence of
+these events during collaboration.
+
+Emotion-regulated processes operate based on the Robot's mental state including
+the anticipated mental state of the human, generated according to the Robot's
+model of the human. These mental states include beliefs, intentions, goals,
 motives and emotion instances. Each of these mental states possesses multiple
 attributes impacting the relation between cognition and behavior or perception.
 
 \begin{figure}[h!]
   \includegraphics[scale=0.78]{figure/theory-general-croped.pdf}
-  \caption{Roadmap of \textit{Affective Motivational Collaboration Theory}
-  showing primary influences between processes.}
+  \caption{Computational framework based on \textit{Affective Motivational
+  Collaboration Theory} (primary influences between mechanisms).}
   \label{fig:theory}
 \end{figure}
-
-There are several theories which describe the underlying structure of a
-collaboration based on mental states of the collaborators. The collaboration
-structure of \textit{Affective Motivational Collaboration Theory} is based on
-the SharedPlans theory \cite{grosz:shared-plans}. \textit{Affective Motivational
-Collaboration Theory} focuses on the processes that generate, maintain and
-update this structure based on mental states. The collaboration structure is
-important because social robots ultimately need to co-exist with humans, and
-therefore need to consider humans mental states as well as their own internal
-states and operational goals.
 
 \subsection{Underlying Mechanisms}
 \label{sec:mechanisms}
@@ -543,102 +659,140 @@ fetch the data in the Mental States.
 \subsubsection{Collaboration Mechanism}
 \label{sec:collaboration-mech}
 
-The \textit{Collaboration} mechanism (see Fig.~\ref{fig:theory}) maintains
-constraints on actions. These constraints include constraints on task states and
-on the ordering of tasks. The Collaboration mechanism also provides processes to
-update and monitor the shared plan. These processes depend on the Appraisal
-mechanism to evaluate the current Mental States with respect to the current
-status of the collaboration. The self also shifts its focus of attention
-according to the outcome of the Appraisal mechanism. Moreover, the Collaboration
-mechanism can help the self to identify the failure of a task. The Appraisal and
+The \textit{Collaboration} mechanism (see Fig.~\ref{fig:theory}) will construct
+a hierarchy of tasks and also manage and maintain the constraints and other
+required details of the collaboration specified by the plan. These constraints
+on task states and on the ordering of tasks include the inputs and outputs of
+individual tasks, the preconditions specifying whether it is appropriate to
+perform a task, and the postconditions specifying whether a just-completed task
+was successful (which can be used as an indication of an impasse or failure).
+The Collaboration mechanism provides processes to update and monitor the shared
+plan. It also keeps track of the focus of attention, which determines the
+salient objects, properties and relations at each point of the collaboration.
+These processes depend on the operation of other mechanisms. For instance,
+Appraisal mechanism is required to evaluate the current mental state with
+respect to the current status of the collaboration. Also, the Appraisal and
 Motivation mechanisms provide interpretation of task failure and the formation
-of new Mental States (e.g.\,intentions) respectively. Ultimately, the Coping
-mechanism allows the self to perform behavior appropriate to the current state
-of the collaboration.
+of new mental state (e.g.\,intentions) respectively.
 
-\subsubsection{Appraisal \& Coping Mechanism}
+\subsubsection{Appraisal \& Coping Mechanisms}
 \label{sec:appraisal-coping-mech}
 
-The \textit{Appraisal \& Coping} mechanism (see Fig.~\ref{fig:theory}) consists
-of the two processes of Appraisal and Coping. The Appraisal mechanism is
-responsible for evaluating changes in the self's Mental States, the anticipated
-Mental States of the other, and the state of the collaboration environment.
-Consequently, the Appraisal mechanism (Fig.~\ref{fig:theory}) is connected to a)
-the Theory of Mind mechanism, to serve as an evaluator whenever the self applies
-the Appraisal mechanism in reverse appraisal \cite{gratch:reverse-appraisal}, b)
-the Collaboration mechanism, to interpret the progress and changes in the
-collaboration plan and associated Mental States, c) the Motivation mechanism, to
-generate and assess the self's new goal-driven motives whenever a new motive or
-intention is required, e.g., following the failure of a task, and d) the
-Perception mechanism, to interpret the external events from the collaboration
-environment. The Coping mechanism provides the self with different coping
-strategies associated with changes in the self's mental states with respect to
-the state of the collaboration. In other words, the Coping mechanism produces
-cognitive responses based on the appraisal patterns.
+Appraisal is a subjective evaluation mechanism based on individual processes
+each of which computes the value of the appraisal variables. The Appraisal
+mechanism is responsible for evaluating changes in the Robot's mental state, the
+anticipated mental state of the human, and the state of the collaboration
+environment. Collaboration needs the evaluative function of the Appraisal
+mechanism for various reasons. The course of a collaboration is based on a full
+or a partial plan which needs to be updated as time passes and collaborators
+achieve, fail at or abandon a task assigned to them. The failure of a task
+should not destroy the entire collaboration. Appraising the environment and the
+current event helps the Robot to update the collaboration plan in response to
+changes in the environment and avoid further critical failures during
+collaboration. Appraisal also helps the Robot to have a better understanding of
+the human's actions by making inferences based on appraisal variables.
+Furthermore, in order to collaborate successfully, a collaborator cannot simply
+use the plan and reach to the shared goal; there should be an adaptation
+mechanism not only for updating the plan but also the underlying mental state.
+The output of Appraisal can directly and indirectly impact other mechanisms. For
+instance, the Motivation mechanism uses this data to generate, compare and
+monitor motives based on the current internal appraisal of the Robot as well as
+the appraisal of the environment. The Coping mechanism is responsible for
+adopting the appropriate behavior with respect to interpretion of the ongoing
+internal and external changes. The Coping mechanism provides the Robot with
+different coping strategies associated with changes in the Robot's mental state
+with respect to the state of the collaboration. In other words, the Coping
+mechanism produces cognitive responses based on the appraisal patterns.
 
 \subsubsection{Motivation Mechanism}
 \label{sec:motivation-mech}
 
 The \textit{Motivation} mechanism (see Fig.~\ref{fig:theory}) operates whenever
-the self a) requires a new motive to overcome an internal impasse in an ongoing
-task, or b) wants to provide an external motive to the other when the other
+the Robot a) requires a new motive to overcome an internal impasse in an ongoing
+task, or b) wants to provide an external motive to the human when the human
 faces a problem in a task. In both cases, the Motivation mechanism uses the
-Appraisal mechanism to compute attributes of the competing motives. Also, the
-Motivation mechanism can serve the Theory of Mind mechanism by helping the self
-to infer the motive behind the other's current action. Moreover, if there is an
-impasse in accomplishing a collaborative task, the self requires a new intention
-to take a new action no matter whether the self or the other is responsible for
-the task. In this case, the Motivation mechanism applies the beliefs associated
-with the blocked task as well as the Appraisal mechanism to generate and compare
-a new set of motives related to the status of the collaboration. Only one of
-these competing motives is most likely to become a new intention. The Motivation
-mechanism forms a new belief and ultimately a new intention based on the winning
-motive. As a result, the self can take an action based on the new intention to
-sustain the collaboration progress.
+Appraisal mechanism to compute attributes of the competing motives. The purpose
+of Motivation mechanism is to generate new emotion-driven goal-directed motives
+considered as ``potential'' intentions. These motives are generated based on what
+the Robot believes about the environment including Robot and the other
+collaborator and the corresponding appraisals. The Robot uses these motives to
+reach to a private or shared goal according to new conditions caused by changes
+in the environment. The Motivation mechanism consists of an arrangement of three
+distinct processes. First, several motives can be generated with respect to the
+current mental state. Only one of these competing motives is most likely to
+become a new intention. Therefore, a comparator decides which motive is more
+likely to be consistent with the current state based on the values of the motive
+attributes (e.g., motive insistence and motive urgency). Finally, the new motive
+will be used to form a new intention. As a result, the Robot can take an action
+based on the new intention to sustain the collaboration progress. Furthermore,
+the Motivation mechanism can serve the Theory of Mind mechanism by helping the
+Robot to infer the motive behind the human's current action.
 
 \subsubsection{Theory of Mind Mechanism}
 \label{sec:tom-mech}
 
 The \textit{Theory of Mind} mechanism (see Fig.~\ref{fig:theory}) is the
-mechanism of inferring a model of the other's anticipated Mental States. The
-self will progressively update this model during the collaboration. The
-refinement of this model helps the self to anticipate the other's mental state
-more accurately, which ultimately impacts the quality of the collaboration and
-the achievement of the shared goal. Furthermore, the self can make inferences
-about the motive (or intention) behind the other's actions using the Motivation
-mechanism. This inference helps the self to update its own beliefs about the
-other's mental state. In the reverse appraisal process, the self also applies
-the Appraisal mechanism together with updated beliefs about the other's Mental
-States to make inferences about the other's current mental state based on the
-other's emotional expression. Finally, the Collaboration mechanism provides the
-collaboration structure, including status of the shared plan with respect to the
-shared goal and the mutual beliefs to the Theory of Mind mechanism.
-Consequently, any change to the self's model of the other will update the self's
-mental state.
+mechanism of inferring a model of the human's anticipated mental state. The
+Robot uses the Theory of Mind mechanism to infer and attribute beliefs,
+intentions, motives and goals to its collaborator based on the user model it
+creates and maintains during collaboration. The Robot progressively updates this
+model during the collaboration. The refinement of this model helps the Robot to
+anticipate the human's mental state more accurately, which ultimately impacts
+the quality of the collaboration and the achievement of the shared goal.
+Furthermore, the Robot can make inferences about the motive (or intention) behind
+the human's actions using the Motivation mechanism. This inference helps the
+Robot to update its own beliefs about the human's mental state. In the reverse
+appraisal process \cite{gratch:reverse-appraisal}, the Robot also applies the
+Appraisal mechanism together with updated beliefs about the human's Mental
+States to infer the human's current mental state based on the human's emotional
+expression. Finally, the Collaboration mechanism provides the collaboration
+structure, including status of the shared plan with respect to the shared goal
+and the mutual beliefs to the Theory of Mind mechanism. Consequently, any change
+to the Robot's model of the human will update the Robot's mental state.
+
+\subsubsection{Perception \& Action Mechanisms}
+\label{sec:tom-mech}
+
+The Perception mechanism is responsible for producing the sensory information
+used by other mechanisms in our framework, and it is only a source of data to
+the computational framework (see Fig. \ref{fig:theory}). Thus, the computational
+framework starts with high-level semantic representation of events (including
+utterances). The output of the Perception mechanism will be given to the
+Collaboration, Theory of Mind and Appraisal mechanisms and provides a unified
+perception representation across all of these mechanisms.
+
+The Action mechanism functions whenever the Robot needs to show a proper
+behavior according to the result of the internal processes of the collaboration
+procedure, and it is only a sink of data in our computational framework (see
+Fig. \ref{fig:theory}). The input to the Action mechanism is provided by the
+Coping mechanism. This data will cause the Action mechanism to execute an
+appropriate behavior of the Robot. This data has the same level of abstraction
+as the output of the Perception mechanism, i.e., it includes Robot's utterances,
+primitive actions and emotional expressions.
 
 \subsection{Mental States \& Emotion Instances}
 
-The Mental States shown in Figure \ref{fig:theory} comprise the knowledge base
-required for all the mechanisms in the overall model.
+The Mental States shown in Fig.\,\ref{fig:theory} comprise the knowledge base
+required for all the mechanisms in the overall framework.
 
 \subsubsection{Beliefs}
 \label{sec:beliefs}
 
-\textit{Beliefs} are a crucial part of the Mental States. I have two different
-perspectives on categorization of beliefs. In one perspective, I categorize
+\textit{Beliefs} are a crucial part of the Mental States. We have two different
+perspectives on categorization of beliefs. In one perspective, we categorize
 beliefs based on whether they are shared or not between the collaborators. The
 SharedPlans \cite{grosz:plans-discourse} theory is the foundation of this
-categorization in which for any given proposition the agent may have: a) private
-beliefs (the agent believes the human does not know these), b) the inferred
-beliefs of the human (the agent believes the human collaborator has these
-beliefs), and c) mutual beliefs (the agent believes both the self and the human
+categorization in which for any given proposition the Robot may have: a) private
+beliefs (the Robot believes the human does not know these), b) the inferred
+beliefs of the human (the Robot believes the human collaborator has these
+beliefs), and c) mutual beliefs (the Robot believes both the Robot and the human
 have these same beliefs and both of them believe that). From another
-perspective, I categorize beliefs based on who or what they are about. In this
-categorization, beliefs can be about the self, the other, or they can be about
+perspective, we categorize beliefs based on who or what they are about. In this
+categorization, beliefs can be about the Robot, the human, or they can be about
 the environment. Beliefs about the environment can be about internal events,
 such as outcomes of a new appraisal or a new motivate, or external events such
 as the human's offer, question or request, and general beliefs about the
-environment in which the agent is situated. Beliefs can be created and updated
+environment in which the Robot is situated. Beliefs can be created and updated
 by different processes. They also affect how these processes function as time
 passes.
 
@@ -648,73 +802,73 @@ passes.
 \textit{Intentions} are mental constructs directed at future actions. They play
 an essential role in: a) taking actions according to the collaboration plan, b)
 coordination of actions with human collaborator, c) formation of beliefs about
-self and anticipated beliefs about the other, and d) behavior selection in the
-Coping mechanism. First, taking actions means that the agent will intend to take
+Robot and anticipated beliefs about the human, and d) behavior selection in the
+Coping mechanism. First, taking actions means that the Robot will intend to take
 an action for primitive tasks that have gained the focus of attention, possess
 active motives, have satisfied preconditions for which required temporal
 predecessors have been successfully achieved. Second, intentions are involved
-in action coordinations in which the human's behavior guides the agent to infer
+in action coordinations in which the human's behavior guides the Robot to infer
 an anticipated behavior of the human. Third, intentions play a role in belief
 formation mainly as a result of the permanence and commitment inherent to
 intentions in subsequent processes, e.g., appraisal of the human's reaction to
 the current action and self regulation. And lastly, intentions are involved in
 selecting intention-related strategies, e.g., planning, seeking instrumental
 support and procrastination, which these strategies are an essential category of
-the strategies in the Coping mechanism. Intentions possess a set of attributes,
-e.g. \textit{Involvement, Certainty, Ambivalence} which moderate the consistency
-between intention and behavior. The issue of consistency between the intentions
-(in collaboration) and the behaviors (as a result of the Coping mechanism in the
-appraisal cycle) is important because neither of these two mechanisms alone
-provides solution for this concern.
+the strategies in the Coping mechanism \cite{marsella:ema-process-model}.
+Intentions possess a set of attributes, e.g. \textit{Involvement, Certainty,
+Ambivalence} which moderate the consistency between intention and behavior. The
+issue of consistency between the intentions (in collaboration) and the behaviors
+(as a result of the Coping mechanism in the appraisal cycle) is important
+because neither of these two mechanisms alone provides solution for this
+concern.
 
 \subsubsection{Motives}
 \label{sec:motives}
 
-\textit{Motives} are mental constructs which can initiate, direct and maintain
-goal-directed behaviors. They are created by the emotion-regulated Motivation
-mechanism. Motives can cause the formation of a new intention for the agent
-according to: a) its own emotional states (how the agent feels about something),
-b) its own private goal (how an action helps the agent to make progress), c) the
-collaboration goal (how an action helps to achieve the shared goal), and d)
-other's anticipated beliefs (how an action helps the other). Motives also
-possess a set of attributes, e.g., \textit{Insistence} or \textit{Failure
-Disruptiveness}. These attributes are involved in comparison of newly generated
-motives based on the current state of the collaboration. Ultimately, the agent
-forms or updates a belief about the winning motive in the Mental States.
+\textit{Motives} are emotion-driven goal-directed mental constructs which can
+initiate, direct and maintain goal-directed behaviors. They are created by the
+emotion-regulated Motivation mechanism. Motives can cause the formation of a new
+intention for the Robot according to: a) its own emotional states (how the Robot
+feels about something), b) its own private goal (how an action helps the Robot
+to make progress), c) the collaboration goal (how an action helps to achieve the
+shared goal), and d) human's anticipated beliefs (how an action helps the
+human). Motives also possess a set of attributes, e.g., \textit{Insistence} or
+\textit{Failure Disruptiveness}. These attributes are involved in comparison of
+newly generated motives based on the current state of the collaboration.
+Ultimately, the Robot forms or updates an intention about the winning motive in
+the Mental States.
 
 \subsubsection{Goals}
 \label{sec:goals}
 
-\textit{Goals} help the agent to create and update its collaboration plan
-according to the current private and shared goal content and structure, i.e.,
-the \textit{Specificity, Proximity} and \textit{Difficulty} of the goal. Goals
-direct the formation of intentions to take appropriate corresponding actions
-during collaboration. Goals also drive the Motivation mechanism to generate
-required motive(s) in uncertain or ambiguous situations, e.g., to minimize the
-risk of impasse or to reprioritize goals. The \textit{Specificity} of goals has
-two functions for the agent. First, it defines the performance standard for
-evaluating the progress and quality of the collaboration. Second, it serves the
-agent to infer the winner of competing motives. The \textit{Proximity} of goals
-distinguishes goals according to how ``far'' they are from the ongoing task.
-Proximal (or short-term) goals are achievable more quickly, and result in higher
-motivation and better self-regulation than more temporally distant (or
-long-term) goals. Goals can influence the \textit{Strength} of beliefs, which is
-an important attribute for regulating the elicitation of social emotions. The
+\textit{Goals} help the Robot to create and update the structure of the
+collaboration plan. Goals direct the formation of intentions to take appropriate
+corresponding actions during collaboration. Goals also drive the Motivation
+mechanism to generate required motive(s) in uncertain or ambiguous situations,
+e.g., to minimize the risk of impasse or to reprioritize goals. Goals have
+three attributes. The \textit{Specificity} of goals has two functions for the
+Robot. First, it defines the performance standard for evaluating the progress
+and quality of the collaboration. Second, it serves the Robot to infer the
+winner of competing motives. The \textit{Proximity} of goals distinguishes goals
+according to how ``far'' they are from the ongoing task. Proximal (or
+short-term) goals are achievable more quickly, and result in higher motivation
+and better self-regulation than more temporally distant (or long-term) goals.
+Goals can influence the \textit{Strength} of beliefs, which is an important
+attribute for regulating the elicitation of social emotions. The
 \textit{Difficulty} of goals impacts collaborative events and decisions in the
 appraisal, reverse appraisal, motive generation and intention formation
-processes. For instance, overly easy goals do not motivate; neither are people
+processes. For instance, overly easy goals do not motivate; neither are humans
 motivated to attempt what they believe are impossible goals.
 
 \subsubsection{Emotions}
 
 \textit{Emotions} in Mental States are emotion instances that are elicited by
-the Appraisal mechanism. The agent also keeps beliefs about these emotion
-instances in the Mental States. The Belief Formation mechanism creates or
-updates these beliefs about emotions. These emotion instances include the
-agent's own emotions as well as the anticipated emotions of the other which are
-created with the help of the processes in the Theory of Mind mechanism.
+the Appraisal mechanism. These emotion instances include the Robot's own
+emotions as well as the anticipated emotions of the human which are created with
+the help of the processes in the Theory of Mind mechanism.
 
 \section{Walk Through Computational Examples}
+\label{sec:wtce}
 
 In this section, we are going to discuss how the individual computational
 mechanisms (see Section \ref{sec:mechanisms}) are involved in generating the
@@ -755,7 +909,7 @@ installation with this measurement problem is so frustrating. I think we should
 stop now!\end{varwidth}}\\ \\
 
 %\fontsize{9pt}{10pt}\selectfont
-\noindent\item \textbf{(Perception)} Robot perceives Astronaut's utterances and
+\noindent \textbf{(Perception)} Robot perceives Astronaut's utterances and
 emotion.\\
   
 First, the Robot perceives the Astronaut's utterances as well as her emotion in
@@ -796,7 +950,7 @@ new beliefs are about:
   attention} to the Astronaut's task.
 \end{itemize}
 
-\noindent\item \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User
+\noindent \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User
 Modeling})} Robot uses reverse appraisal to understand the meaning of
 Astronaut's frustration according to the collaborative task status (e.g.,
 precondition and shared goal status). Robot updates Astronaut's user model
@@ -814,7 +968,7 @@ process and the collaboration mechanism; this user modeling process forms
 beliefs that a) Astronaut has \textit{low autonomy}, and b) Astronaut is a
 \textit{highly communicative} collaborator.\\
 
-\noindent\item \textbf{(Appraisal)} Robot appraises Astronaut's utterances and
+\noindent \textbf{(Appraisal)} Robot appraises Astronaut's utterances and
 emotion.\\
 
 The Appraisal mechanism simultaneously uses distinct processes to compute values
@@ -826,7 +980,7 @@ makes the Robot to properly express an appropriate emotion as a response to the
 Astronaut's emotional state. The robot can choose to express this emotion
 verbally or nonverbally as part of its communication if it is required.\\
 
-\noindent\item \textbf{(Motivation: \textit{Motive \& Intention Formation})}
+\noindent \textbf{(Motivation: \textit{Motive \& Intention Formation})}
 Robot forms new motives according to the result of:
 
 \begin{enumerate}[a)]
@@ -847,11 +1001,11 @@ respect to the current status of collaboration. After this whole process,
 Robot uses the coping mechanism to take an action based on the available
 intention.\\
 
-\noindent\item \textbf{(Coping)} Based on the current mental state, the Robot
-chooses an emotion-focused coping strategy (see Section
-\ref{sec:appraisal-coping-mech}) and decides to acknowledge Astronaut's emotion,
-and provide an alternative solution. Subsequently, the Robot responds to the
-Astronaut with appropriate utterances appearing in A2.\\
+\noindent \textbf{(Coping)} Based on the current mental state, the Robot chooses
+an emotion-focused coping strategy (see Section \ref{sec:appraisal-coping-mech})
+and decides to acknowledge Astronaut's emotion, and provide an alternative
+solution. Subsequently, the Robot responds to the Astronaut with appropriate
+utterances appearing in A2.\\
 
 \noindent \fbox{\begin{varwidth}{0.98\textwidth}\textit{\textbf{A2. Robot:}}
 I see. This is frustrating. But, I can help you with the measurement
@@ -907,7 +1061,7 @@ Robot forms the corresponding intentions with respect to the new motives.\\
 Once again, the Robot uses the coping mechanim to take an action based on the
 recent intention.\\
 
-\noindent\textbf{(Coping)} Based on the current mental states, Robot
+\noindent\textbf{(Coping)} Based on the current mental state, Robot
 chooses to negotiate and offer an alternative action to the Astronaut. (A4)\\
 %\end{spacing}
 
@@ -1034,7 +1188,7 @@ the most related motive and forms a new intention with respect to the current
 status of collaboration. After this whole process, the Robot uses the coping
 mechanism to take an action based on the available intention.\\
 
-\noindent\textbf{(Coping)} Based on the current mental states, Robot decides to
+\noindent\textbf{(Coping)} Based on the current mental state, Robot decides to
 use problem-focused coping strategy of seeking information to be able to choose
 between two available actions and reduce the current amount of uncertainty.
 Therefore, the Robot, without acknowledging the Astronaut's emotion, asks the
@@ -1110,7 +1264,7 @@ Robot forms the corresponding intentions with respect to the new motives.\\
 
 Once again, the Robot decides to take an action based on the recent intention.\\
 
-\noindent\textbf{(Coping)} Based on the current mental states, first, Robot
+\noindent\textbf{(Coping)} Based on the current mental state, first, Robot
 responds to the Astronaut's question, and then, chooses to negotiate and offer
 an alternative action to the Astronaut(B6).\\
 
@@ -1225,7 +1379,7 @@ Section \ref{sec:wt-exp1}, and compares the available motives in the same way
 we discussed in that section. Robot forms new intention(s) with respect to the
 selected motive.\\
 
-\noindent\textbf{(Coping)} Based on the current mental states, Robot chooses an
+\noindent\textbf{(Coping)} Based on the current mental state, Robot chooses an
 emotion-focused coping strategy and decides to acknowledge Astronaut's emotion,
 and provide a proper response (C2) without asking questions about the delegated
 task.\\
@@ -1380,6 +1534,7 @@ proper collaborative behavior (D11).\\
 Astronaut:}} We don't have time for this anymore! \end{varwidth}}
 
 \section{Related Work}
+\label{sec:related-work}
 
 \subsection{Emotions in Social Context}
 
@@ -1388,7 +1543,7 @@ Astronaut:}} We don't have time for this anymore! \end{varwidth}}
 \subsection{Affect and Motives}
 
 \subsection{Collaboration Theories}
-\label{sec:collaboration-theory}
+\label{sec:collaboration-theories}
 
 The prominent collaboration theories are mostly based on plans and joint
 intentions
@@ -1450,7 +1605,46 @@ the goal \cite{grosz:plans-discourse,lochbaum:plan-models}.
 
 \section{Conclusion and Future Work}
 
-- Talking about other examples that I have.
+In this paper, first, we argued the missing part of computational collaboration
+theories and the need for a theory explaining the undelying processes involved
+in a collaboration. Then, we discussed the importance of social functions of
+emotions and how emotions are involved in social contexts to reveal or enrich
+the meaning of interactants' messages through communication. In fact, there is a
+correspondence between what a collaboration needs and what social functions of
+emotions provide within a social context. Next, in Section
+\ref{sec:example-scenario}, we provided four hypothetical examples in two pairs.
+Each pair of examples was about a distinct collaborative behavior. The first
+pair was about agreeing on a shared goal between a robot and an astronaut, and
+the second pair was about delegation of a new task to the robot by the
+astronaut. Each pair of these examples contains a successful collaboration
+because of the robot being aware of the astronaut's emotion, and a failure in
+collaboration as the consequence of the robot ignoring the astraonuat's
+emotions. We provided a brief description for each example as well as the
+utterances of both the robot and the astronaut during their collaboration. These
+examples could illustrate the importance of emotional-awareness to attain a
+successful collaborative behavior. Then, in Section
+\ref{sec:computational-framework}, we continued by briefly introduing main
+components of \textit{Affective Motivational Collaboration Thoery} as our
+computational framework which incorporates emotion-regulated mechanisms. This
+framework let us to describe the same examples in more details (in Section
+\ref{sec:wtce}) in a way that we could explain what mechanisms or their
+underlying processes, and how they are involved to help the robot obtaining a
+collaborative behavior by observing the astronaut's emotions. At last, in
+Section \ref{sec:related-work}, we provided some related works in which they are
+using comoputaitonal collaboration and emotion theories.
+
+We have also implemented the rules associated to these examples using JESS (Java
+Expert System Shell) which is a rule engine for the Java platform. In our
+current implementation we have categorized the rules in different modules
+associated with the mechanisms and the underlying processes in \textit{Affective
+Motivational Collaboration Thoery} (see Fig. \ref{fig:theory}). In our future
+work, we will implement our algorithms for each individual mechanism to be able
+to automatically generate the reauired facts within each mechanism to fire the
+existing rules. Ultimately, we are going to offer a platform which operates
+based on collaboration structure discussed by ShredPlans theory
+\cite{grosz:discourse-structure}, and employs some emotion-driven processes such
+as appriasal process in \cite{marsella:ema-process-model} to enable a robot to
+obtain and demonstrate collaborative behaviors.
 
 %\label{sec:2} ~\ref{sec:1}
 

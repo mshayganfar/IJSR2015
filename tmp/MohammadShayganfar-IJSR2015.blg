@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: MohammadShayganfar-IJSR2015.aux
 The style file: abbrv.bst
 Database file #1: mshayganfar.bib.bib
-You've used 20 entries,
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            613 strings with 6523 characters,
-and the built_in function-call counts, 7030 in all, are:
-= -- 712
-> -- 247
+            657 strings with 7461 characters,
+and the built_in function-call counts, 8990 in all, are:
+= -- 902
+> -- 329
 < -- 8
-+ -- 98
-- -- 76
-* -- 424
-:= -- 1104
-add.period$ -- 67
-call.type$ -- 20
-change.case$ -- 90
++ -- 132
+- -- 102
+* -- 559
+:= -- 1444
+add.period$ -- 89
+call.type$ -- 27
+change.case$ -- 121
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 323
-empty$ -- 622
-format.name$ -- 76
-if$ -- 1567
+cite$ -- 27
+duplicate$ -- 401
+empty$ -- 789
+format.name$ -- 102
+if$ -- 1972
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 25
-newline$ -- 103
-num.names$ -- 44
-pop$ -- 122
+int.to.str$ -- 27
+missing$ -- 35
+newline$ -- 138
+num.names$ -- 58
+pop$ -- 159
 preamble$ -- 1
-purify$ -- 75
+purify$ -- 102
 quote$ -- 0
-skip$ -- 229
+skip$ -- 272
 stack$ -- 0
-substring$ -- 463
-swap$ -- 94
+substring$ -- 571
+swap$ -- 99
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 70
+type$ -- 92
 warning$ -- 0
-while$ -- 73
-width$ -- 22
-write$ -- 227
+while$ -- 93
+width$ -- 29
+write$ -- 302
