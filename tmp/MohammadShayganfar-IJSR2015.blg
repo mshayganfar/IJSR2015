@@ -3,44 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: MohammadShayganfar-IJSR2015.aux
 The style file: abbrv.bst
 Database file #1: mshayganfar.bib.bib
-You've used 27 entries,
+Warning--can't use both volume and number fields in hudlicka:emotinos-reasons
+Too many commas in name 1 of "Rafael A. Calvo, Sidney D'Mello, Jonathan Gratch, Arvid Kappas" for entry paiva:emotion-modeling
+while executing---line 1090 of file abbrv.bst
+You've used 88 entries,
             2118 wiz_defined-function locations,
-            657 strings with 7461 characters,
-and the built_in function-call counts, 8990 in all, are:
-= -- 902
-> -- 329
-< -- 8
-+ -- 132
-- -- 102
-* -- 559
-:= -- 1444
-add.period$ -- 89
-call.type$ -- 27
-change.case$ -- 121
+            989 strings with 21249 characters,
+and the built_in function-call counts, 34448 in all, are:
+= -- 3349
+> -- 1657
+< -- 38
++ -- 669
+- -- 557
+* -- 2343
+:= -- 5462
+add.period$ -- 287
+call.type$ -- 88
+change.case$ -- 526
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 401
-empty$ -- 789
-format.name$ -- 102
-if$ -- 1972
+cite$ -- 89
+duplicate$ -- 1418
+empty$ -- 2773
+format.name$ -- 557
+if$ -- 7469
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 35
-newline$ -- 138
-num.names$ -- 58
-pop$ -- 159
+int.to.str$ -- 88
+missing$ -- 93
+newline$ -- 442
+num.names$ -- 192
+pop$ -- 650
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 446
 quote$ -- 0
-skip$ -- 272
+skip$ -- 1015
 stack$ -- 0
-substring$ -- 571
-swap$ -- 99
-text.length$ -- 8
+substring$ -- 2053
+swap$ -- 420
+text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
-warning$ -- 0
-while$ -- 93
-width$ -- 29
-write$ -- 302
+type$ -- 338
+warning$ -- 1
+while$ -- 321
+width$ -- 90
+write$ -- 978
+(There was 1 error message)
