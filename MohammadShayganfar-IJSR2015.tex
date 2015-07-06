@@ -64,6 +64,9 @@ grestore
 % Insert the name of "your journal" with
 % \journalname{myjournal}
 %
+
+\raggedbottom
+
 \begin{document}
 
 \title{Toward Improving Human-Robot Collaboration with Emotional Awareness}%\thanks{Grants or
@@ -147,83 +150,86 @@ shared plan. This communication leads to the construction of a shared plan, and
 ultimately termination of the collaboration. On the other hand, in Joint
 Intentions theory, the notion of joint intention is viewed as a persistent
 commitment of the team members to a shared goal. In this theory, once an agent
-entered into a joint commitment with other agents, it should communicate its
+enters into a joint commitment with other agents, it should communicate its
 private beliefs with other team members.
 
 We believe, although the existing collaboration theories explain the necessity
-of the important elements within a collaboration structure, there is still a lack
-of a theory explaining the underlying processes required to dynamically create,
-use, and maintain the elements of this structure. For instance, a general
-mechanism has yet to be developed that allows an agent to effectively interact
-with a human in a collaboration environment in case of a shared task failure.
-Therefore, a theory comprising a process view of the collaboration requires to
-embrace some elements of which a) they are inherently involved in social
-interactions, and b) they essentially constitute processes capable of modifying
-the content of social interaction. We believe emotions inherit these two
-properties, and social functions of emotions can shed light on some aspects of
-underlying processes in collaboration.
+of the important elements within a collaboration structure, the underlying
+processes required to dynamically create, use, and maintain the elements of this
+structure are still unexplained. For instance, a general mechanism has yet to be
+developed that allows an agent to effectively interact with a human in a
+collaboration environment in the event of a shared task failure. Therefore, a
+theory comprising a process view of collaboration must embrace some elements
+with certain properties. First, these elements should inherently be involved in
+social interactions. Second, they should essentially constitute processes
+capable of modifying the content of social interaction. We believe emotions
+possess these two properties, and social functions of emotions can shed light on
+some aspects of the underlying processes in collaboration.
 
-Humans are emotional and social being, therefore, emotions can also be social
-and they are involved in developing different social contexts including
-collaboration. Although emotions undeniably have personal aspects, they are
-usually experienced in a social context and acquire their significance in
-relation to this context \cite{parkinson:emotion-social-interaction}. For
-instance, humans feel the emotions of those around them. They have emotions
-about actions of those people around them. They have emotions about the things
-that happen to other people. Also, humans' concern about their relationship with
-others elicits emotion in them. The groups to which they belong can also elicit
-their emotions. They can also feel emotion about the success and failure of
-themselves, their own group, or of the others. Moreover, individuals sharing
-emotions might possess a shared understanding of their environment, and socially
-shared and regulated emotions can provide social meanings to the events
-happening in that environment \cite{wisecup:sociology-emotions}. There is also a
-communicative aspect of emotions. For instance, human behaviors around others
-are performative which is often intended to convey information to others
-\cite{goffman:self-presentation}. Or, when human's actions are visible in the
-social context, they behave differently in the presence of the others
+Humans are emotional and social beings; emotions can be social and they are
+involved in developing different social contexts including collaboration.
+Although emotions undeniably have personal aspects, they are usually experienced
+in a social context and acquire their significance in relation to this context
+\cite{parkinson:emotion-social-interaction}. For instance, humans feel the
+emotions of those around them. They also have emotions about actions of those
+people around them. They have emotions about the events that occur in the other
+people's lives. Also, humans' concern about their relationship with others
+elicits emotion in them. The groups to which they belong can elicit their
+emotions. They can feel emotion about the success and failure of themselves,
+their own group, or of the others. Moreover, individuals sharing emotions might
+possess a shared understanding of their environment, and socially shared and
+regulated emotions can provide social meanings to the events happening in that
+environment \cite{wisecup:sociology-emotions}. There is also a communicative
+aspect of emotions. For instance, human behaviors around others are performative
+and are often intended to convey information to others
+\cite{goffman:self-presentation}. Or, when human's actions are visible in a
+social context, they behave differently than in private
 \cite{zajonc:social-facilitation}. Emotions are also involved in one's verbal
 behaviors. For instance, an utterance can include content and relational
 meaning. An emotion might seem to be elicited by the content of the utterance,
 but in fact it is an individual's response to the relational meaning
 \cite{planalp:communicating-emotion}. The interpretation of these relational
 meanings are handled by the appraisal of the events. Appraisal processes also
-give us a way of viewing emotion as social \cite{hooft:sharing-emotions}.
-Meaning is created by an individual's social relationships and experiences in
-the social world, and individuals communicate these meanings through utterances.
+give us a way to view emotion as social \cite{hooft:sharing-emotions}. Meaning
+is created by an individual's social relationships and experiences in the social
+world, and individuals communicate these meanings through utterances.
 Consequently, the meaning of these utterances and the emotional communication
 change the dynamic of social interactions. A successful and effective emotional
 communication necessitates ongoing reciprocal adjustments between interactants
 that can happen by interpreting each other's behaviors
 \cite{parkinson:emotion-social-interaction}. This adjustment procedure
 fundamentally requires a baseline and an assessment process. While the
-components of the collaboration structure, e.g., shared shared, provide the
+components of the collaboration structure, e.g., shared plan, provide the
 baseline, emotions and underlying processes can provide the assessment
 procedures.
 
-We believe since collaboration is a special type of a social context, social
-functions of emotions are required for an agent to perform in such an
+We believe since collaboration is a special type of social context, social
+functions of emotions are required for an agent to perform adequately in such an
 environment. In this paper, we introduce two pairs of hypothetical examples.
 Each pair provides an emotional-awareness and emotional-ignorant robot based on
-our collaboration scenario. We also briefly discuss the \textit{Affective
-Motivational Collaboration Theory} in which we introduce underlying mechanisms
-each of which include one or multiple processes that we believe they are
-required to be involved to produce collaborative behaviors. The
-emotional-awareness examples show how these mechanisms are involved to
-successfully finish a collaboration considering a) agreeing on a shared goal
-with a robot (see Sections \ref{sec:exp1} and \ref{sec:wt-exp1}), and b)
-delegating a new task to the robot (see Sections \ref{sec:exp3} and
-\ref{sec:wt-exp3}). The emotional-ignorant examples are the same, except that
-they ignore the human's verbally or nonverbally expressed emotions. The example
-in Section \ref{sec:exp2} (see also Section \ref{sec:wt-exp2}) shows agreeing on
-a shared goal can fail if the robot ignores the human's emotion. Similarly, the
-example in Section \ref{sec:exp4} (see also Section \ref{sec:wt-exp4}) shows how
-the delegation of a new task can fail if the robot ignores human's emotion. The
-same four example in Sections \ref{sec:exp1} to \ref{sec:exp4} are discussed
-in more details in our walkthrough examples in Section \ref{sec:wtce}. In this
-section we use the same mechanisms introduced in Section
-\ref{sec:computational-framework} to show how each mechanism is involved to
-produce the utterances within our examples in Section
-\ref{sec:example-scenario}.
+our collaboration scenario. These examples highlight the necessity of enabling
+robots with the capacity to understand and regulate emotions, as well as
+provide emotion-driven responses. We also briefly introduce the
+\textit{Affective Motivational Collaboration Theory} which we provide to
+explain the underlying processes of the collaboration structure. In
+\textit{Affective Motivational Collaboration Theory} we introduce the underlying
+mechanisms, each of which include one or multiple processes that we believe are
+required to produce collaborative behaviors. The emotional-awareness examples
+show how these mechanisms are involved in successfully finishing a collaboration
+considering a) agreeing on a shared goal with a robot (see Sections
+\ref{sec:exp1} and \ref{sec:wt-exp1}), and b) delegating a new task to the robot
+(see Sections \ref{sec:exp3} and \ref{sec:wt-exp3}). The emotional-ignorant
+examples are the same, except that they ignore the human's verbally or
+nonverbally expressed emotions. The example in Section \ref{sec:exp2} (see also
+Section \ref{sec:wt-exp2}) shows agreeing on a shared goal can fail if the robot
+ignores the human's emotion. Similarly, the example in Section \ref{sec:exp4}
+(see also Section \ref{sec:wt-exp4}) shows how the delegation of a new task can
+fail if the robot ignores human's emotion. The same four example in Sections
+\ref{sec:exp1} to \ref{sec:exp4} are discussed in more details in our
+walkthrough examples in Section \ref{sec:wtce}. In this section we use the same
+mechanisms introduced in Section \ref{sec:computational-framework} to show how
+each mechanism is involved to produce the utterances within our examples in
+Section \ref{sec:example-scenario}.
 
 \section{Example Scenario}
 \label{sec:example-scenario}
@@ -232,12 +238,13 @@ produce the utterances within our examples in Section
 \subsection{The Backstory}
 
 The scenario transpires in a facility building collaborative robots to work with
-astronauts. The mission is to finish installing the required solar panels to
+astronauts. The mission is to finish installing the solar panels required to
 provide energy for the operation of science labs on the moon. Most of these
 panels have already been installed. However, the operation is now faced with low
-batteries which forces the operation team to be cautious about consuming energy.
-The astronaut is inspecting the working conditions in the field and planning the
-installation of the remaining panels in collaboration with the robot.
+batteries, which forces the operation team to be cautious about consuming
+energy. The astronaut is inspecting the working conditions in the field and
+planning the installation of the remaining panels in collaboration with the
+robot.
 
 \subsection{Astronaut-Robot Interaction}
 
@@ -249,7 +256,7 @@ a protracted sub-task. The robot and the astronaut will go through a series of
 assessment processes to figure out a) how did the current blocking happen? b)
 why is the current task is blocked? and c) what is the next action they are
 going to take? The robot uses its cognitive abilities and its communication
-skills to overcome these problems and to motivate the astronaut to propose
+skills to overcome these problems, to motivate the astronaut, and to propose
 alternative tasks. The following is part of an interaction between the astronaut
 and the robot during their collaboration on installing solar panels.
 
@@ -259,10 +266,10 @@ and the robot during their collaboration on installing solar panels.
 This and the next hypothetical examples show that agreeing on a shared goal
 requires the Robot to be aware of its collaborator's emotions (here,
 frustration). In this example, the Astronaut's first turn (A1), shows her
-verbally conveying her frustration with respect to the disfunctioning
-measurement tool that is used for checking the quality of the installed panel.
-In return, the Robot's first turn (A2), as the crucial part of this interaction,
-shows the Robot perceiving the Astronaut's frustration and acknowledging that
+verbally conveying her frustration with respect to a disfunctioning measurement
+tool that is used for checking the quality of the installed panel. In return,
+the Robot's first turn (A2), as the crucial part of this interaction, shows the
+Robot perceiving the Astronaut's frustration and acknowledging that
 verbally.\footnote{The underlined section of the Robot's utterances (in turn A2)
 shows the influence of using emotion-driven processes which leads to
 acknowledgement of the Astronaut's emotion. See the absence of these utterances
@@ -281,21 +288,17 @@ emotion helps to change her emotion from frustration to neutral. Now that the
 Astronaut does not express a negative emotion (i.e., frustration), and she is
 asking for instrumental support, the Robot can provide the alternative task as a
 potential solution (A4). Here is another advantage of the emotion-awareness in
-this hypothetical example. Although, the Robot, according to the shared plan
-(see Sections \ref{sec:collaboration-theories} and \ref{sec:AMCT}), could
-provide the same alternative task as a solution to the Astronaut immediately, it
-procrastinated instead, providing the potential solution based on the
-Astronaut's negative emotional state, i.e., frustration. Finally, since agreeing
-on a shared goal is a collaborative negotiation process, emotion-awareness plays
-a crucial role in providing a fair offer to the collaborator during negotiation.
-As a result, the Astronaut's response in the last turn (A5) shows the acceptance
-of the Robot's potential solution to continue collaboration and agreement on the
-shared goal while she is content. In the next example we are going to show what
-happens to the same hypothetical example when the Robot ignores the Astronaut's
-emotion and tries to save the collaboration process from failure.\\
+this hypothetical example. Although the Robot, according to the shared plan
+(see Section \ref{sec:AMCT}), could have provided the same alternative task as a
+solution to the Astronaut immediately, it procrastinated instead, providing the
+potential solution at a timing that was based on the Astronaut's negative
+emotional state, i.e., frustration. Finally, since agreeing on a shared goal is
+a collaborative negotiation process, emotion-awareness plays a crucial role in
+providing a fair offer to the collaborator during negotiation. As a result, the
+Astronaut's response in the last turn (A5) shows acceptance of the Robot's
+potential solution to continue collaboration and agreement on the shared goal
+since she is content. 
 
-\begin{spacing}{1.3}
-\small{ 
 \begin{description}
   \item \textit{\textbf{A1. Astronaut:}} Oh no! Finishing the quality check of
   our installation with this measurement problem is so frustrating. I think we
@@ -316,69 +319,68 @@ emotion and tries to save the collaboration process from failure.\\
   \item \textit{\textbf{A5. Astronaut:}} That would be great!
   
 \end{description}
-}
-\end{spacing}
+
+In the next example we are going to show what happens to the same hypothetical
+situation when the Robot ignores the Astronaut's emotion and tries to save the
+collaboration process from failure.
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:exp2}
 
-This example shows the same process of agreeing on a shared goal as previous
-one except that it diverges from reaching to an agreement, despite the fact
-that it begins with the same utterance (B1) as it appears in previous example
-(A1). As mentioned earlier in Section \ref{sec:exp1}, the emotion-awareness is
-beneficial in collaboration by channeling the collaboration process towards the
-shared goal in the right direction. Without the emotion-awareness a
-collaborative Robot will try to maintain the status of the shared goal and
-prevent it from failure without considering its collaborator's negative emotion
-which can be a direct result of a type of task failure during collaboration.
-First, the emotion-ignorant Robot does not acknowledge the Astronaut's
-frustration (i.e., B2 in compare to A2 in Section \ref{sec:exp1}), since it does
-not perceive that emotion. Then, while negotiating the shared goal the Robot
-fails to offer a potential solution with respect to the Astronaut's emotional
-state which is the reflection of Astronaut's overall mental state. As a result,
-it causes the failure of the negotiation procedure during collaboration.
+This example shows the same process of agreeing on a shared goal as the previous
+example except that it diverges from reaching an agreement, despite the fact
+that it begins with the same utterance (B1) as the previous example (A1). As
+mentioned earlier in Section \ref{sec:exp1}, emotional-awareness is beneficial
+in collaboration by channeling the collaboration process in the right direction
+towards the shared goal. Without emotional-awareness a collaborative Robot will
+try to maintain the status of the shared goal and prevent it from failure
+without considering its collaborator's negative emotion which can be a direct
+result of a type of task failure during collaboration. In this example, the
+emotional-ignorant Robot does not acknowledge the Astronaut's frustration (i.e.,
+B2 compared with A2 in Section \ref{sec:exp1}), since it does not perceive that
+emotion. Then, while negotiating the shared goal the Robot fails to offer a
+potential solution with respect to the Astronaut's emotional state which is the
+reflection of Astronaut's overall mental state. As a result, it causes the
+failure of the negotiation procedure during collaboration.
 
 In this example, the Robot is not capable of perceiving the Astronaut's emotion,
 thus it does not apply the Astronaut's emotion (i.e., frustration) as an
 influential factor in its computational mechanisms (see Section \ref{sec:AMCT}).
-Hence, in the Robot's first response to the Astronaut's utterances (B2), first
-it does not acknowledge the Astronaut' emotion, and second, it immediately
-conveys two available alternative actions according to the existing shared plan
-(see Section \ref{sec:collaboration-theories}) and asks the Astronaut to select
-between these two actions.\footnote{Notice that the Robot's acknowledgement of
-the Astronaut's emotion is missing in B2 because of ignoring the Astronaut's
-emotion -- see the Robot's same turn (A2) in Section \ref{sec:exp1}. Also,
-notice (for the same reason) that the underlined utterance in B2, reveals that
-the Robot requires the Astronaut's confirmation for the next step.} As it
-appears in the Astronaut's response, the Robot's immediate proposal does not
-make any progress in collaboration. As a result, the Astronaut just repeats
-herself about the task status (B3) while still expresses frustration. The
-Astronaut's response does not change the Robot's mental state and this causes
-the Robot to try to repeat its own question while still is missing the
-Astronaut's frustration (B4). The Robot's utterance creates an ambiguous
-assumption for the Astronaut on whether the Robot can fix the broken measurement
-tool for her. This ambiguity makes the Astronaut even more frustrated and causes
-her to ask a question to remove the ambiguity of the Robot's proposal (B5). In
-return, the Robot not only misses the Astronaut's intensified frustration, but
-it also nullifies the Astronaut's assumption about fixing the disfunctional
-measurement tool and proposes the potential solution of replacing the broken
-tool and seeing whether the Astronaut agrees on that (B6). In B7, the Astronaut
-modifies its assumption and announces the shortage of time as justification of
-expressing her anger. At this point, the Robot's response becomes more crucial
-since its wrong way of interaction and emotion-ignorance behavior shift the
-Astronaut's emotional and mental states into a noncollaborative status.
-Consequently, again, the Robot wants to revive the collaboration process,
-therefore it provides more information about the repercussions of terminating
-the collaboration process and wants to see whether the Astronaut can pursue
-another task (B8).\footnote{Notice the underlined section of the Robot's turn
-B8 indicates its dissociated reasoning about the problem from the Astronaut's
-mental state.} Finally, the incorrect interaction of the Robot caused by its
-emotion-ignorance behaviors which was developed since the Robot's very first
-response and has continued till the end, leads to an unsuccessful termination of
-their collaboration (B9).\\
+Hence, in the Robot's first response to the Astronaut's utterances (B2), it does
+not acknowledge the Astronaut's emotion, and it immediately conveys two
+available alternative actions according to the existing shared plan (see Section
+\ref{sec:collaboration-theories}) and asks the Astronaut to select between these
+two actions.\footnote{Notice that the Robot's acknowledgement of the Astronaut's
+emotion is missing in B2 because of ignorance of the Astronaut's emotion -- see
+the Robot's same turn (A2) in Section \ref{sec:exp1}. Also, notice (for the same
+reason) that the underlined utterance in B2, reveals that the Robot requires the
+Astronaut's confirmation for the next step.} As shown in the Astronaut's
+response, the Robot's immediate proposal does not result in any progress in
+collaboration. As a result, the Astronaut repeats herself about the task status
+(B3) while still expressing frustration. The Astronaut's response does not
+change the Robot's mental state and this causes the Robot to try to repeat its
+own question while still missing the Astronaut's frustration (B4). The Robot's
+utterance creates an ambiguous assumption for the Astronaut about whether the
+Robot can fix the broken measurement tool for her. This ambiguity makes the
+Astronaut even more frustrated and causes her to ask a question to remove the
+ambiguity of the Robot's proposal (B5). In return, the Robot not only misses the
+Astronaut's intensified frustration, but also nullifies the Astronaut's
+assumption about fixing the disfunctional measurement tool and proposes the
+potential solution of replacing the broken tool and asking whether the Astronaut
+agrees on that (B6). In B7, the Astronaut modifies its assumption and announces
+the shortage of time as justification for expressing her anger. At this point,
+the Robot's response becomes more crucial since its wrong method of interaction
+and emotion-ignorant behavior shift the Astronaut's emotional and mental states
+into a noncollaborative status. Consequently, again, the Robot wants to revive
+the collaboration process, therefore it provides more information about the
+repercussions of terminating the collaboration process and wants to see whether
+the Astronaut can pursue another task (B8).\footnote{Notice the underlined
+section of the Robot's turn B8 indicates its dissociated reasoning about the
+problem from the Astronaut's mental state.} Finally, the incorrect interaction
+of the Robot caused by its emotion-ignorant behavior which developed from the
+Robot's very first response and has continued till the end, leads to an
+unsuccessful termination of their collaboration (B9).\\
 
-\begin{spacing}{1.2}
-\small{
 \begin{description}
   \item \textit{\textbf{B1. Astronaut:}} Oh no! Finishing the quality check of
   our installation with this measurement problem is so frustrating. I think we
@@ -413,68 +415,59 @@ their collaboration (B9).\\
   should terminate the mission! We cannot continue without the measurement
   tool!
 \end{description}
-}
-\end{spacing}
 
 \subsection{Delegation of a Task (Emotion-Awareness)}
 \label{sec:exp3}
 
-This and the next hypothetical examples as a completely different collaborative
-behaviors show how delegation of a task critically depends on understanding how
+This and the next hypothetical examples, as a completely different collaborative
+behavior, show how delegation of a task critically depends on understanding how
 worried the other collaborator is and the necessity of having sufficient time,
-which play together. This example shows when the Robot is aware of the
-Astronaut's worriedness, it can use its own motivation mechanism drived by
-emotions to come up with a way to alleviate that. Its methods are to exactly
-postpone any questions until such time as they are critical (effects are
-appeared in C2, C4). At the beginning of this example (C1), Astronaut is worried
-because of the lack of time in achieving the shared goal (finishing to install
-solar panels) for the overall task. She proposes the Robot to begin installing
-the second panel, since the first one still has some problems. The Robot in its
-first turn (C2), perceives the Astronaut's emotion (i.e., worriedness) and using
-the same cognitive mechanisms (see Section \ref{sec:AMCT}) acknowledges the
-Astronaut's emotion just as it did in first example in Section
-\ref{sec:exp1}.\footnote{The underlined utterance in the Robot's turn C2, shows
-the Robot's awareness of the Astronaut's emotion.} Also, Robot does not ask the
-Astronaut (because of perceiving worriedness) if it is okay to leave the current
-task which was helping the Astronaut to install the first panel. As mentioned
-earlier, we are going to show step-by-step (see Sections \ref{sec:wt-exp1} and
-\ref{sec:wt-exp3}) how different emotion-driven goal-directed mechanisms get
-involved in each turn of the collaboration process to appropriately respond to
-the Astronaut based on the \textit{Affective Motivational Collaboration Theory}
-(see Section \ref{sec:AMCT}). Continuing in this example, after acknowledging
-the Astronaut's emotion, the Robot infers that it needs to postpone asking
-questions about the missing parts of the shared plan (see Section
-\ref{sec:collaboration-theories}) since installing a panel is a collaborative
-task and some of the primitive tasks need to be done by the Astronaut. Then, the
-Astronaut perceives the Robot's response as a proper acceptance of the task
-delegation and tries to communicate the status of her own, even though she is
-still worried about finishing the overall task (C3). Now, the Robot perceives
-the Astronaut's worriedness and without asking the actual detailed questions
-about the delegated task, declares the possibility of asking some follow-up
-questions whenever the Astronaut's answers are required to make progress in
-executing some primitive tasks while installing the second panel (C4). Here, the
-Robot not only prevents overwhelming the Astronaut with several questions
-related to executing the next steps in the future, but its utterance implicitly
-reveals its knowledge of tasks' requirements to the Astronaut. As a result, the
-Robot's approach on acceptance of the delegated task mitigates the Astronaut's
-negative emotion (i.e., worriedness) which makes her to respond positively to
-the Robot's proposal. The next example explains the same hypothetical task
-delegation scenario except it shows the negative impact of missing the
-Astronaut's emotion on task delegation process.\\
+which play together. This example shows that when the Robot is aware of the
+Astronaut's worriedness, it can use its own motivation mechanism driven by
+emotions to come up with a way to alleviate her worry. Its methods are to
+exactly postpone any questions until such time as they are critical (effects
+appear in C2, C4). At the beginning of this example (C1), Astronaut is worried
+because of the lack of time to achieve the shared goal (finishing installation
+of solar panels) for the overall task. She proposes that the Robot begin
+installing the second panel, since the first one still has some problems. The
+Robot in its first turn (C2), perceives the Astronaut's emotion (i.e.,
+worriedness) and, using the same cognitive mechanisms (see Section
+\ref{sec:AMCT}), acknowledges the Astronaut's emotion just as it did in first
+example in Section \ref{sec:exp1}.\footnote{The underlined utterance in the
+Robot's turn C2, shows the Robot's awareness of the Astronaut's emotion.} Also,
+Robot does not ask the Astronaut (because of perceiving her worriedness) if it
+is okay to leave the current task which was helping the Astronaut to install the
+first panel. As mentioned earlier, we are going to show step-by-step (see
+Sections \ref{sec:wt-exp1} and \ref{sec:wt-exp3}) how different emotion-driven
+goal-directed mechanisms are involved in each turn of the collaboration process
+to appropriately respond to the Astronaut based on the \textit{Affective
+Motivational Collaboration Theory} (see Section
+\ref{sec:computational-framework}). Continuing in this example, after
+acknowledging the Astronaut's emotion, the Robot infers that it needs to
+postpone asking questions about the missing parts of the shared plan since
+installing a panel is a collaborative task and some of the primitive tasks need
+to be done by the Astronaut. Then, the Astronaut perceives the Robot's response
+as a proper acceptance of the task delegation and tries to communicate the
+status of her own, even though she is still worried about finishing the overall
+task (C3). Now, the Robot perceives the Astronaut's worriedness and without
+asking the actual detailed questions about the delegated task, declares the
+possibility of asking some follow-up questions whenever the Astronaut's answers
+are required to make progress in executing some primitive tasks while installing
+the second panel (C4). Here, the Robot not only prevents overwhelming the
+Astronaut with several questions related to executing the next steps in the
+future, but its utterance implicitly reveals its knowledge of tasks'
+requirements to the Astronaut. As a result, the Robot's approach to acceptance
+of the delegated task mitigates the Astronaut's negative emotion (i.e.,
+worriedness) which makes her to respond positively to the Robot's proposal.
 
-\begin{spacing}{1.2}
-\small{
 \begin{description}
   \item \textit{\textbf{C1. Astronaut:}} I still have some problems with
   attaching the first panel! We do not have enough time. You should begin to
   install the second panel.\\
 
   \item \fbox{\begin{varwidth}{0.96\textwidth}\textit{\textbf{C2. Robot:}} Okay.
-  \underline{Don't worry.} I can handle that.
+  \underline{Don't worry.} I can handle that.\end{varwidth}}\\
 
-  [\textit{Robot perceives the Astronaut's request as on “open planning” (as
-  oppose to specific executive) task delegation.}]\end{varwidth}}\\
-  
   \item \textit{\textbf{C3. Astronaut:}} I will try to fix it asap.\\
 
   \item \textit{\textbf{C4. Robot:}} I might need to ask some questions while I
@@ -483,15 +476,17 @@ Astronaut's emotion on task delegation process.\\
   \item \textit{\textbf{C5. Astronaut:}} That's fine. Just let me know.
   
 \end{description}
-}
-\end{spacing}
+
+The next example explains the same hypothetical task delegation scenario except
+it shows the negative impact of the Robot ignoring the Astronaut's emotion
+during the task delegation process.
 
 \subsection{Delegation of a Task (Emotion-Ignorance)}
 \label{sec:exp4}
 
 This last hypothetical example is also about task delegation (similar to the
 example in Section \ref{sec:exp3}) and it shows how ignoring the collaborator's
-emotions in task delegation procedure can negatively impact the progress of a
+emotions in a task delegation procedure can negatively impact the progress of a
 collaboration. In this example, the emotion-ignorant Robot is doing planning in
 its most efficient manner (efficient because time is short); asking a lot of
 questions (see utterances in D2, D4, D6, D8, D10) so that it can work out the
@@ -499,41 +494,41 @@ plan. But asking questions exacerbates the Astronaut's worry which leads to an
 unsuccessful collaboration due to the lack of time. 
 
 As it is shown, the very first utterance of the Astronaut (D1) is the same as
-the first utterance in previous example (C1). The Astronaut is worried and
+the first utterance in the previous example (C1). The Astronaut is worried and
 expresses her worry. However, the Robot is not capable of perceiving and
 consequently acknowledging the Astronaut's emotion. As a result, the Robot
-responds to the Astronaut while the Astronaut's proposed task changes the
-Robot's focus of attention to a new task, and now, the Robot tries to determine
-a proper solution for an action selection problem. The reason that the Robot
+responds to the Astronaut while trying to determine a proper solution for an
+action selection problem, caused by the shift in the Robot's focus of
+attention due to the Astronaut's proposed task. The reason that the Robot
 perceives the Astronaut's proposal as an action selection problem is primarily
 caused by the shift in the Robot's focus of attention from an unfinished ongoing
 task (unsatisfied postconditions) to a new partially known nonprimitive task
 (i.e., installing the second panel). Therefore, the Robot immediately tries to
 confirm leaving the current unfinished task (D2). Notice the absence of
-acknowledging the Astronaut's emotion by the Robot in this turn (compare C2 in
-Section \ref{sec:exp3} and D2 here). This vacancy of the emotional awareness is
+acknowledgment of the Astronaut's emotion by the Robot in this turn (compare C2
+in Section \ref{sec:exp3} and D2 here). This vacancy of emotional awareness is
 the beginning of the failure of the task delegation process. As we can see, the
 Robot's response does not mitigate the Astronaut's worriedness about the future
 of the collaboration.\footnote{The underlined section in D2 shows the Robot's
 need for confirmation of leaving an unfinished task.} Next, the Astronaut tries
-to help the Robot to select the proper action by responding positively about
-the Robot leaving the current task (D3). Now, the Robot shifts its focus of
+to help the Robot to select the proper action by responding positively about the
+Robot leaving the current task (D3). Now, the Robot shifts its focus of
 attention to the new task and uses the Collaboration mechanism (see Section
 \ref{sec:AMCT}) to obtain required information such as task dependencies,
 existing preconditions and required resources as well as the existence of a
-plan. Subsequently, the absence of the required information and dependencies to
-the Astronaut's actions causes the Robot to ask a question about whether the
-Astronaut will be able to help in some parts of the task (D4). Although, the
+plan. Subsequently, the absence of required information and dependencies to the
+Astronaut's actions causes the Robot to ask a question about whether the
+Astronaut will be able to help in some parts of the task (D4). Although the
 Robot's interactive behavior is crucial in many collaborative contexts, here it
-implies that the Astronaut's worriedness caused by the lack of time is ignored
+implies that the Astronaut's worriedness, caused by the lack of time, is ignored
 by the Robot. This ignorance of the Astronaut's emotional state influences her
-mental state and consequently her behavior. Thus, she succinctly responds to
-the Robot's question while she is still worried about finishing of installing
-the first panel (D5). The Robot asks another question about the required inputs
-for the task which are dependent to the Astronaut without considering her
+mental state and consequently her behavior. Thus, she succinctly responds to the
+Robot's question while she is still worried about finishing installation of the
+first panel (D5). The Robot asks another question about the required inputs for
+the task which are dependent to the Astronaut without considering her
 worriedness (D6). At this point, since the Astronaut believes that the Robot's
 questions are unnecessary, she becomes frustrated and impatiently answers the
-Robot's question (D7). However, once again, not only the Robot misses the
+Robot's question (D7). However, once again, not only does the Robot miss the
 Astronaut's emotion, but it also wants to prevent failure of a task in the
 future (D8).\footnote{Notice that the underlined section in D8 is the result of
 the Robot's inference about the possibility of a future problem.} Then, the
@@ -544,18 +539,16 @@ tries to see whether the Astronaut wants the Robot to clarify the issue for her
 by providing her some examples (D10).\footnote{The underlined utterance in D10
 indicates another situation in which the Robot misses the Astronaut's emotion.}
 At last, the Astronaut terminates the collaboration task because of the lack of
-time (D11).\\
+time (D11).
 
-\begin{spacing}{1.2}
-\small{
 \begin{description}
   \item \textit{\textbf{D1. Astronaut:}} I still have some problems with
   attaching the first panel! We do not have enough time. You should begin to
   install the second panel.\\
 
   \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{D2. Robot:}}
-  Okay. I can handle that. \underline{Is it okay if I leave the current task
-  though?}\end{varwidth}}\\
+  Okay. I can handle that. \underline{Is it okay if I leave the current task}
+  \underline{though?}\end{varwidth}}\\
   
   \item \textit{\textbf{D3. Astronaut:}} Yes, that's fine. I can finish it by my
   own.\\
@@ -572,9 +565,9 @@ time (D11).\\
   something!\\
   
   \item \fbox{\begin{varwidth}{0.96\textwidth} \textit{\textbf{D8. Robot:}}
-  Thanks. I will. \underline{How about the conflict that might occur while I am
-  trying} \underline{to fix the second panel?} You are going to need my help at
-  the same time.\end{varwidth}}\\
+  Thanks. I will. \underline{How about the conflict that might occur
+  while} \underline{I am trying to fix the second panel?} You are going to need
+  my help at the same time.\end{varwidth}}\\
   
   \item \textit{\textbf{D9. Astronaut:}} Robot, I really don't understand what
   you are talking about!\\
@@ -585,24 +578,22 @@ time (D11).\\
   \item \textit{\textbf{D11. Astronaut:}} We don't have time for this anymore!
   
 \end{description}
-}
-\end{spacing}
 
 \section{Computational Framework}
 \label{sec:computational-framework}
 
-As we mentioned in Section \ref{sec:example-scenario}, all provided examples in
-Sections \ref{sec:exp1} to \ref{sec:exp4} will be discussed in more details in
+As we mentioned in Section \ref{sec:example-scenario}, all examples provided in
+Sections \ref{sec:exp1} to \ref{sec:exp4} will be discussed in more detail in
 Sections \ref{sec:wt-exp1} to \ref{sec:wt-exp4} using our computational theory
 called \textit{Affective Motivational Collaboration Theory}. There are several
 mechanisms (see Fig. \ref{fig:theory}) involved in our computational framework
 applying different concepts of the \textit{Affective Motivational Collaboration
-Theory} to provide an emotion-regulated collaborative behavior for a robot. In
-this section, we are going to briefly describe all these mechanisms. However, we
-will not elaborate the underlying processes involved in each mechanism due to
-the scope of this paper. We also explain different types of associated mental
-states in our computational framework based on the \textit{Affective
-Motivational Collaboration Theory}.
+Theory} to provide emotion-regulated collaborative behavior for a robot. In this
+section, we are going to briefly describe these mechanisms. However, we will not
+elaborate the underlying processes involved in each mechanism due to the scope
+of this paper. We also explain different types of associated mental states in
+our computational framework based on the \textit{Affective Motivational
+Collaboration Theory}.
 
 \subsection{Affective Motivational Collaboration Theory}
 \label{sec:AMCT}
@@ -610,14 +601,14 @@ Motivational Collaboration Theory}.
 \textit{Affective Motivational Collaboration Theory} is about the interpretation
 and prediction of the observable behaviors in a dyadic collaborative
 interaction. There are several theories which describe the underlying structure
-of a collaboration based on mental states of the collaborators (see Section
+of a collaboration based on the mental states of the collaborators (see Section
 \ref{sec:collaboration-theories}). The collaboration structure of
 \textit{Affective Motivational Collaboration Theory} is based on the SharedPlans
 theory \cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}.
 \textit{Affective Motivational Collaboration Theory} focuses on the processes
-that generate, maintain and update this structure based on mental state. The
+that generate, maintain and update this structure based on mental states. The
 collaboration structure is important because social robots ultimately need to
-co-exist with humans, and therefore need to consider humans mental state as
+co-exist with humans, and therefore need to consider humans' mental states as
 well as their own internal states and operational goals. The processes involved
 in collaboration are important because they explain how the collaboration
 structure is formed and dynamically evolved based on the collaborators'
@@ -636,11 +627,12 @@ and emotional changes. \textit{Affective Motivational Collaboration Theory}
 explains how emotions regulate the underlying processes in the occurrence of
 these events during collaboration.
 
-Emotion-regulated processes operate based on the Robot's mental state including
-the anticipated mental state of the human, generated according to the Robot's
-model of the human. These mental states include beliefs, intentions, goals,
-motives and emotion instances. Each of these mental states possesses multiple
-attributes impacting the relation between cognition and behavior or perception.
+Emotion-regulated processes operate based on the Robot's mental state, which
+also includes the anticipated mental state of the human, generated according to
+the Robot's model of the human. These mental states include beliefs, intentions,
+goals, motives and emotion instances. Each of these mental states possess
+multiple attributes impacting the relation between cognition and behavior or
+perception.
 
 \begin{figure}[h!]
   \includegraphics[scale=0.78]{figure/theory-general-croped.pdf}
@@ -652,7 +644,7 @@ attributes impacting the relation between cognition and behavior or perception.
 \subsection{Underlying Mechanisms}
 \label{sec:mechanisms}
 
-The \textit{Affective Motivational Collaboration Model} consists of seven
+The \textit{Affective Motivational Collaboration Theory} consists of seven
 mechanisms (see Fig.~\ref{fig:theory}) most of which directly store and
 fetch the data in the Mental States.
 
@@ -670,10 +662,10 @@ The Collaboration mechanism provides processes to update and monitor the shared
 plan. It also keeps track of the focus of attention, which determines the
 salient objects, properties and relations at each point of the collaboration.
 These processes depend on the operation of other mechanisms. For instance,
-Appraisal mechanism is required to evaluate the current mental state with
+the Appraisal mechanism is required to evaluate the current mental state with
 respect to the current status of the collaboration. Also, the Appraisal and
 Motivation mechanisms provide interpretation of task failure and the formation
-of new mental state (e.g.\,intentions) respectively.
+of a new mental state (e.g.\,intention) respectively.
 
 \subsubsection{Appraisal \& Coping Mechanisms}
 \label{sec:appraisal-coping-mech}
@@ -682,7 +674,7 @@ Appraisal is a subjective evaluation mechanism based on individual processes
 each of which computes the value of the appraisal variables. The Appraisal
 mechanism is responsible for evaluating changes in the Robot's mental state, the
 anticipated mental state of the human, and the state of the collaboration
-environment. Collaboration needs the evaluative function of the Appraisal
+environment. Collaboration requires the evaluative function of the Appraisal
 mechanism for various reasons. The course of a collaboration is based on a full
 or a partial plan which needs to be updated as time passes and collaborators
 achieve, fail at or abandon a task assigned to them. The failure of a task
@@ -714,7 +706,7 @@ faces a problem in a task. In both cases, the Motivation mechanism uses the
 Appraisal mechanism to compute attributes of the competing motives. The purpose
 of Motivation mechanism is to generate new emotion-driven goal-directed motives
 considered as ``potential'' intentions. These motives are generated based on what
-the Robot believes about the environment including Robot and the other
+the Robot believes about the environment including the Robot and the other
 collaborator and the corresponding appraisals. The Robot uses these motives to
 reach to a private or shared goal according to new conditions caused by changes
 in the environment. The Motivation mechanism consists of an arrangement of three
@@ -732,7 +724,7 @@ Robot to infer the motive behind the human's current action.
 \label{sec:tom-mech}
 
 The \textit{Theory of Mind} mechanism (see Fig.~\ref{fig:theory}) is the
-mechanism of inferring a model of the human's anticipated mental state. The
+mechanism for inferring a model of the human's anticipated mental state. The
 Robot uses the Theory of Mind mechanism to infer and attribute beliefs,
 intentions, motives and goals to its collaborator based on the user model it
 creates and maintains during collaboration. The Robot progressively updates this
@@ -767,8 +759,8 @@ procedure, and it is only a sink of data in our computational framework (see
 Fig. \ref{fig:theory}). The input to the Action mechanism is provided by the
 Coping mechanism. This data will cause the Action mechanism to execute an
 appropriate behavior of the Robot. This data has the same level of abstraction
-as the output of the Perception mechanism, i.e., it includes Robot's utterances,
-primitive actions and emotional expressions.
+as the output of the Perception mechanism, i.e., it includes the Robot's
+utterances, primitive actions and emotional expressions.
 
 \subsection{Mental States \& Emotion Instances}
 
@@ -788,39 +780,38 @@ beliefs of the human (the Robot believes the human collaborator has these
 beliefs), and c) mutual beliefs (the Robot believes both the Robot and the human
 have these same beliefs and both of them believe that). From another
 perspective, we categorize beliefs based on who or what they are about. In this
-categorization, beliefs can be about the Robot, the human, or they can be about
-the environment. Beliefs about the environment can be about internal events,
-such as outcomes of a new appraisal or a new motivate, or external events such
-as the human's offer, question or request, and general beliefs about the
-environment in which the Robot is situated. Beliefs can be created and updated
-by different processes. They also affect how these processes function as time
-passes.
+categorization, beliefs can be about the Robot, the human, or the environment.
+Beliefs about the environment can be about internal events, such as outcomes of
+a new appraisal or a new motive, or external events such as the human's offer,
+question or request, and general beliefs about the environment in which the
+Robot is situated. Beliefs can be created and updated by different processes.
+They also affect how these processes function as time passes.
 
 \subsubsection{Intentions}
 \label{sec:intentions}
 
 \textit{Intentions} are mental constructs directed at future actions. They play
 an essential role in: a) taking actions according to the collaboration plan, b)
-coordination of actions with human collaborator, c) formation of beliefs about
-Robot and anticipated beliefs about the human, and d) behavior selection in the
-Coping mechanism. First, taking actions means that the Robot will intend to take
-an action for primitive tasks that have gained the focus of attention, possess
-active motives, have satisfied preconditions for which required temporal
-predecessors have been successfully achieved. Second, intentions are involved
-in action coordinations in which the human's behavior guides the Robot to infer
-an anticipated behavior of the human. Third, intentions play a role in belief
-formation mainly as a result of the permanence and commitment inherent to
-intentions in subsequent processes, e.g., appraisal of the human's reaction to
-the current action and self regulation. And lastly, intentions are involved in
-selecting intention-related strategies, e.g., planning, seeking instrumental
-support and procrastination, which these strategies are an essential category of
-the strategies in the Coping mechanism \cite{marsella:ema-process-model}.
-Intentions possess a set of attributes, e.g. \textit{Involvement, Certainty,
-Ambivalence} which moderate the consistency between intention and behavior. The
-issue of consistency between the intentions (in collaboration) and the behaviors
-(as a result of the Coping mechanism in the appraisal cycle) is important
-because neither of these two mechanisms alone provides solution for this
-concern.
+coordination of actions with the human collaborator, c) formation of beliefs
+about the Robot and anticipated beliefs about the human, and d) behavior
+selection in the Coping mechanism. First, taking actions means that the Robot
+will intend to take an action for primitive tasks that have gained the focus of
+attention, possess active motives, and have satisfied preconditions for which
+required temporal predecessors have been successfully achieved. Second,
+intentions are involved in action coordinations in which the human's behavior
+guides the Robot to infer an anticipated behavior of the human. Third,
+intentions play a role in belief formation mainly as a result of the permanence
+and commitment inherent to intentions in subsequent processes, e.g., appraisal
+of the human's reaction to the current action and self-regulation. And lastly,
+intentions are involved in selecting intention-related strategies, e.g.,
+planning, seeking instrumental support and procrastination, which are an
+essential category of the strategies in the Coping mechanism
+\cite{marsella:ema-process-model}. Intentions possess a set of attributes, e.g.
+\textit{Involvement, Certainty, Ambivalence} which moderate the consistency
+between intention and behavior. The issue of consistency between the intentions
+(in collaboration) and the behaviors (as a result of the Coping mechanism in the
+appraisal cycle) is important because neither of these two mechanisms alone
+provides solution for this concern.
 
 \subsubsection{Motives}
 \label{sec:motives}
@@ -831,10 +822,10 @@ emotion-regulated Motivation mechanism. Motives can cause the formation of a new
 intention for the Robot according to: a) its own emotional states (how the Robot
 feels about something), b) its own private goal (how an action helps the Robot
 to make progress), c) the collaboration goal (how an action helps to achieve the
-shared goal), and d) human's anticipated beliefs (how an action helps the
+shared goal), and d) the human's anticipated beliefs (how an action helps the
 human). Motives also possess a set of attributes, e.g., \textit{Insistence} or
-\textit{Failure Disruptiveness}. These attributes are involved in comparison of
-newly generated motives based on the current state of the collaboration.
+\textit{Failure Disruptiveness}. These attributes are involved in the comparison
+of newly generated motives based on the current state of the collaboration.
 Ultimately, the Robot forms or updates an intention about the winning motive in
 the Mental States.
 
