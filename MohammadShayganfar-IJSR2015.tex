@@ -568,11 +568,9 @@ Collaboration Theory}.
 
 \textit{Affective Motivational Collaboration Theory} (see Fig. \ref{fig:theory})
 is about the interpretation and prediction of the observable behaviors in a
-dyadic collaborative interaction. There are several theories which describe the
-underlying structure of a collaboration based on the mental states of the
-collaborators (see Section \ref{sec:collaboration-theories}). The collaboration
-structure of \textit{Affective Motivational Collaboration Theory} is based on
-the SharedPlans theory
+dyadic collaborative interaction. The collaboration structure of
+\textit{Affective Motivational Collaboration Theory} is based on the SharedPlans
+theory of collaboration
 \cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}.
 \textit{Affective Motivational Collaboration Theory} focuses on the processes
 that generate, maintain and update this structure based on mental states. The
@@ -583,18 +581,17 @@ in collaboration are important because they explain how the collaboration
 structure is formed and dynamically evolved based on the collaborators'
 interaction.
 
-The \textit{Affective Motivational Collaboration Theory} focuses on the
-processes regulated by emotional states. It aims to explain both rapid emotional
-reactions to events as well as slower, more deliberative responses. These
-observable behaviors represent the outcome of reactive and deliberative
-processes related to the interpretation of the Robot's relationship to the
-collaborative environment. These reactive and deliberative processes are
-triggered by two types of events: \textit{external} events, such as the human's
-\textit{utterances} and \textit{primitive actions}, and \textit{internal}
-events, comprising changes in the Robot's mental state, such as belief formation
-and emotional changes. \textit{Affective Motivational Collaboration Theory}
-explains how emotions regulate the underlying processes in the occurrence of
-these events during collaboration.
+Affective Motivational Collaboration Theory focuses on the processes regulated
+by emotional states. It aims to explain both rapid emotional reactions to events
+as well as slower, more deliberative responses. These observable behaviors
+represent the outcome of reactive and deliberative processes related to the
+interpretation of the Robot's relationship to the collaborative environment.
+These reactive and deliberative processes are triggered by two types of events:
+\textit{external} events, such as the human's utterances and primitive actions,
+and \textit{internal} events, comprising changes in the Robot's mental state,
+such as belief formation and emotional changes. Affective Motivational
+Collaboration Theory explains how emotions regulate the underlying processes in
+the occurrence of these events during collaboration.
 
 Emotion-regulated processes operate based on the Robot's mental state, which
 also includes the anticipated mental state of the human, generated according to
@@ -606,37 +603,35 @@ perception.
 \begin{figure}[h!]
   \includegraphics[scale=0.78]{figure/theory-general-croped.pdf}
   \caption{Computational framework based on \textit{Affective Motivational
-  Collaboration Theory} (primary influences between mechanisms).}
+  Collaboration Theory} (arrows indicate primary influences between
+  mechanisms).}
   \label{fig:theory}
 \end{figure}
 
-\subsection{Underlying Mechanisms}
-\label{sec:mechanisms}
+In summary, Affective Motivational Collaboration Theory consists of five
+mechanisms all of which store and retrieve data in the Mental States. We will
+describe each mechanism and their influences on each other briefly below.
 
-The \textit{Affective Motivational Collaboration Theory} consists of seven
-mechanisms (see Fig.~\ref{fig:theory}) most of which directly store and
-fetch the data in the Mental States.
-
-\subsubsection{Collaboration Mechanism}
+\subsection{Collaboration Mechanism}
 \label{sec:collaboration-mech}
 
-The \textit{Collaboration} mechanism (see Fig.~\ref{fig:theory}) will construct
-a hierarchy of tasks and also manage and maintain the constraints and other
+The \textit{Collaboration} mechanism (see Fig.~\ref{fig:theory}) constructs
+a hierarchy of tasks and also manages and maintains the constraints and other
 required details of the collaboration specified by the plan. These constraints
 on task states and on the ordering of tasks include the inputs and outputs of
 individual tasks, the preconditions specifying whether it is appropriate to
-perform a task, and the postconditions specifying whether a just-completed task
-was successful (which can be used as an indication of an impasse or failure).
-The Collaboration mechanism provides processes to update and monitor the shared
-plan. It also keeps track of the focus of attention, which determines the
-salient objects, properties and relations at each point of the collaboration.
-These processes depend on the operation of other mechanisms. For instance,
-the Appraisal mechanism is required to evaluate the current mental state with
-respect to the current status of the collaboration. Also, the Appraisal and
-Motivation mechanisms provide interpretation of task failure and the formation
-of a new mental state (e.g.\,intention) respectively.
+perform a task (which can be used as an indication of an impasse), and the
+postconditions specifying whether a just-completed task was successful (or
+failed). The Collaboration mechanism includes processes to update and monitor
+the shared plan. It also keeps track of the focus of attention, which specifies
+the salient objects, properties and relations at each point of the
+collaboration. These processes depend on the operation of other mechanisms. For
+instance, the Appraisal mechanism is required to evaluate the current mental
+state with respect to the current status of the collaboration. Also, the
+Appraisal and Motivation mechanisms provide interpretation of task failure and
+the formation of a new mental state (e.g.\,an intention) respectively.
 
-\subsubsection{Appraisal \& Coping Mechanisms}
+\subsection{Appraisal \& Coping Mechanisms}
 \label{sec:appraisal-coping-mech}
 
 Appraisal is a subjective evaluation mechanism based on individual processes
@@ -658,60 +653,62 @@ mechanism not only for updating the plan but also the underlying mental state.
 The output of Appraisal can directly and indirectly impact other mechanisms. For
 instance, the Motivation mechanism uses this data to generate, compare and
 monitor motives based on the current internal appraisal of the Robot as well as
-the appraisal of the environment. The Coping mechanism is responsible for
-adopting the appropriate behavior with respect to interpretation of the ongoing
-internal and external changes. The Coping mechanism provides the Robot with
-different coping strategies associated with changes in the Robot's mental state
-with respect to the state of the collaboration. In other words, the Coping
-mechanism produces cognitive responses based on the appraisal patterns.
+the appraisal of the environment. 
 
-\subsubsection{Motivation Mechanism}
+The Coping mechanism is responsible for adopting the appropriate behavior with
+respect to interpretation of the ongoing internal and external changes. The
+Coping mechanism provides the Robot with different coping strategies associated
+with changes in the Robot's mental state with respect to the state of the
+collaboration. In other words, the Coping mechanism produces cognitive responses
+based on the appraisal patterns.
+
+\subsection{Motivation Mechanism}
 \label{sec:motivation-mech}
 
-The \textit{Motivation} mechanism (see Fig.~\ref{fig:theory}) operates whenever
-the Robot a) requires a new motive to overcome an internal impasse in an ongoing
-task, or b) wants to provide an external motive to the human when the human
-faces a problem in a task. In both cases, the Motivation mechanism uses the
-Appraisal mechanism to compute attributes of the competing motives. The purpose
-of Motivation mechanism is to generate new emotion-driven goal-directed motives
-considered as ``potential'' intentions. These motives are generated based on what
-the Robot believes about the environment including the Robot and the other
-collaborator and the corresponding appraisals. The Robot uses these motives to
-reach to a private or shared goal according to new conditions caused by changes
-in the environment. The Motivation mechanism consists of an arrangement of three
-distinct processes. First, several motives can be generated with respect to the
+The \textit{Motivation} mechanism operates whenever the Robot a) requires a new
+motive to overcome an internal impasse in an ongoing task, or b) wants to
+provide an external motive to the human when the human faces a problem in a
+task. In both cases, the Motivation mechanism uses the Appraisal mechanism to
+compute attributes of the competing motives. The purpose of Motivation mechanism
+is to generate new emotion-driven goal-directed motives considered as
+``potential'' intentions. These motives are generated based on what the Robot
+believes about the environment including the Robot and the other collaborator
+and the corresponding appraisals. The Robot uses these motives to reach to a
+private or shared goal according to new conditions caused by changes in the
+environment. The Motivation mechanism consists of an arrangement of three
+distinct processes. First, several motives are generated with respect to the
 current mental state. Only one of these competing motives is most likely to
-become a new intention. Therefore, a comparator decides which motive is more
-likely to be consistent with the current state based on the values of the motive
-attributes (e.g., motive insistence and motive urgency). Finally, the new motive
-will be used to form a new intention. As a result, the Robot can take an action
-based on the new intention to sustain the collaboration progress. Furthermore,
-the Motivation mechanism can serve the Theory of Mind mechanism by helping the
-Robot to infer the motive behind the human's current action.
+become a new intention. Therefore, a comparison process decides which motive is
+more likely to be consistent with the current state based on the values of the
+motive attributes (e.g., motive insistence and motive urgency). Finally, the new
+motive will be used to form a new intention. As a result, the Robot can take an
+action based on the new intention to sustain the collaboration progress.
+Furthermore, the Motivation mechanism can serve the Theory of Mind mechanism by
+helping the Robot to infer the motive behind the human's current action.
 
-\subsubsection{Theory of Mind Mechanism}
+\subsection{Theory of Mind Mechanism}
 \label{sec:tom-mech}
 
-The \textit{Theory of Mind} mechanism (see Fig.~\ref{fig:theory}) is the
-mechanism for inferring a model of the human's anticipated mental state. The
-Robot uses the Theory of Mind mechanism to infer and attribute beliefs,
-intentions, motives and goals to its collaborator based on the user model it
-creates and maintains during collaboration. The Robot progressively updates this
-model during the collaboration. The refinement of this model helps the Robot to
-anticipate the human's mental state more accurately, which ultimately impacts
-the quality of the collaboration and the achievement of the shared goal.
-Furthermore, the Robot can make inferences about the motive (or intention) behind
-the human's actions using the Motivation mechanism. This inference helps the
-Robot to update its own beliefs about the human's mental state. In the reverse
-appraisal process \cite{gratch:reverse-appraisal}, the Robot also applies the
-Appraisal mechanism together with updated beliefs about the human's Mental
-States to infer the human's current mental state based on the human's emotional
-expression. Finally, the Collaboration mechanism provides the collaboration
-structure, including status of the shared plan with respect to the shared goal
-and the mutual beliefs to the Theory of Mind mechanism. Consequently, any change
-to the Robot's model of the human will update the Robot's mental state.
+The \textit{Theory of Mind} mechanism is the mechanism for inferring a model of
+the human's anticipated mental state. The Robot uses the Theory of Mind
+mechanism to infer and attribute beliefs, intentions, motives and goals to its
+collaborator based on the user model it creates and maintains during
+collaboration. The Robot progressively updates this model during the
+collaboration. The refinement of this model helps the Robot to anticipate the
+human's mental state more accurately, which ultimately impacts the quality of
+the collaboration and the achievement of the shared goal. Furthermore, the Robot
+can make inferences about the motive (or intention) behind the human's actions
+using the Motivation mechanism. This inference helps the Robot to update its own
+beliefs about the human's mental state. In the reverse appraisal process
+\cite{gratch:reverse-appraisal}, the Robot also applies the Appraisal mechanism
+together with updated beliefs about the human's Mental States to infer the
+human's current mental state based on the human's emotional expression. Finally,
+the Collaboration mechanism provides the collaboration structure, including
+status of the shared plan with respect to the shared goal and the mutual beliefs
+to the Theory of Mind mechanism. Consequently, any change to the Robot's model
+of the human will update the Robot's mental state.
 
-\subsubsection{Perception \& Action Mechanisms}
+\subsection{Perception \& Action Mechanisms}
 \label{sec:tom-mech}
 
 The Perception mechanism is responsible for producing the sensory information
@@ -741,7 +738,7 @@ required for all the mechanisms in the overall framework.
 
 \textit{Beliefs} are a crucial part of the Mental States. We have two different
 perspectives on categorization of beliefs. In one perspective, we categorize
-beliefs based on whether they are shared or not between the collaborators. The
+beliefs based on whether or not they are shared between the collaborators. The
 SharedPlans \cite{grosz:plans-discourse} theory is the foundation of this
 categorization in which for any given proposition the Robot may have: a) private
 beliefs (the Robot believes the human does not know these), b) the inferred
@@ -769,14 +766,14 @@ attention, possess active motives, and have satisfied preconditions for which
 required temporal predecessors have been successfully achieved. Second,
 intentions are involved in action coordinations in which the human's behavior
 guides the Robot to infer an anticipated behavior of the human. Third,
-intentions play a role in belief formation mainly as a result of the permanence
+intentions play a role in belief formation, mainly as a result of the permanence
 and commitment inherent to intentions in subsequent processes, e.g., appraisal
-of the human's reaction to the current action and self-regulation. And lastly,
+of the human's reaction to the current action and self-regulation. Lastly,
 intentions are involved in selecting intention-related strategies, e.g.,
 planning, seeking instrumental support and procrastination, which are an
 essential category of the strategies in the Coping mechanism
 \cite{marsella:ema-process-model}. Intentions possess a set of attributes, e.g.
-\textit{Involvement, Certainty, Ambivalence} which moderate the consistency
+\textit{involvement, certainty, ambivalence} which moderate the consistency
 between intention and behavior. The issue of consistency between the intentions
 (in collaboration) and the behaviors (as a result of the Coping mechanism in the
 appraisal cycle) is important because neither of these two mechanisms alone
@@ -792,8 +789,8 @@ intention for the Robot according to: a) its own emotional states (how the Robot
 feels about something), b) its own private goal (how an action helps the Robot
 to make progress), c) the collaboration goal (how an action helps to achieve the
 shared goal), and d) the human's anticipated beliefs (how an action helps the
-human). Motives also possess a set of attributes, e.g., \textit{Insistence} or
-\textit{Failure Disruptiveness}. These attributes are involved in the comparison
+human). Motives also possess a set of attributes, e.g., \textit{insistence} or
+\textit{failure disruptiveness}. These attributes are involved in the comparison
 of newly generated motives based on the current state of the collaboration.
 Ultimately, the Robot forms or updates an intention about the winning motive in
 the Mental States.
@@ -806,14 +803,14 @@ collaboration plan. Goals direct the formation of intentions to take appropriate
 corresponding actions during collaboration. Goals also drive the Motivation
 mechanism to generate required motive(s) in uncertain or ambiguous situations,
 e.g., to minimize the risk of impasse or to reprioritize goals. Goals have
-three attributes. The \textit{Specificity} of goals has two functions for the
+three attributes. The \textit{specificity} of goals has two functions for the
 Robot. First, it defines the performance standard for evaluating the progress
 and quality of the collaboration. Second, it serves the Robot to infer the
-winner of competing motives. The \textit{Proximity} of goals distinguishes goals
+winner of competing motives. The \textit{proximity} of goals distinguishes goals
 according to how ``far'' they are from the ongoing task. Proximal (or
 short-term) goals are achievable more quickly, and result in higher motivation
 and better self-regulation than more temporally distant (or long-term) goals.
-Goals can influence the \textit{Strength} of beliefs, which is an important
+Goals can influence the \textit{strength} of beliefs, which is an important
 attribute for regulating the elicitation of social emotions. The
 \textit{Difficulty} of goals impacts collaborative events and decisions in the
 appraisal, reverse appraisal, motive generation and intention formation
