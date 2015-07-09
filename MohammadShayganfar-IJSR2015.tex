@@ -132,38 +132,44 @@ successful collaboration between robots and humans. To meet this challenges, it
 is crucial to understand what makes a collaboration not only successful, but
 also efficient. Existing computational models of collaboration explain some of
 the important concepts underlying collaboration; such as the presence of a
-reason for collaborators' commitment, and the necessity of communicating mental
-states in order to maintain progress over the course of a collaboration. The
-most prominent collaboration theories are based on plans and intentions
+reason for collaborators' commitment, and the necessity of communicating about
+mental states in order to maintain progress over the course of a collaboration.
+The most prominent collaboration theories are based on plans and intentions
 \cite{cohen:teamwork} \cite{grosz:plans-discourse}
 \cite{Litman:discourse-commonsense}, and are derived from Bratman's BDI
 architecture \cite{bratman:intentions-plans}. Two theories, Joint Intentions
 \cite{cohen:teamwork} and SharedPlans
 \cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}, have
-been extensively used to support teamwork and collaboration between humans and
-robots or virtual agents. However, these theories explain only the structure of
-a collaboration. For instance, in SharedPlans theory collaborators build a
-shared plan containing a collection of beliefs and intentions about the actions
-in the plan. Collaborators communicate these beliefs and intentions via
-utterances about actions that contribute to the shared plan. This communication
-leads to the incremental construction of a shared plan, and ultimately
-successful completion of the collaboration. In contrast, in Joint Intentions
-theory, the notion of joint intention is viewed as a persistent commitment of
-the team members to a shared goal. In this theory, once an agent enters into a
-joint commitment with other agents, it should communicate its private beliefs to
-other team members.
+been used to support teamwork and collaboration between humans and robots or
+virtual agents \cite{breazeal:humanoid-robots}
+\cite{montreuil:planning-robot-activity} \cite{sidner:enagagement-robot}
+\cite{yen:cast}. However, these theories explain only the structure of a
+collaboration. For instance, in SharedPlans theory collaborators build a shared
+plan containing a collection of beliefs and intentions about the actions in the
+plan. Collaborators communicate these beliefs and intentions via utterances
+about actions that contribute to the shared plan. This communication leads to
+the incremental construction of a shared plan, and ultimately successful
+completion of the collaboration. In contrast, in Joint Intentions theory, the
+notion of joint intention is viewed as a persistent commitment of the team
+members to a shared goal. In this theory, once an agent enters into a joint
+commitment with other agents, it should communicate its private beliefs to other
+team members.
 
 Although existing collaboration theories explain the important elements of a
 collaboration structure, the underlying processes required to dynamically
 create, use, and maintain the elements of this structure are largely
 unexplained. For instance, a general mechanism has yet to be developed that
-allows an agent to effectively interact with a human in a collaboration
-environment in the event of a shared task failure. A process view of
-collaboration must include certain key elements. It should inherently involve
-social interactions, and should essentially constitute processes capable of
-modifying the content of social interaction. Emotions possess these two
-properties, and social functions of emotions explain some aspects of the
-underlying processes in collaboration.
+allows an agent to effectively integrate the influence of its collaborator's
+perceived or anticipated emotions into its own cognitive mechanisms to prevent
+shared task failures while maintining a collaborative behavior. Therefore, a
+process view of collaboration must include certain key elements. It should
+inherently involve social interactions since all collaborations occur between
+social agents, and it should essentially constitute a mean of modifying the
+content of social interaction as the collaboration unfolds. The underlying
+processes of emotions possess these two properties, and social functions of
+emotions explain some aspects of the underlying processes in collaboration. This
+paper makes the case for a process model of emotions and demonstrates how it
+furthers collaboration between humans and robots.
 
 Humans are emotional and social beings; emotions are involved in many different
 social contexts including collaboration. Although there are purely personal
@@ -182,7 +188,7 @@ There is also a communicative aspect of emotions. For instance, emotions are
 often intended to convey information to others \cite{goffman:self-presentation}.
 Emotions are also involved in verbal behaviors. For instance, an utterance can
 include both content and relational meaning. An emotion might appear to be
-elicited by the content of the utterance, but in fact it is an individual's
+elicited by the content of the utterance, but in fact be an individual's
 response to the relational meaning \cite{planalp:communicating-emotion}. The
 interpretation of these relational meanings are handled by the appraisal of
 events. Appraisal processes give us a way to view emotion as social
@@ -200,21 +206,33 @@ emotion-related processes provide the assessment procedure.
 Since collaboration is a type of social context, the social functions of
 emotions are required for an agent to perform adequately in such an environment.
 In this paper, we present two pairs of hypothetical interaction scenarios. Each
-pair contrasts an emotionally-awarewith an emotionally-ignorant robot iteracting
-with a human in the same situation. These scenarios highlight the necessity of
-giving robots the capacity to understand and regulate emotions, as well as to
-provide emotion-driven responses. We then briefly introduce \textit{Affective
-Motivational Collaboration Theory} which explains the underlying processes of
-emotions and collaboration. The emotion-aware examples show how the mechanisms
-of this theory are involved in agreeing on a shared goal with a robot (Sections
-\ref{sec:exp1} and \ref{sec:wt-exp1}), and delegating a new task to the robot
-(Sections \ref{sec:exp3} and \ref{sec:wt-exp3}). The emotion-ignorance examples
-are the same, except that the robot ignores the human's verbally or nonverbally
-expressed emotions. The same four examples in Sections \ref{sec:exp1} to
-\ref{sec:exp4} are revisited in more detail in our computational walkthroughs
-in Section \ref{sec:wtce}. In this section we show how the mechanisms of
-\textit{Affective Motivational Collaboration Theory} operate to produce the
-robot behaviors in Section \ref{sec:example-scenario}.
+pair contrasts an emotionally-aware with an emotionally-ignorant robot
+iteracting with a human in the same situation. These scenarios highlight the
+necessity of giving robots the capacity to understand and regulate emotions, as
+well as to provide emotion-driven responses. We then briefly introduce
+\textit{Affective Motivational Collaboration Theory} which explains the
+underlying processes of emotions and collaboration. The emotion-aware examples
+show how the mechanisms of this theory are involved in agreeing on a shared goal
+with a robot (Sections \ref{sec:exp1} and \ref{sec:wt-exp1}), and delegating a
+new task to the robot (Sections \ref{sec:exp3} and \ref{sec:wt-exp3}). The
+emotion-ignorance examples are the same, except that the robot ignores the
+human's verbally or nonverbally expressed emotions. The same four examples in
+Sections \ref{sec:exp1} to \ref{sec:exp4} are revisited in more detail in our
+computational walkthroughs in Section \ref{sec:wtce}. In this section, we show
+how the mechanisms of \textit{Affective Motivational Collaboration Theory}
+operate to produce the robot behaviors in Section \ref{sec:example-scenario}.
+
+As we discussed above, there are certain types of emotion-regulated mechanisms
+with which a collaborative robot can modify and maintain a collaboration
+structure (e.g., shared plan). We explain these mechanisms and their
+corresponding operations in \textit{Affective Motivational Collaboration
+Theory}. In this paper, we briefly describe some parts of this theory that are
+required to discuss our examples. We have also implemented all the rules
+asscoiated with each mechanism using JESS (JAVA Expert System Shell) to be able
+to generate the same type of collaborative behaviors as they appear in our
+examples. In the future, we are going to use these rules and the processes
+involved in each mechanism to build collaborative behaviors in an interactive
+robot.
 
 \section{Example Scenarios}
 \label{sec:example-scenario}
