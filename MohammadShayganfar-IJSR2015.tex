@@ -587,18 +587,16 @@ collaboration task because of the lack of time (D11).
 \section{Computational Framework}
 \label{sec:computational-framework}
 
-As we mentioned in Section \ref{sec:example-scenario}, all examples provided in
-Sections \ref{sec:exp1} to \ref{sec:exp4} will be discussed in more detail in
-Sections \ref{sec:wt-exp1} to \ref{sec:wt-exp4} using our computational theory
-called \textit{Affective Motivational Collaboration Theory}. There are several
-mechanisms (see Fig. \ref{fig:theory}) involved in our computational framework
-applying different concepts of the \textit{Affective Motivational Collaboration
-Theory} to provide emotion-regulated collaborative behavior for a robot. In this
-section, we are going to briefly describe these mechanisms. However, we will not
-elaborate the underlying processes involved in each mechanism due to the scope
-of this paper. We also explain different types of associated mental states in
-our computational framework based on the \textit{Affective Motivational
-Collaboration Theory}.
+In this section, we briefly describe \textit{Affective Motivational
+Collaboration Theory} and the five underlying emotion-regulated mechanisms in
+this theory. Each mechanism constitutes one or more processes which are involved
+in generating collaborative behaviors for the Robot. We also explain different
+types of mental states in our computational framework based on the
+\textit{Affective Motivational Collaboration Theory}. Notice, in Fig.
+\ref{fig:theory}, there are two mechanisms, i.e., Perception and Action, which
+are not part of \textit{Affective Motivational Collaboration Theory}. They only
+provide required input and output to our framework which can differ based on the
+capabilities of any sociable robot.
 
 \subsection{Affective Motivational Collaboration Theory}
 \label{sec:AMCT}
@@ -677,27 +675,29 @@ mechanism is responsible for evaluating changes in the Robot's mental state, the
 anticipated mental state of the human, and the state of the collaboration
 environment. Collaboration requires the evaluative function of the Appraisal
 mechanism for various reasons. The course of a collaboration is based on a full
-or a partial plan which needs to be updated as time passes and collaborators
-achieve, fail at or abandon a task assigned to them. The failure of a task
-should not destroy the entire collaboration. Appraising the environment and the
-current event helps the Robot to update the collaboration plan in response to
-changes in the environment and avoid further critical failures during
-collaboration. Appraisal also helps the Robot to have a better understanding of
-the human's actions by making inferences based on appraisal variables.
+or a partial plan \cite{grosz:collaboration,grosz:discourse-structure} which
+needs to be updated as time passes and collaborators achieve, fail at or abandon
+a task assigned to them. The failure of a task should not destroy the entire
+collaboration. Appraising the environment and the current event helps the Robot
+to update the collaboration plan in response to changes in the environment and
+avoid further critical failures during collaboration. Appraisal also helps the
+Robot to have a better understanding of the human's actions by making inferences
+based on appraisal variables (see Section \ref{sec:wtce} for some examples)
+\cite{marsella:ema-process-model} \cite{scherer:appraisal-processes}.
 Furthermore, in order to collaborate successfully, a collaborator cannot simply
 use the plan and reach to the shared goal; there should be an adaptation
 mechanism not only for updating the plan but also the underlying mental state.
 The output of Appraisal can directly and indirectly impact other mechanisms. For
 instance, the Motivation mechanism uses this data to generate, compare and
 monitor motives based on the current internal appraisal of the Robot as well as
-the appraisal of the environment. 
+the appraisal of the environment.
 
-The Coping mechanism is responsible for adopting the appropriate behavior with
-respect to interpretation of the ongoing internal and external changes. The
-Coping mechanism provides the Robot with different coping strategies associated
-with changes in the Robot's mental state with respect to the state of the
-collaboration. In other words, the Coping mechanism produces cognitive responses
-based on the appraisal patterns.
+The Coping mechanism is responsible for adopting the appropriate behavior
+(action) with respect to interpretation of the ongoing internal and external
+changes. The Coping mechanism provides the Robot with different coping
+strategies associated with changes in the Robot's mental state with respect to
+the state of the collaboration. In other words, the Coping mechanism produces
+cognitive responses based on the appraisal patterns.
 
 \subsection{Motivation Mechanism}
 \label{sec:motivation-mech}
@@ -707,21 +707,22 @@ motive to overcome an internal impasse in an ongoing task, or b) wants to
 provide an external motive to the human when the human faces a problem in a
 task. In both cases, the Motivation mechanism uses the Appraisal mechanism to
 compute attributes of the competing motives. The purpose of Motivation mechanism
-is to generate new emotion-driven goal-directed motives considered as
-``potential'' intentions. These motives are generated based on what the Robot
-believes about the environment including the Robot and the other collaborator
-and the corresponding appraisals. The Robot uses these motives to reach to a
-private or shared goal according to new conditions caused by changes in the
-environment. The Motivation mechanism consists of an arrangement of three
-distinct processes. First, several motives are generated with respect to the
-current mental state. Only one of these competing motives is most likely to
-become a new intention. Therefore, a comparison process decides which motive is
-more likely to be consistent with the current state based on the values of the
-motive attributes (e.g., motive insistence and motive urgency). Finally, the new
-motive will be used to form a new intention. As a result, the Robot can take an
-action based on the new intention to sustain the collaboration progress.
-Furthermore, the Motivation mechanism can serve the Theory of Mind mechanism by
-helping the Robot to infer the motive behind the human's current action.
+in Affective Motivational Collaboration Theory is to generate new emotion-driven
+goal-directed motives considered as ``potential'' intentions. These motives are
+generated based on what the Robot believes about the environment including the
+Robot and the other collaborator and the corresponding appraisals. The Robot
+uses these motives to reach to a private or shared goal according to new
+conditions caused by changes in the environment. The Motivation mechanism
+consists of an arrangement of three distinct processes. First, several motives
+are generated with respect to the current mental state. Only one of these
+competing motives is most likely to become a new intention. Therefore, a
+comparison process decides which motive is more likely to be consistent with the
+current state based on the values of the motive attributes (e.g., motive
+insistence and motive urgency). Finally, the new motive will be used to form a
+new intention. As a result, the Robot can take an action based on the new
+intention to sustain the collaboration progress. Furthermore, the Motivation
+mechanism can serve the Theory of Mind mechanism by helping the Robot to infer
+the motive behind the human's current action.
 
 \subsection{Theory of Mind Mechanism}
 \label{sec:tom-mech}
@@ -745,25 +746,25 @@ status of the shared plan with respect to the shared goal and the mutual beliefs
 to the Theory of Mind mechanism. Consequently, any change to the Robot's model
 of the human will update the Robot's mental state.
 
-\subsection{Perception \& Action Mechanisms}
+\subsection{Perception \& Action}
 \label{sec:tom-mech}
 
-The Perception mechanism is responsible for producing the sensory information
-used by other mechanisms in our framework, and it is only a source of data to
-the computational framework (see Fig. \ref{fig:theory}). Thus, the computational
-framework starts with high-level semantic representation of events (including
-utterances). The output of the Perception mechanism will be given to the
-Collaboration, Theory of Mind and Appraisal mechanisms and provides a unified
-perception representation across all of these mechanisms.
+Perception is outside of our theory and is responsible for producing the sensory
+information used by the mechanisms in our framework; it is only a source of data
+to the computational framework (see Fig.\,\ref{fig:theory}). Thus, our
+computational framework starts with high-level semantic representation of events
+(including utterances). The output of the Perception component provides a
+unified perception representation across all of the mechanisms.
 
-The Action mechanism functions whenever the Robot needs to show a proper
-behavior according to the result of the internal processes of the collaboration
-procedure, and it is only a sink of data in our computational framework (see
-Fig. \ref{fig:theory}). The input to the Action mechanism is provided by the
-Coping mechanism. This data will cause the Action mechanism to execute an
-appropriate behavior of the Robot. This data has the same level of abstraction
-as the output of the Perception mechanism, i.e., it includes the Robot's
-utterances, primitive actions and emotional expressions.
+The Action component in Fig.\,\ref{fig:theory}, which is also outside of our
+theory, functions whenever the Robot needs to show a proper behavior according
+to the result of the internal processes of the collaboration procedure; it is
+only a sink of data in our computational framework. The only input to the Action
+component is provided by the Coping mechanism. This input will cause the Action
+component to execute an appropriate behavior of the Robot. This input to Action
+has the same level of abstraction as the output of the Perception mechanism,
+i.e., it includes the Robot's utterances, primitive actions and emotional
+expressions.
 
 \subsection{Mental States \& Emotion Instances}
 
