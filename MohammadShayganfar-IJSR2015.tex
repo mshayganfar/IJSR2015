@@ -919,9 +919,8 @@ include:
 \end{itemize}
 
 \noindent\textbf{(Collaboration: \textit{Monitoring \& Focus Shifting})}
-the Robot uses the Collaboration mechanism (see Section
-\ref{sec:collaboration-mech}) to form new beliefs about the collaboration status
-based on its perception. These new beliefs are about:
+Based on these perceptions, the Robot uses the Collaboration mechanism, and
+forms new beliefs about the collaboration status. These new beliefs are about:
 
 \begin{itemize}
   \item[$\bullet$] the \textit{unsatisfied} precondition of the Astronaut's
@@ -938,18 +937,17 @@ based on its perception. These new beliefs are about:
 Modeling})} The Robot uses reverse appraisal to understand the meaning of the
 Astronaut's frustration according to the collaborative task status (e.g.,
 precondition and shared goal status). The Robot updates the Astronaut's user
-model respectively.\\
+model correspondingly.\\
 
-The reverse appraisal process (see Section \ref{sec:appraisal-coping-mech})
-forms beliefs about the anticipated appraisals of the Astronaut with respect to
-the current task's status based on the Astronaut's utterances and emotion in A1,
-and the output of the collaboration mechanism. Some of these anticipated
-appraisal values indicate that the event is interpreted as \textit{relevant},
-\textit{undesirable}, \textit{uncontrollable}, \textit{urgent}, and
-\textit{unexpected} by the Astronaut. Furthermore, the user modeling process
-updates the Astronaut's user model based on the output of the reverse appraisal
-process and the collaboration mechanism; this user modeling process forms
-beliefs that:
+The reverse appraisal process forms beliefs about the anticipated appraisals of
+the Astronaut with respect to the current task's status based on the Astronaut's
+utterances and emotion in A1, and the output of the collaboration mechanism.
+Some of these anticipated appraisal values indicate that the event is
+interpreted as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
+\textit{urgent}, and \textit{unexpected} by the Astronaut. Furthermore, the user
+modeling process updates the Astronaut's user model based on the output of the
+reverse appraisal process and the collaboration mechanism; this user modeling
+process forms beliefs that:
 
 \begin{itemize}
   \item[$\bullet$] Astronaut has \textit{low autonomy},
@@ -961,12 +959,10 @@ and emotion.\\
 
 The Appraisal mechanism simultaneously uses distinct processes to compute values
 for each individual appraisal variable. The output of these processes provides a
-vector of values describing the Robot's interpretation of the current event,
-(A1). The outcome will be mapped to a particular emotion instance, i.e., worry,
-since the Astronaut is frustrated and the task is blocked, which makes the Robot
-to properly express an appropriate emotion as a response to the Astronaut's
-emotional state. The robot can choose to express this emotion verbally or
-nonverbally as part of its communication if it is required.\\
+vector of values describing the Robot's interpretation of the current event
+(A1). In this example, the beliefs listed above including the negative-valenced
+emotion provide a vector of values that would be read as frustration. The Action
+component has the task of expressing this emotion.\\
 
 \noindent \textbf{(Motivation: \textit{Motive \& Intention Formation})}
 The Robot forms new motives according to the result of:
@@ -977,23 +973,21 @@ The Robot forms new motives according to the result of:
   \item and the user model of the Astronaut. 
 \end{enumerate}
 
-Then, the motive comparator process compares current available motives and
+Then, the motive comparison process compares current available motives and
 sorts them based on their distance to the Astronaut's emotional state and
-the achievement of the shared goal.\footnote{Here, the distance function is a
-function of a) the Astronaut's emotional state as an admissible approximation
-of her mental state, and b) how taking an action based on the corresponding
-intention of a particular motive improves the possibility of the collaborators
-reaching to the collaborators' mutually accepted shared goal.} The Robot,
-ultimately, selects the most related motive and forms a new intention with
-respect to the current status of collaboration. After this whole process, the
-Robot uses the coping mechanism to take an action based on the available
-intention.\\
+the achievement of the shared goal. Here, the distance function is a function of
+a) the Astronaut's emotional state as an admissible approximation of her mental
+state, and b) how taking an action based on the corresponding intention of a
+particular motive improves the possibility of the collaborators reaching to the
+collaborators' mutually accepted shared goal. The Robot ultimately selects the
+most related motive and forms a new intention with respect to the current status
+of collaboration. After this whole process, the Robot uses the coping mechanism
+to take an action based on the available intention.\\
 
 \noindent \textbf{(Coping)} Based on the current mental state, the Robot chooses
-an emotion-focused coping strategy (see Section \ref{sec:appraisal-coping-mech})
-and decides to acknowledge Astronaut's emotion, and provide an alternative
-solution. Subsequently, the Robot responds to the Astronaut with appropriate
-utterances appearing in A2.\\
+an emotion-focused coping strategy, decides to acknowledge the Astronaut's
+emotion, and to provide an alternative solution. Subsequently, the Robot
+responds to the Astronaut with A2.\\
 
 \noindent \fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{A2. Robot:}}} I see. This is
@@ -1003,16 +997,14 @@ task as originally planned. \end{varwidth}}\\
 The Astronaut's new utterance (A3) provides the Robot with a new question about
 whether the Robot can fix the measurement tool. The following paragraphs show
 how the robot employs the same mechanisms described in Section
-\ref{sec:computational-framework} which enables the Robot to negotiate with the
-Astronaut to reach an agreement on the shared goal.\\
+\ref{sec:computational-framework} to negotiate with the Astronaut to reach an
+agreement on the shared goal.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{A3. Astronaut:}}} Can you fix
 the measurement tool?\end{varwidth}}\\
 
-Notice that the processes will be run again (similar to what we had above) for
-perceiving the new utterance of the Astronaut (A3) before the following
-processes are run. The new beliefs based on the Astronaut's new utterance are:
+Using the same processes as before, the following beliefs hold:
 
 \begin{itemize}
   \item[$\bullet$] the precondition associated with the Astronaut's current
@@ -1031,7 +1023,7 @@ processes are run. The new beliefs based on the Astronaut's new utterance are:
 
 \noindent\textbf{(Collaboration)} The change in the focus of attention to the
 measurement tool causes the Robot to check the availability of a recipe to fix
-or replace the disfunctioning measurement tool. The Robot finds a recipe to
+or replace the malfunctioning measurement tool. The Robot finds a recipe to
 replace the measurement tool.\\
 
 \noindent\textbf{(Appraisal)} The Robot appraises the possibility of
@@ -1069,10 +1061,12 @@ great!\end{varwidth}}
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:wt-exp2}
 
-This walkthrough example begins with the same exact utterance as the previous
-one, and it provides the corresponding details of the emotional-ignorance
-example in Section \ref{sec:exp2}. To avoid redundant explanations, we refer to
-similar procedures in the previous walkthrough example.\\
+This walkthrough example begins with the same utterance as the previous one, and
+it provides the computational walkthrough of the emotional-ignorance example in
+Section \ref{sec:exp2}. In emotional-ignorance examples, we assume Robot always
+perceives neutral emotion expressed by the Astronaut. To avoid redundant
+explanations, we refer to similar processing in the previous walkthrough
+example, when possible.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{B1. Astronaut:}}} Oh no!
@@ -1084,8 +1078,8 @@ utterances (B1).\\
 
 Here, in the first step, the Robot perceives the Astronaut's utterances and
 ignores her expressed emotion in B1, i.e., frustration. Similarly to the
-previous example, the Perception mechanism forms beliefs about the task under
-the Astronaut's focus of attention. These beliefs include:
+previous example, Perception forms beliefs about the task in the Astronaut's
+focus of attention. These beliefs include:
 
 \begin{itemize}
   \item[$\bullet$] the Astronaut's proposal of \textit{stopping} the task,
@@ -1094,11 +1088,9 @@ the Astronaut's focus of attention. These beliefs include:
 \end{itemize}
 
 \noindent Notice that beliefs about the Astronaut's emotion are formed
-differently in comparison with the previous example, and they are based on the
+differently in comparison with the previous example, and are based on the
 neutral emotion of the Astronaut, since the Robot ignores the Astronaut's actual
-emotion instance, i.e., frustration.\footnote{In emotional-ignorance examples,
-we assume Robot always perceives neutral emotion expressed by the Astronaut.} These
-beliefs include:
+emotion instance, i.e., frustration. These beliefs include:
 
 \begin{itemize}
   \item[$\bullet$] the existence of a \textit{neutral valenced} emotion,
@@ -1109,18 +1101,8 @@ beliefs include:
 
 \noindent\textbf{(Collaboration)} The Robot uses the collaboration mechanism to
 form new beliefs about the collaboration status based on its perception. These
-new beliefs are the same as the previous example:
-
-\begin{itemize}
-  \item[$\bullet$] the \textit{unsatisfied} precondition of the Astronaut's
-  current \textit{task},
-  \item[$\bullet$] the \textit{blocked} status of the Astronaut's current
-  \textit{task},
-  \item[$\bullet$] and consequently the \textit{blocked} status of the
-  \textit{shared goal},
-  \item[$\bullet$] which causes the change in the Robot's \textit{focus of
-  attention} to the Astronaut's task.
-\end{itemize}
+new beliefs are the same as those generated by Collaboration mechanism in the
+previous example.\\
 
 \noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
 The Robot uses reverse appraisal to understand the meaning of the Astronaut's
@@ -1128,20 +1110,13 @@ neutral emotion according to the collaborative task status (e.g., precondition
 and shared goal status). The Robot updates the Astronaut's user model
 respectively.\\
 
-The reverse appraisal process, as we discussed in previous example, forms
-beliefs about the anticipated appraisals of the Astronaut with respect to the
-current task's status based on the Astronaut's utterances and emotion that the
-Robot perceives, as well as the output of the collaboration mechanism. In this
-example, since the Robot misses the actual expressed emotion by the Astronaut
-(i.e., frustration) and incorrectly perceives her with neutral emotion, the
-corresponding anticipated appraisal values indicate the wrong interpretation of
-the event. For instance, the output of the reverse appraisal mechanism would
-indicate a \textit{relevant}, \textit{desirable}, \textit{controllable},
-\textit{non-urgent}, and \textit{expected} interpretation of the current event
-by the Astronaut, due to the Robot's perception of the Astronaut's emotion,
-i.e., neutral. Furthermore, the user modeling process updates the Astronaut's
-user model based on the output of the reverse appraisal process and the
-collaboration mechanism; this user modeling process forms beliefs that:\\
+In this example, since the Robot misses the actual expressed emotion by the
+Astronaut (i.e., frustration) and incorrectly perceives her with neutral
+emotion, the corresponding anticipated appraisal values lead to the wrong
+interpretation of the event. The Robot thinks the Astronaut interprets the
+event as \textit{desirable}, \textit{controllable}, \textit{non-urgent}, and
+\textit{expected} (all of which are incorrect). Furthermore, the user modeling
+process forms incorrect beliefs:
 
 \begin{itemize}
   \item[$\bullet$] Astronaut has \textit{high autonomy},
@@ -1170,19 +1145,19 @@ we discussed earlier, the Robot forms new motives according to the result of:
   \item and the user model of the Astronaut. 
 \end{enumerate} 
 
-Although the process of comparing and sorting available motives is similar to
-previous example, all of the new motives are different than the motives in that
-example. The reason is that each of the above three sources of motives forms a
-different motive because it holds a different value, which is caused by the
-ignorance of the Astronaut's actual emotion. For instance, the motive generated
-with the influence of appraisal in the emotional-awareness example urges the
-Robot to postpone asking questions about the alternative solutions while the
-motive with the same cause (i.e., appraisal) in emotional-ignorance example
-urges the Robot to immediately try to fix the problem and come up with
-alternative solutions by asking questions. The Robot, similarly to the previous
-example, selects the most related motive and forms a new intention with respect
-to the current status of collaboration. After this whole process, the Robot uses
-the coping mechanism to take an action based on the available intention.\\
+Although the process of comparing and sorting available motives here is similar
+to the previous example, all of the new motives are different. The reason is
+that each of the above three sources of motives forms a different motive because
+it holds a different value, which is caused by the ignorance of the Astronaut's
+actual emotion. For instance, the motive generated with the influence of
+appraisal in the emotional-awareness example urges the Robot to postpone asking
+questions about the alternative solutions while the motive with the same cause
+(i.e., appraisal) in emotional-ignorance example urges the Robot to immediately
+try to fix the problem and come up with alternative solutions by asking
+questions. The Robot, similarly to the previous example, selects the most
+related motive and forms a new intention with respect to the current status of
+collaboration. After this whole process, the Robot uses the coping mechanism to
+take an action based on the available intention.\\
 
 \noindent\textbf{(Coping)} Based on the current mental state, the Robot decides
 to use a problem-focused coping strategy of seeking information to be able to
