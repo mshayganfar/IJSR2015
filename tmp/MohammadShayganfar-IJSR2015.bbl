@@ -13,27 +13,10 @@ J.~Andriessen, K.~de~Smedt, and M.~Zock.
   psycholinguistics: AI and connectionist models of human language processing},
   pages 247--278. Taylor \& Francis, 1996.
 
-\bibitem{babaian:writers-assistant}
-T.~Babaian, B.~J. Grosz, and S.~M. Shieber.
-\newblock A writer's collaborative assistant.
-\newblock In {\em Proceedings of the International Conference on Intelligent
-  User Interfaces (IUI2000)}, pages 7--14. ACM Press, 2002.
-
 \bibitem{bratman:intentions-plans}
 M.~E. Bratman.
 \newblock {\em Intention, Plans, and Practical Reason}.
 \newblock Cambridge, Mass.: Harvard University Press, 1987.
-
-\bibitem{brave:emotion-hci}
-S.~Brave and C.~Nass.
-\newblock Emotion in human-computer interaction.
-\newblock In J.~A. Jacko and A.~Sears, editors, {\em The Human-computer
-  Interaction Handbook}, pages 81--96. L. Erlbaum Associates Inc., 2003.
-
-\bibitem{breazeal:sociable-robot}
-C.~Breazeal.
-\newblock {\em Designing Sociable Robots}.
-\newblock MIT Press, 2002.
 
 \bibitem{breazeal:expressive-behavior}
 C.~Breazeal.
@@ -53,12 +36,6 @@ C.~Burghart, R.~Mikut, R.~Stiefelhagen, T.~Asfour, H.~Holzapfel, P.~Steinhaus,
 \newblock A cognitive architecture for a humanoid robot: {A} first approach.
 \newblock In {\em 5th IEEE-RAS International Conference on Humanoid Robots},
   pages 357--362, 2005.
-
-\bibitem{canamero:designing-activity-selection}
-L.~D. Canamero.
-\newblock Designing emotions for activity selection in autonomous agents.
-\newblock In R.~Trappl, P.~Petta, and S.~Payr, editors, {\em Emotions in Humans
-  and Artifacts}, pages 115--148. MIT Press, 2003.
 
 \bibitem{clair:action-intention-collaboraiton}
 A.~B.~S. Clair and M.~J. Matari$\acute{c}$.
@@ -150,33 +127,6 @@ B.~J. Grosz and C.~L. Sidner.
 \newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
   Intentions in Communication}, pages 417--444. MIT Press, Cambridge, MA, 1990.
 
-\bibitem{heeman:model-collaboration-referring}
-P.~A. Heeman.
-\newblock {\em A Computational Model of Collaboration on Referring
-  Expressions}.
-\newblock PhD thesis, University of Toronto, 1991.
-
-\bibitem{hegel:empathic-robot}
-F.~Hegel, T.~Spexard, B.~Wrede, G.~Horstmann, and T.~Vogt.
-\newblock Playing a different imitation game: Interaction with an empathic
-  android robot.
-\newblock In {\em Proceedings of 2006 IEEE-RAS International Conference on
-  Humanoid Robots (Humanoids06)}, 2006.
-
-\bibitem{hill:synthetic-battlefield-aircraft}
-R.~W. Hill, Jr., J.~Chen, J.~Gratch, P.~Rosenbloom, and M.~Tambe.
-\newblock Intelligent agents for the synthetic battlefield: A company of rotary
-  wing aircraft.
-\newblock In {\em Innovative Applications of Artificial Inttigence (IAAI-97)},
-  pages 227--262, 1997.
-
-\bibitem{hobbs:microsociology-relationship}
-J.~R. Hobbs, A.~Sagae, and S.~Wertheim.
-\newblock Toward a commonsense theory of microsociology: Interpersonal
-  relationships.
-\newblock In {\em Formal Ontology in Information Systems - Proceedings of the
-  Seventh International Conference}, pages 249--262, 2012.
-
 \bibitem{hudlicka:emotinos-reasons}
 E.~Hudlicka.
 \newblock Reasons for emotinos: Modeling emotinos in integrated cognitive
@@ -184,21 +134,10 @@ E.~Hudlicka.
 \newblock In W.~D. Gary, editor, {\em Integrated Models of Cognitive Systems},
   volume~59, pages 1--37. New York: Oxford University Press, 2007.
 
-\bibitem{hunsberger:auction-collaborative}
-L.~Hunsberger and B.~J. Grosz.
-\newblock A combinatorial auction for collaborative planning.
-\newblock In {\em In Proceedings of ICMAS}, 2000.
-
 \bibitem{marinier:emotion-reinforcement}
 R.~P.~M. III and J.~E. Laird.
 \newblock Emotion-driven reinforcement learning.
 \newblock In {\em CogSci 2008}, 2008.
-
-\bibitem{jennings:joint-intention-hybrid}
-N.~R. Jennings.
-\newblock Controlling cooperative problem solving in industrial multi-agent
-  systems using joint intentions.
-\newblock {\em Artificial Intelligence}, 75(2):195--240, 1995.
 
 \bibitem{kabil:coordination-mechanisms}
 A.~Kabil, C.~D. Keukelaere, and P.~Chavaillier.
@@ -213,12 +152,6 @@ H.-R. Kim and D.-S. Kwon.
 \newblock {\em Journal of Intelligent and Robotic Systems}, 60(2):263--283,
   2010.
 
-\bibitem{kinny:planned-team}
-D.~Kinny, M.~Ljungberg, A.~Rao, G.~Tidhar, E.~Werner, and E.~Sonenberg.
-\newblock Planned team activity.
-\newblock In {\em Lecture notes in artificial intelligence}. Springer-Verlag,
-  1992.
-
 \bibitem{kiryazov:modeling-appraisal-pad}
 K.~Kiryazov, R.~Lowe, C.~Becker-Asano, and T.~Ziemke.
 \newblock Modelling embodied appraisal in humanoids : Grounding pad space for
@@ -230,12 +163,6 @@ K.~Kiryazov, R.~Lowe, C.~Becker-Asano, and T.~Ziemke.
 H.~Kitano, M.~Asada, Y.~Kuniyoshi, I.~Noda, E.~Osawai, and H.~Matsubara.
 \newblock Robocup: {A} challenge problem for {AI}.
 \newblock {\em {AI} Magazine}, 18(1):73--85, 1997.
-
-\bibitem{leite:empathy-hri}
-I.~Leite, A.~Pereira, S.~Mascarenhas, C.~Martinho, R.~Prada, and A.~Paiva.
-\newblock The influence of empathy in human-robot relations.
-\newblock {\em International Journal of Human-Computer Studies},
-  71(3):250--260, 2013.
 
 \bibitem{levesque:acting-together}
 H.~J. Levesque, P.~R. Cohen, and J.~H.~T. Nunes.
@@ -279,24 +206,10 @@ S.~Marsella, J.~Adibi, Y.~Al-Onaizan, A.~Erdem, R.~Hill, G.~A. Kaminka, Z.~Qiu,
 \newblock In {\em RoboCup-98: Robot Soccer World Cup II}, volume 1604, pages
   237--245. Springer Berlin Heidelberg, 1999.
 
-\bibitem{marsella:assessing-coping}
-S.~Marsella, J.~Gratch, N.~Wang, and B.~Stankovic.
-\newblock Assessing the validity of a computational model of emotional coping.
-\newblock In {\em International Conference on Affective Computing and
-  Intelligent Interaction}. IEEE, 2009.
-
 \bibitem{marsella:ema-process-model}
 S.~C. Marsella and J.~Gratch.
 \newblock {EMA}: A process model of appraisal dynamics.
 \newblock {\em Cognitive Systems Research}, 10(1):70--90, March 2009.
-
-\bibitem{miranda:teamwork-multiagent-system}
-J.~Mart$\acute{i}$nez-Miranda, A.~Aldea, and
-  R.~Ba$\tilde{n}$ares-Alc$\acute{a}$ntara.
-\newblock Simulation of work teams using a multi-agent system.
-\newblock In {\em The Second International Joint Conference on Autonomous
-  Agents {\&} Multiagent Systems {AAMAS}, July 14-18, Melbourne, Victoria,
-  Australia}, pages 1064--1065, 2003.
 
 \bibitem{matignon:verbal-nonverbal-collaboration}
 L.~Matignon, A.~B. Karami, and A.-I. Mouaddib.
@@ -352,26 +265,6 @@ M.~Pontier and J.~F. Hoorn.
 \newblock How women think robots perceive them - as if robots were men.
 \newblock In {\em International Conference on Agents and Artificial
   Intelligence (ICAART-2)}, pages 496--504, 2013.
-
-\bibitem{prendinger:empathic-companion}
-H.~Prendinger and M.~Ishizuka.
-\newblock The empathic companion: a character-based interface that addresses
-  users' affective states.
-\newblock {\em Applied Artificial Intelligence}, 19(3-4):267--285, 2005.
-
-\bibitem{pynadath:teamwork-heterogeneous-agents}
-D.~V. Pynadath and M.~Tambe.
-\newblock An automated teamwork infrastructure for heterogeneous software
-  agents and humans.
-\newblock {\em Journal of Autonomous Agents and Multi-Agent Systems, Special
-  Issue on Infrastructure and Requirements for Building Research Grade
-  Multi-Agent Systems,}, 7(1-2):71--100, 2003.
-
-\bibitem{rauenbusch:decision-making-planning}
-T.~W. Rauenbusch and B.~J. Grosz.
-\newblock A decision making procedure for collaborative planning.
-\newblock In {\em Proceedings of the Second International Joint Conference on
-  Autonomous Agents and Multiagent Systems}, 2003.
 
 \bibitem{ravenscroft:folk}
 I.~Ravenscroft.
@@ -456,22 +349,10 @@ D.~Sofge, M.~D. Bugajska, J.~G. Trafton, D.~Perzanowski, S.~Thomas, M.~Skubic,
 \newblock {\em International Journal of Humanoid Robotics}, 2(2):181--201,
   2005.
 
-\bibitem{subramanian:joint-intention-dialogue}
-R.~A. Subramanian, S.~Kumar, and P.~Cohen.
-\newblock Integrating joint intention theory, belief reasoning, and
-  communicative action for generating team-oriented dialogue.
-\newblock In {\em AAAI}, pages 1501--1507. AAAI Press, 2006.
-
 \bibitem{tambe:flexible-teamwork}
 M.~Tambe.
 \newblock Towards flexible teamwork.
 \newblock {\em Journal of Artificial Intelligence Research}, 7:83--124, 1997.
-
-\bibitem{bickmore:longterm-relationship}
-M.~Tambe.
-\newblock Establishing and maintaining long-term human-computer relationships.
-\newblock {\em ACM Transactions on Computer-Human Interaction (TOCHI)},
-  12(2):293--327, 2005.
 
 \bibitem{urban:pecs}
 C.~Urban.
@@ -518,12 +399,6 @@ J.~Yin, M.~S. Miller, T.~R. Ioerger, J.~Yen, and R.~A. Volz.
   systems.
 \newblock In {\em Proceedings of the Fourth International Conference on
   Autonomous Agents}, pages 427--434. ACM, 2000.
-
-\bibitem{zamfirescu:gdss}
-Zamfirescu and Candea.
-\newblock On integrating agents into gdss.
-\newblock In {\em Preprints of the 9th IFAC / IFORS / IMACS / IFIP/ Symposium
-  on Large Scale Systems: Theory and Applications}, 2001.
 
 \bibitem{zeng:affect-recognition}
 Z.~Zeng, M.~Pantic, G.~I. Roisman, and T.~S. Huang.

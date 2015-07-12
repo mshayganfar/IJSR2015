@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  10 JUL 2015 16:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  11 JUL 2015 21:32
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -824,70 +824,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 1517--1523
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1555--1585
+Underfull \hbox (badness 10000) in paragraph at lines 1555--1586
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1586--1660
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 1661--1692
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 1711--1716
+Underfull \hbox (badness 10000) in paragraph at lines 1611--1627
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1748
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1633
 
  []
 
-[31] [32] (./MohammadShayganfar-IJSR2015.bbl [33]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1634--1654
+
+ []
+
+[29] [30] (./MohammadShayganfar-IJSR2015.bbl [31]
 Missing character: There is no â in font cmti8!
 Missing character: There is no € in font cmti8!
 Missing character: There is no ™ in font cmti8!
- [34] [35] [36]
+ [32] [33]
 Missing character: There is no â in font cmti8!
 Missing character: There is no € in font cmti8!
 Missing character: There is no ™ in font cmti8!
-) [37]
+) [34]
 (./MohammadShayganfar-IJSR2015.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2454 strings out of 495028
- 38057 string characters out of 6181497
- 94594 words of memory out of 5000000
- 5639 multiletter control sequences out of 15000+600000
+ 2434 strings out of 495028
+ 37451 string characters out of 6181497
+ 92514 words of memory out of 5000000
+ 5619 multiletter control sequences out of 15000+600000
  10550 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,23p,277b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,277b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (37 pages, 315095 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on MohammadShayganfar-IJSR2015.pdf (34 pages, 294806 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 179 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
