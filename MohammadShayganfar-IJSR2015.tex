@@ -1352,61 +1352,71 @@ examples. In other words, ignorance of the Astronaut's expressed emotion by the
 Robot does not impact beliefs formed based on the output of the Collaboration
 mechanism.\\
 
-\noindent \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User
-Modeling})} The Robot uses reverse appraisal to understand the meaning of the
-Astronaut's frustration according to the collaborative task status (e.g.,
-precondition and shared goal status). The Robot updates the Astronaut's user
-model correspondingly.\\
-
-The reverse appraisal process forms beliefs about the anticipated appraisals of
-the Astronaut with respect to the current task's status based on the Astronaut's
-utterances and emotion in A1, and the output of the collaboration mechanism.
-Some of these anticipated appraisal values indicate that the event is
-interpreted as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
-\textit{urgent}, and \textit{unexpected} by the Astronaut. Furthermore, the user
-modeling process updates the Astronaut's user model based on the output of the
-reverse appraisal process and the collaboration mechanism; this user modeling
-process forms beliefs that:
-
-\begin{itemize}
-  \item[$\bullet$] Astronaut has \textit{low autonomy},
-  \item[$\bullet$] Astronaut is a \textit{highly communicative} collaborator.
-\end{itemize}
-
 \noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
 Similar to previous sections, in emotion-awareness example, the Robot uses
 reverse appraisal to understand the meaning of the Astronaut's emotion (i.e.,
 worry) with respect to the collaborative task status, and finds the anticipated
 appraisals as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
-\textit{urgent} and \textit{unexpected}. In the emotion-ignorance example, the
-Robot finds most of the anticipated appraisals almost the same, except that
-ignoring the Astroanut's negative emotion would cause interpreting the event as
-\textit{controllable} and and \textit{expected}.
-
-The Robot also updates the Astronaut's user model and forms beliefs that a) the
-Astronaut has \textit{high autonomy}, and b) Astronaut is a highly communicative
-collaborator. We have discussed more details about reverse appraisal and user
-modeling processes in our example in Section \ref{sec:wt-exp1}.\\
+\textit{urgent} and \textit{unexpected}. However, in the emotion-ignorance
+example, the Robot finds most of the anticipated appraisals the same, except
+that ignoring the Astroanut's negative emotion would cause interpreting the
+event as \textit{controllable} and \textit{expected}. As a result, the Robot
+updates the Astronaut's user model and forms beliefs that a) the Astronaut has
+\textit{low autonomy} in emotion-awareness example versus \textit{high autonomy}
+in emotion-ignorance example, and b) Astronaut is a highly communicative
+collaborator in both examples.\\
 
 \noindent\textbf{(Appraisal)} The Robot appraises the Astronaut's utterances and
-emotion. The Robot interprets the Astronaut's utterances and emotional state as
-a \textit{relevant}, \textit{unexpected}, \textit{undesirable}, \textit{urgent},
-but \textit{controllable} event.\\
+emotion. Therefore, the Robot's interpretation of the current event leads to the
+same appriasal values in both examples as \textit{relevant},
+\textit{unexpected}, \textit{undesirable}, \textit{urgent}, and
+\textit{controllable}.\\
 
-\noindent\textbf{(Motivation: \textit{Motive \& Intention Formations})} The
-Robot forms new motives based on the result of the same processes we discussed
-in Section \ref{sec:wt-exp1}, and compares the available motives in the same way
-we discussed in that section. The Robot forms new intention(s) with respect to
-the selected motive.\\
+\noindent \textbf{(Motivation: \textit{Motive \& Intention Formation})}
+The Robot forms new motives in the same way to what we have discussed in Section
+\ref{sec:wt-exp1}. The motives in the emotion-awareness example are formed for
+acknowledging the Astronaut's negative emotion, and postponing any question
+regarding the required information (e.g., unsatisfied postcondition of the
+current task) because of the Astronaut's perceived negative emotion. However, in
+the emotion-ignorance example one motive is formed based on the availability of
+a partial recipe for accepting the delegated task, and another motive is formed
+based on the unsatisfied precondition of the Robot's ongoing task. The Robot
+forms corresponsing intentions with respect to these motives. After all, the
+Robot uses the coping mechanism to take actions based on the available
+intentions.\\
 
-\noindent\textbf{(Coping)} Based on the current mental state, the Robot chooses
-an emotion-focused coping strategy and decides to acknowledge the Astronaut's
-emotion, and provide a proper response (C2) without asking questions about the
+\noindent \textbf{(Coping)} With respect to the current intentions and based on
+different beliefs, the Robot selects distinct coping strategies. Therefore,
+based on the Astronaut's perceived negative emotion, the Robot chooses the
+restraint coping strategy (an emotion-focused strategy) which causes the Robot
+to postpone asking about alternative solution. Then, because of the Astronaut's
+anticipated appraisals, e.g., undesirability of the event, the Robot chooses an
+active coping strategy (a problem-focused strategy) to acknowledge the
+Astronaut's negative emotion, which is an active step to remove the Astronaut's
+stressor within the collaboration. Finally, based on the current mental state,
+e.g., the Astronaut's blocked task, the Robot chooses a planning strategy
+(another problem-focused strategy) to provide an alternative solution to the
+Astronaut.\\
+
+\noindent\textbf{(Coping)} In the emotion-awareness example, the Robot chooses
+similar coping strategies as we discussed in Section \ref{sec:wt-exp1}, a) to
+acknowledge the Astronaut's negative emotion, b) to accpet the delegated task,
+and c) to postpone asking questions about the delegation process. Hence, the
+Robot provides a proper response (C2) without asking any question about the
 delegated task.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C2. Robot:}}} Okay. Don't worry.
 I can handle that.\end{varwidth}}\\
+
+In contrast, in the emotion-ignorance example, not only the Robot does not have
+any intention to acknowledge the Astronaut's emotion, but also selects an
+incorrect coping strategy to seek information about droping its own current
+unachieved task. Therefore, the Robot asks a related question (D2).\\
+
+\noindent\fbox{\begin{varwidth}{0.98\textwidth}
+\textit{\textbf{\fontsize{9pt}{12pt}\selectfont{D2. Robot:}}} Okay. I can handle
+that. Is it okay if I leave the current task though? \end{varwidth}}\\
 
 The Astronaut perceives Robot's acknowledgment of her emotion as well as the
 Robot's positive response to the Astronaut's delegated task. The Astronaut knows
@@ -1444,42 +1454,6 @@ Just let me know.\end{varwidth}}
 
 \subsection{Task Delegation (Emotion-Ignorance)}
 \label{sec:wt-exp4}
-
-\noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
-Similar to the example in Section \ref{sec:wt-exp2}, the Robot uses reverse
-appraisal to understand the meaning of the Astronaut's emotion with respect to
-the collaborative task status. However, since the Robot ignores the Astronaut's
-actual emotion, the output of the reverse appraisal does not help the Robot's
-inference about its own collaborative behavior (see Section \ref{sec:wt-exp2}).
-Similarly, the Robot updates the Astronaut's user model based on wrong beliefs
-achieved by ignoring the Astronaut's expressed emotion. We have discussed more
-details about reverse appraisal and user modeling processes in our example in
-Section \ref{sec:wt-exp1}, and we have shown similar effects in Section
-\ref{sec:wt-exp2}.\\
-
-\noindent\textbf{(Appraisal)} The Robot appraises the Astronaut's utterances
-with a wrong assumption of her expressing neutral emotion. Consequently, similar
-to the example in Section \ref{sec:wt-exp3}, the Robot interprets the
-Astronaut's utterances as a \textit{relevant}, \textit{unexpected},
-\textit{undesirable}, \textit{urgent}, and \textit{controllable} event.\\
-
-\noindent\textbf{(Motivation: \textit{Motive \& Intention Formations})} The
-Robot forms and compares new motives in the same way as we have discussed in
-previous examples. However, both processes of the motive formation and
-comparison are performed based on false outputs of the other processes (see also
-Section \ref{sec:wt-exp2}). Therefore, the Robot forms a new intention with
-respect to the selected motive which can be formed or selected for a wrong
-reason.\\
-
-\noindent\textbf{(Coping)} Based on the current mental state (including a
-wrong intention), the Robot decides to use problem-focused coping strategy of
-seeking social support (seeking information) to be able to drop the intention of
-working on the same task as the Astronaut. Respectively, Robot asks a question
-(D2).\\
-
-\noindent\fbox{\begin{varwidth}{0.98\textwidth}
-\textit{\textbf{\fontsize{9pt}{12pt}\selectfont{D2. Robot:}}} Okay. I can handle
-that. Is it okay if I leave the current task though? \end{varwidth}}\\
 
 The rest of the Robot's utterances from D4 to D10 shows that the Robot wants to
 do planning in the most efficient manner possible by asking many questions about
