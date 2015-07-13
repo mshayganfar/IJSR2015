@@ -1315,43 +1315,78 @@ and \ref{sec:wt-exp4}, as another example of collaborative behavior, we are
 going to show the importance of emotional-awareness and its underlying
 computational mechanisms in a task delegation procedure.
 
-\subsection{Task Delegation (Emotion-Awareness)}
+\subsection{Task Delegation (Emotion-Awareness vs. Emotion-ignorance)}
 \label{sec:wt-exp3}
 
-This walkthrough example is focusing on the delegation of a task by the
-Astronaut during collaboration (see also the example in Section \ref{sec:exp3}).
-In this example, To avoid redundancy, the walkthrough examples in this and the
-next sections are limited to an in-depth comparison of the first \# turns in
-each example, as follows:\\
+In this section, the last two walkthrough examples are focusing on the
+delegation of a task by the Astronaut during collaboration (see also the
+examples in Sections \ref{sec:exp3} and \ref{sec:exp4}). In one example, the
+Robot has emotional-awareness, while in the other example the Robot ignores the
+Astronaut's emotions. Comparing these two examples shows that even though the
+same mechanisms (discussed in Section \ref{sec:computational-framework}) are
+used to make the Robot obtain collaborative behaviors, ignoring the Astronaut's
+expressed emotion changes the output of different computational mechanisms which
+ultimately causes unsuccessful termination of the task delegation process.
+
+Here, to avoid redundant explanations, these walkthrough examples are limited to
+the comparison of the key turns in each example to emphasize the crucial
+differences in the result of the underlying mechanisms. We also group some of
+the Astronaut and Robot's utterances which constitute the representation of
+repetitive interactions, and we refer to similar procedures in previous
+walkthrough examples.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
-\textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C1. Astronaut:}}} I still have
-some problems with attaching the first panel! We do not have enough time. You
+\textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C1 \& D1. Astronaut:}}} I still
+have some problems with attaching the first panel! We do not have enough time. You
 should begin to install the second panel.\end{varwidth}}\\
 
-\noindent\textbf{(Perception)} The Robot perceives the Astronaut's utterances
-and emotion in C1.\\
+\noindent\textbf{(Perception)} As shown above, although the first Astronaut's
+utterance is the same for both examples (C1 \& D1), in the second example the
+Perception mechnaism misses the Astronaut's expressed emotion, i.e., worry. The
+Perception mechanism forms beliefs in both examples similar to what we discussed
+in Sections \ref{sec:wt-exp1} and \ref{sec:wt-exp2}.
 
-The perception mechanism forms beliefs based on the Astronaut's utterances and
-her emotion (i.e., worry) which she has expressed nonverbally. We have shown
-some examples of the beliefs formed by the perception mechanism in the example
-in Section \ref{sec:wt-exp1}.\\
+\noindent\textbf{(Collaboration)}The Collaboration mechanism forms the same
+beliefs (e.g., about required resources and availability of a recipe) in both
+examples. In other words, ignorance of the Astronaut's expressed emotion by the
+Robot does not impact beliefs formed based on the output of the Collaboration
+mechanism.\\
 
-\noindent\textbf{(Collaboration: \textit{Interruption \& Constraint
-Management})} The Robot infers the interruption and uses the constraint
-management process to retrieve required resources and preconditions. the Robot
-also checks whether there is an available associated recipe for the delegated
-task.\\
+\noindent \textbf{(Theory of Mind: \textit{Reverse Appraisal \& User
+Modeling})} The Robot uses reverse appraisal to understand the meaning of the
+Astronaut's frustration according to the collaborative task status (e.g.,
+precondition and shared goal status). The Robot updates the Astronaut's user
+model correspondingly.\\
+
+The reverse appraisal process forms beliefs about the anticipated appraisals of
+the Astronaut with respect to the current task's status based on the Astronaut's
+utterances and emotion in A1, and the output of the collaboration mechanism.
+Some of these anticipated appraisal values indicate that the event is
+interpreted as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
+\textit{urgent}, and \textit{unexpected} by the Astronaut. Furthermore, the user
+modeling process updates the Astronaut's user model based on the output of the
+reverse appraisal process and the collaboration mechanism; this user modeling
+process forms beliefs that:
+
+\begin{itemize}
+  \item[$\bullet$] Astronaut has \textit{low autonomy},
+  \item[$\bullet$] Astronaut is a \textit{highly communicative} collaborator.
+\end{itemize}
 
 \noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
-The Robot uses reverse appraisal to understand the meaning of the Astronaut's
-worry with respect to the collaborative task status retrieved in the previous
-step (e.g., precondition status, postcondition status, required resources,
-shared goal). the Robot also updates the Astronaut's user model and forms
-beliefs that a) the Astronaut has \textit{high autonomy}, and b) Astronaut is a
-highly communicative collaborator. We have discussed more details about reverse
-appraisal and user modeling processes in our example in Section
-\ref{sec:wt-exp1}.\\
+Similar to previous sections, in emotion-awareness example, the Robot uses
+reverse appraisal to understand the meaning of the Astronaut's emotion (i.e.,
+worry) with respect to the collaborative task status, and finds the anticipated
+appraisals as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
+\textit{urgent} and \textit{unexpected}. In the emotion-ignorance example, the
+Robot finds most of the anticipated appraisals almost the same, except that
+ignoring the Astroanut's negative emotion would cause interpreting the event as
+\textit{controllable} and and \textit{expected}.
+
+The Robot also updates the Astronaut's user model and forms beliefs that a) the
+Astronaut has \textit{high autonomy}, and b) Astronaut is a highly communicative
+collaborator. We have discussed more details about reverse appraisal and user
+modeling processes in our example in Section \ref{sec:wt-exp1}.\\
 
 \noindent\textbf{(Appraisal)} The Robot appraises the Astronaut's utterances and
 emotion. The Robot interprets the Astronaut's utterances and emotional state as
@@ -1409,44 +1444,6 @@ Just let me know.\end{varwidth}}
 
 \subsection{Task Delegation (Emotion-Ignorance)}
 \label{sec:wt-exp4}
-
-This walkthrough example begins with the same exact utterance as the previous
-one in Section \ref{sec:wt-exp3}. This section briefly provides the
-corresponding details of the emotional-ignorance example in Section
-\ref{sec:exp4} which is focusing on the delegation of a task by the Astronaut during
-collaboration. In this example, the explanation between the Astronaut's
-utterance D1 and the Robot's utterance D2 provides some details to show that
-even though the same mechanisms (discussed in Section
-\ref{sec:computational-framework}) are used to make the Robot obtain
-collaborative behaviors, ignoring the Astronaut's expressed emotion changes the
-output of different computational mechanisms (see also Section
-\ref{sec:wt-exp2}) which ultimately causes unsuccessful termination of the task
-delegation process. To avoid redundant explanations, we group some of the
-Astronaut and Robot's utterances which constitute the representation of
-repetitive interaction between them. We also refer to similar procedures in
-previous walkthrough examples.\\
-
-\noindent\fbox{\begin{varwidth}{0.98\textwidth}
-\textit{\textbf{\fontsize{9pt}{12pt}\selectfont{D1. Astronaut:}}} I still have
-some problems with attaching the first panel! We do not have enough time. You
-should begin to install the second panel.\end{varwidth}}\\
-
-\noindent\textbf{(Perception)} The Robot only perceives the Astronaut's
-utterances (D1). These beliefs are about the unsatisfied postcondition of the
-first task, i.e., installing the first solar panel, and the Astronaut's proposal
-of installing the second panel. We have shown some examples of the beliefs
-formed by perception mechanism in Section \ref{sec:wt-exp1}. Also, as we have
-shown in Section \ref{sec:wt-exp2} that the Robot does not perceive the
-Astronaut's emotion (i.e., worry). Therefore, the Robot misses beliefs about the
-Astronaut's emotion.\\
-
-\noindent\textbf{(Collaboration: \textit{Interruption \& Constraint
-Management})} The Robot infers the interruption and uses the constraint
-management process to retrieve required resources, and preconditions. Similarly
-to the previous example, the Robot also checks whether there is an available
-associated recipe for the delegated task. Ignoring the Astronaut's expressed
-emotion does not change the beliefs formed based on the output of the
-collaboration mechanism.\\
 
 \noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
 Similar to the example in Section \ref{sec:wt-exp2}, the Robot uses reverse
