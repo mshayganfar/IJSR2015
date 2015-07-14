@@ -107,13 +107,13 @@ Current computational theories for human-robot collaboration specify the
 structure of collaborative activities, but are weak on the underlying processes
 that generate and maintain these structures.  We argue that emotions are crucial
 to these underlying processes and have developed a new computational theory,
-called \textit{Affective Motivational Collaboration Theory}, that combines
-emotion-based processes, such as appraisal and coping, with collaboration
-processes, such as planning, in a single unified framework. To illustrate the
-application of this new theory, we present detailed computational walkthroughs
-contrasting the behavior of an emotionally aware robot with an emotionally
-ignorant robot in the same situations.  These walkthroughs are the starting
-point for our implementation of the theory. 
+called Affective Motivational Collaboration Theory, that combines emotion-based
+processes, such as appraisal and coping, with collaboration processes, such as
+planning, in a single unified framework. To illustrate the application of this
+new theory, we present detailed computational walkthroughs contrasting the
+behavior of an emotionally aware robot with an emotionally ignorant robot in the
+same situations.  These walkthroughs are the starting point for our
+implementation of the theory.
 
 \keywords{Human-Robot Collaboration \and Emotional-Awareness \and Affective
 Motivational Collaboration Theory}
@@ -210,28 +210,28 @@ pair contrasts an emotionally-aware with an emotionally-ignorant robot
 interacting with a human in the same situation. These scenarios highlight the
 necessity of giving robots the capacity to understand and regulate emotions, as
 well as to provide emotion-driven responses. We then briefly introduce
-\textit{Affective Motivational Collaboration Theory} which explains the
-underlying processes of emotions and collaboration. The emotion-aware examples
-show how the mechanisms of this theory are involved in agreeing on a shared goal
-with a robot (Sections \ref{sec:exp1} and \ref{sec:wt-exp1}), and delegating a
-new task to the robot (Sections \ref{sec:exp3} and \ref{sec:wt-exp3}). The
-emotion-ignorance examples are the same, except that the robot ignores the
-human's verbally or nonverbally expressed emotions. The same four examples in
-Sections \ref{sec:exp1} to \ref{sec:exp4} are revisited in more detail in our
+Affective Motivational Collaboration Theory which explains the underlying
+processes of emotions and collaboration. The emotion-aware examples show how the
+mechanisms of this theory are involved in agreeing on a shared goal with a robot
+(Sections \ref{sec:exp1} and \ref{sec:wt-exp1}), and delegating a new task to
+the robot (Sections \ref{sec:exp3} and \ref{sec:wt-exp3}). The emotion-ignorance
+examples are the same, except that the robot ignores the human's verbally or
+nonverbally expressed emotions. The same four examples in Sections
+\ref{sec:exp1} to \ref{sec:exp4} are revisited in more detail in our
 computational walkthroughs in Section \ref{sec:wtce}. In this section, we show
-how the mechanisms of \textit{Affective Motivational Collaboration Theory}
-operate to produce the robot behaviors in Section \ref{sec:example-scenario}.
+how the mechanisms of Affective Motivational Collaboration Theory operate to
+produce the robot behaviors in Section \ref{sec:example-scenario}.
 
 As we discussed above, there are certain types of emotion-regulated mechanisms
 with which a collaborative robot can modify and maintain a collaboration
 structure (e.g., shared plan). We explain these mechanisms and their
-corresponding operations in \textit{Affective Motivational Collaboration
-Theory}. In this paper, we briefly describe some parts of this theory that are
-required to discuss our examples. We have also implemented all the rules
-associated with each mechanism using JESS (JAVA Expert System Shell), in order
-to generate the same type of collaborative behaviors as appear in our examples.
-In the future, we are going to use these rules and the processes involved in
-each mechanism to develop collaborative behaviors in an interactive robot.
+corresponding operations in Affective Motivational Collaboration Theory. In
+this paper, we briefly describe some parts of this theory that are required to
+discuss our examples. We have also implemented all the rules associated with
+each mechanism using JESS (JAVA Expert System Shell), in order to generate the
+same type of collaborative behaviors as appear in our examples. In the future,
+we are going to use these rules and the processes involved in each mechanism to
+develop collaborative behaviors in an interactive robot.
 
 \section{Example Scenarios}
 \label{sec:example-scenario}
@@ -256,8 +256,8 @@ conflicts of their private and/or shared goals because of a blocked or a
 protracted sub-task. The Robot and the Astronaut will go through a series of
 assessment processes to figure out a) how did the current blockage happen? b)
 why is the current task is blocked? and c) what is the next action they are
-going to take? The robot uses its cognitive abilities and communication skills
-to overcome these problems, to motivate the astronaut, and to propose
+going to take? The Robot uses its cognitive abilities and communication skills
+to overcome these problems, to motivate the Astronaut, and to propose
 alternative tasks. The following is part of an interaction between the Astronaut
 and the Robot during their collaboration on installing solar panels.
 
@@ -424,7 +424,7 @@ their collaboration (B9).\\
 In this and the next section, a different collaborative behavior, task
 delegation, is used to illustrate how collaboration critically depends on
 understanding how worried the other collaborator is. This example shows that
-when the Robot is aware of the Astronaut's worry, it can use its own motivation
+when the Robot is aware of the Astronaut's worry, it can use its own Motivation
 mechanism driven by emotions to come up with a way to alleviate her worry. Its
 solution is to postpone all questions until such time as they are
 critical. 
@@ -586,16 +586,16 @@ collaboration task because of the lack of time (D11).
 \section{Computational Framework}
 \label{sec:computational-framework}
 
-In this section, we briefly describe \textit{Affective Motivational
-Collaboration Theory} and the five underlying emotion-regulated mechanisms in
-this theory. Each mechanism constitutes one or more processes which are involved
-in generating collaborative behaviors for the Robot. We also explain different
-types of mental states in our computational framework based on the
-\textit{Affective Motivational Collaboration Theory}. Notice, in Fig.
-\ref{fig:theory}, there are two mechanisms, i.e., Perception and Action, which
-are not part of \textit{Affective Motivational Collaboration Theory}. They only
-provide required input and output to our framework which can differ based on the
-capabilities of any sociable robot.
+In this section, we briefly describe Affective Motivational Collaboration
+Theory and the five underlying emotion-regulated mechanisms in this theory. Each
+mechanism constitutes one or more processes which are involved in generating
+collaborative behaviors for the Robot. We also explain different types of mental
+states in our computational framework based on the Affective Motivational
+Collaboration Theory. Notice, in Fig. \ref{fig:theory}, there are two
+mechanisms, i.e., Perception and Action, which are not part of Affective
+Motivational Collaboration Theory. They only provide required input and output
+to our framework which can differ based on the capabilities of any sociable
+robot.
 
 \subsection{Affective Motivational Collaboration Theory}
 \label{sec:AMCT}
@@ -603,11 +603,11 @@ capabilities of any sociable robot.
 \textit{Affective Motivational Collaboration Theory} (see Fig. \ref{fig:theory})
 is about the interpretation and prediction of the observable behaviors in a
 dyadic collaborative interaction. The collaboration structure of
-\textit{Affective Motivational Collaboration Theory} is based on the SharedPlans
-theory of collaboration
+Affective Motivational Collaboration Theory is based on the SharedPlans theory
+of collaboration
 \cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}.
-\textit{Affective Motivational Collaboration Theory} focuses on the processes
-that generate, maintain and update this structure based on mental states. The
+Affective Motivational Collaboration Theory focuses on the processes that
+generate, maintain and update this structure based on mental states. The
 collaboration structure is important because social robots ultimately need to
 co-exist with humans, and therefore need to consider humans' mental states as
 well as their own internal states and operational goals. The processes involved
@@ -937,12 +937,12 @@ model accordingly.\\
 
 The reverse appraisal process forms beliefs about the anticipated appraisals of
 the Astronaut with respect to the current task's status based on the Astronaut's
-utterances and emotion in A1, and the output of the collaboration mechanism.
+utterances and emotion in A1, and the output of the Collaboration mechanism.
 Some of these anticipated appraisal values indicate that the event is
 interpreted as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
 \textit{urgent}, and \textit{unexpected} by the Astronaut. Furthermore, the user
 modeling process updates the Astronaut's user model based on the output of the
-reverse appraisal process and the collaboration mechanism; this user modeling
+reverse appraisal process and the Collaboration mechanism; this user modeling
 process forms beliefs that:
 
 \begin{itemize}
@@ -982,7 +982,7 @@ postpone asking questions about the alternative solution because of the
 Astronaut's negative emotion, the second motive to form an intention for
 acknowledging the Astronaut's perceived emotion, and the third motive to form
 another intention for resolving the current blocking in the collaboration. After
-this whole process, the Robot uses the coping mechanism to take an action based
+this whole process, the Robot uses the Coping mechanism to take an action based
 on the available intention.\\
 
 \noindent \textbf{(Coping)} With respect to the current intentions and based on
@@ -1005,7 +1005,7 @@ task as originally planned. \end{varwidth}}\\
 
 The Astronaut's new utterance (A3) provides the Robot with a question about
 whether the Robot can fix the measurement tool. The following paragraphs show
-how the robot employs the same mechanisms described in Section
+how the Robot employs the same mechanisms described in Section
 \ref{sec:computational-framework} to negotiate with the Astronaut to reach an
 agreement on the shared goal.\\
 
@@ -1059,7 +1059,7 @@ Robot forms new motives based on:
 \end{itemize}
 
 \noindent The Robot forms the corresponding intentions with respect to the new
-motives. Once again, the Robot uses the coping mechanism to take actions
+motives. Once again, the Robot uses the Coping mechanism to take actions
 based on the recent intentions.\\
 
 \noindent\textbf{(Coping)} With respect to the Robot's intention to alleviate
@@ -1125,7 +1125,7 @@ emotion instance, i.e., frustration. These beliefs include:
   \item[$\bullet$] that is verbally conveyed as \textit{neutral} emotion.
 \end{itemize}
 
-\noindent\textbf{(Collaboration)} The Robot uses the collaboration mechanism to
+\noindent\textbf{(Collaboration)} The Robot uses the Collaboration mechanism to
 form new beliefs about the collaboration status based on its perception. These
 new beliefs are the same as those generated by the Collaboration mechanism in
 the previous example.\\
@@ -1182,7 +1182,7 @@ questions about the alternative solutions while the motive with the same cause
 try to fix the problem and come up with alternative solutions by asking
 questions. The Robot, similarly to the previous example, selects the most
 related motives and forms new intentions with respect to the current status of
-collaboration. After this whole process, the Robot uses the coping mechanism to
+collaboration. After this whole process, the Robot uses the Coping mechanism to
 take actions based on the available intentions.\\
 
 \noindent\textbf{(Coping)} Based on the current mental state and with a similar
@@ -1244,7 +1244,7 @@ based on the same set of beliefs, except that in this example the Robot misses a
 belief about a positive change in the Astronaut's emotion. Since the Robot
 always believes the Astronaut has neutral emotion. Similarly, the Robot forms
 the corresponding intentions with respect to the new motives, and uses the
-coping mechanism to take actions based on these intentions.\\
+Coping mechanism to take actions based on these intentions.\\
 
 \noindent\textbf{(Coping)} Here, the Robot does not have an intention to
 maintain the recent improvement in the Astronaut's emotional state. However,
@@ -1289,7 +1289,7 @@ without the measurement tool!\end{varwidth}}\\
 As shown in this example, ignoring the Astronaut's emotion impacts the Robot's
 perception and corresponding beliefs. The output of the Collaboration mechanism
 remains unchanged in comparison with the emotional-awareness example which is a
-crucial point in our first two examples. Although the collaboration mechanism
+crucial point in our first two examples. Although the Collaboration mechanism
 provides the required structural details of collaboration between the Robot and
 the Astronaut, these structural details are not enough to save a collaboration
 from failure. As we continue, we can see that ignoring the actual emotion of the
@@ -1299,9 +1299,9 @@ these two processes with the results in the emotional-awareness example shows
 the importance of correctly perceiving a collaborator's emotion. This problem
 continues even with the Appraisal mechanism which maps the Robot's
 interpretation of the environment to a wrong emotion. Consequently, all sources
-of the motivation mechanism provide incorrect values which drastically influence
+of the Motivation mechanism provide incorrect values which drastically influence
 the formation of the underlying motives of the required intentions. Finally, the
-coping mechanism operates based on wrong newly formed intentions which leads to
+Coping mechanism operates based on wrong newly formed intentions which leads to
 a totally different behavior of the Robot in comparison with the same turn in
 the emotional-awareness example. The divergence of the Robot's collaborative
 behavior from its successful path continues throughout the Robot and the
@@ -1380,7 +1380,7 @@ the emotion-ignorance example one motive is formed based on the availability of
 a partial recipe for accepting the delegated task, and another motive is formed
 based on the unsatisfied precondition of the Robot's ongoing task. The Robot
 forms corresponding intentions with respect to these motives. After all, the
-Robot uses the coping mechanism to take actions based on the available
+Robot uses the Coping mechanism to take actions based on the available
 intentions.\\
 
 \noindent\textbf{(Coping)} In the emotion-awareness example, the Robot chooses
