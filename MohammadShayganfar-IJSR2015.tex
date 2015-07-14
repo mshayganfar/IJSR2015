@@ -875,10 +875,10 @@ provide the same impact during collaboration, the automatic recognition of them
 is out of our research context. The following four walkthrough examples are in
 the same order as the four examples in Section \ref{sec:example-scenario}. The
 name of the mechanisms written in parantheses and bold indicates below which
-mechanism is involved in each step. There are also specific processes written
-after a colon in front of the mechanism, if appropriate.
+mechanism is involved in each step. There are also specific processes provided
+after the mechanism, if appropriate.
 
-\subsection{Agreeing on Shared Goal (Emotion-Awareness)}
+\subsection{Agreeing on the Shared Goal (Emotion-Awareness)}
 \label{sec:wt-exp1}
 
 This section provides a step-by-step walkthrough explanation of the example
@@ -933,7 +933,7 @@ forms new beliefs about the collaboration status. These new beliefs are about:
 Modeling})} The Robot uses reverse appraisal to understand the meaning of the
 Astronaut's frustration according to the collaborative task status (e.g.,
 precondition and shared goal status). The Robot updates the Astronaut's user
-model correspondingly.\\
+model accordingly.\\
 
 The reverse appraisal process forms beliefs about the anticipated appraisals of
 the Astronaut with respect to the current task's status based on the Astronaut's
@@ -946,8 +946,9 @@ reverse appraisal process and the collaboration mechanism; this user modeling
 process forms beliefs that:
 
 \begin{itemize}
-  \item[$\bullet$] Astronaut has \textit{low autonomy},
-  \item[$\bullet$] Astronaut is a \textit{highly communicative} collaborator.
+  \item[$\bullet$] the Astronaut has \textit{low autonomy},
+  \item[$\bullet$] the Astronaut is a \textit{highly communicative}
+  collaborator.
 \end{itemize}
 
 \noindent \textbf{(Appraisal)} The Robot appraises the Astronaut's utterances
@@ -976,32 +977,33 @@ a) the Astronaut's emotional state (i.e., frustration) as an admissible
 approximation of her mental state, and b) how taking an action based on the
 corresponding intention of a particular motive improves the possibility of the
 collaborators reaching to the collaborators' mutually accepted shared goal. The
-Robot chooses the first motive to form an intention to postpone asking questions
-about the alternative solution bacause of the Astronaut's negative emotion, the
-second motive to form an intention for acknowledging the Astronaut's perceived
-emotion, and the third motive to form another intention for resolving the
-current blocking in the collaboration. After this whole process, the Robot uses
-the coping mechanism to take an action based on the available intention.\\
+Robot chooses the first motive on the sorted list to form an intention to
+postpone asking questions about the alternative solution bacause of the
+Astronaut's negative emotion, the second motive to form an intention for
+acknowledging the Astronaut's perceived emotion, and the third motive to form
+another intention for resolving the current blocking in the collaboration. After
+this whole process, the Robot uses the coping mechanism to take an action based
+on the available intention.\\
 
 \noindent \textbf{(Coping)} With respect to the current intentions and based on
 different beliefs, the Robot selects distinct coping strategies. Therefore,
 based on the Astronaut's perceived negative emotion, the Robot chooses the
 restraint coping strategy (an emotion-focused strategy) which causes the Robot
-to postpone asking about alternative solution. Then, because of the Astronaut's
-anticipated appraisals, e.g., undesirability of the event, the Robot chooses an
-active coping strategy (a problem-focused strategy) to acknowledge the
-Astronaut's negative emotion, which is an active step to remove the Astronaut's
-stressor within the collaboration. Finally, based on the current mental state,
-e.g., the Astronaut's blocked task, the Robot chooses a planning strategy
-(another problem-focused strategy) to provide an alternative solution to the
-Astronaut.\\
+to postpone asking about an alternative solution. Then, because of the
+Astronaut's anticipated appraisals, e.g., undesirability of the event, the Robot
+chooses an active coping strategy (a problem-focused strategy) to acknowledge
+the Astronaut's negative emotion, which is an active step to remove the
+Astronaut's stressor within the collaboration. Finally, based on the current
+mental state, e.g., the Astronaut's blocked task, the Robot chooses a planning
+strategy (another problem-focused strategy) to provide an alternative solution
+to the Astronaut.\\
 
 \noindent \fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{A2. Robot:}}} I see. This is
 frustrating. But, I can help you with the measurement tool and we can finish the
 task as originally planned. \end{varwidth}}\\
 
-The Astronaut's new utterance (A3) provides the Robot with a new question about
+The Astronaut's new utterance (A3) provides the Robot with a question about
 whether the Robot can fix the measurement tool. The following paragraphs show
 how the robot employs the same mechanisms described in Section
 \ref{sec:computational-framework} to negotiate with the Astronaut to reach an
@@ -1064,9 +1066,10 @@ based on the recent intentions.\\
 the pressure of the shortage of time, the Robot chooses an active coping
 strategy to remove the current stressor within the collaboration (i.e., lack of
 time). Also, with respect to the Robot's intention to maintain the recent
-improvement in Astronaut's emotional state, and the intention to fetch another
-measurement tool, the Robot chooses a planning strategy, to explain the next
-task to the Astronaut, and to negotiate and offer an alternative action (A4).\\
+improvement in the Astronaut's emotional state, and the intention to fetch
+another measurement tool, the Robot chooses a planning strategy, to explain the
+next task to the Astronaut, and to negotiate and offer an alternative action
+(A4).\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{A4. Robot:}}} The next task is
@@ -1074,10 +1077,10 @@ fixing the panel and it requires you to prepare and attach the welding rod to
 your welding tool. To save our time, I will fetch another measurement tool while
 you are preparing your welding tool.\end{varwidth}}\\
 
-At this point, Astronaut is content with the way Robot outlined the shared goal
-and responds respectively (A5). The Robot perceives and interprets the
-Astronaut's response as an agreement on their new shared goal as we discussed
-above.\\
+At this point, the Astronaut is content with the way the Robot outlined the
+shared goal and responds respectively (A5). The Robot perceives and interprets
+the Astronaut's response as an agreement on their new shared goal as we
+discussed above.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{A5. Astronaut:}}} That would be
@@ -1088,8 +1091,8 @@ great!\end{varwidth}}
 
 This walkthrough example begins with the same utterance as the previous one, and
 it provides the computational walkthrough of the emotional-ignorance example in
-Section \ref{sec:exp2}. In emotional-ignorance examples, we assume Robot always
-perceives neutral emotion expressed by the Astronaut. To avoid redundant
+Section \ref{sec:exp2}. In emotional-ignorance examples, we assume the Robot
+always perceives neutral emotion expressed by the Astronaut. To avoid redundant
 explanations, we refer to similar processing in the previous walkthrough
 example, when possible.\\
 
@@ -1119,13 +1122,13 @@ emotion instance, i.e., frustration. These beliefs include:
 
 \begin{itemize}
   \item[$\bullet$] the existence of a \textit{neutral-valenced} emotion,
-  \item[$\bullet$] and is verbally conveyed as \textit{neutral} emotion.
+  \item[$\bullet$] that is verbally conveyed as \textit{neutral} emotion.
 \end{itemize}
 
 \noindent\textbf{(Collaboration)} The Robot uses the collaboration mechanism to
 form new beliefs about the collaboration status based on its perception. These
-new beliefs are the same as those generated by Collaboration mechanism in the
-previous example.\\
+new beliefs are the same as those generated by the Collaboration mechanism in
+the previous example.\\
 
 \noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
 The Robot uses reverse appraisal to understand the meaning of the Astronaut's
@@ -1153,7 +1156,7 @@ The Appraisal mechanism operates similarly to what we discussed in Section
 \ref{sec:exp1}. The output of these processes provides a vector of values
 describing the Robot's interpretation of the current event (B1). The outcome
 will also be mapped to a particular emotion instance, but since the Robot misses
-Astronaut's emotion, it maps the appraisals to a different emotion, i.e.,
+the Astronaut's emotion, it maps the appraisals to a different emotion, i.e.,
 hope, than the one elicited in previous example. The Robot elicits hope because
 it believes the Astronaut's emotion is neutral and the current task is blocked.
 Therefore, the Robot wants to come up with an alternative solution
@@ -1182,10 +1185,10 @@ related motives and forms new intentions with respect to the current status of
 collaboration. After this whole process, the Robot uses the coping mechanism to
 take actions based on the available intentions.\\
 
-\noindent\textbf{(Coping)} Based on the current mental state and with the
-similar process as the previous example in Section \ref{sec:wt-exp1}, the Robot
-decides to use a problem-focused coping strategy of seeking information to be
-able to choose between two available actions and reduce the current amount of
+\noindent\textbf{(Coping)} Based on the current mental state and with a similar
+process as the previous example in Section \ref{sec:wt-exp1}, the Robot decides
+to use a problem-focused coping strategy of seeking information to be able to
+choose between two available actions and reduce the current amount of
 uncertainty. Therefore, the Robot, without acknowledging the Astronaut's
 emotion, asks the Astronaut to choose between two alternative solutions (B2).\\
 
@@ -1212,11 +1215,11 @@ to ask a similar question (B4).\\
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{B4. Robot:}}} Okay. Do you want
 me to fix this problem or terminate the task?\end{varwidth}}\\
 
-This time, Robot creates ambiguity for the Astronaut because part of Robot's
-utterance (i.e., fix this problem) does not show whether the Robot can fix the
-measurement tool, or whether Robot has another potential solution. Hence, the
-ambiguity of Robot's question does not help Astronaut's frustration and causes
-her to ask a clarification question (B5).\\
+This time, the Robot creates ambiguity for the Astronaut because part of
+the Robot's utterance (i.e., fix this problem) does not show whether the Robot
+can fix the measurement tool, or whether Robot has another potential solution.
+Hence, the ambiguity of Robot's question does not help the Astronaut's
+frustration and causes her to ask a clarification question (B5).\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{B5. Astronaut:}}} Can you fix my
@@ -1244,11 +1247,11 @@ the corresponding intentions with respect to the new motives, and uses the
 coping mechanism to take actions based on these intentions.\\
 
 \noindent\textbf{(Coping)} Here, the Robot does not have an intention to
-maintain the recent improvement in Astronaut's emotional state. However, since
-the Robot has an intention to alleviate the pressure of the shortage of time,
+maintain the recent improvement in the Astronaut's emotional state. However,
+since the Robot has an intention to alleviate the pressure of the shortage of time,
 and an intention to fetch another measurement tool, the Robot chooses a
 planning strategy, to immediately respond to the Astronaut's question, and try
-negotiate and offer an alternative action to the Astronaut (B6).\\
+to negotiate and offer an alternative action to the Astronaut (B6).\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{B6. Robot:}}} I cannot fix your
@@ -1264,9 +1267,8 @@ proposal (B7).\\
 want another measurement tool! We don't have time for that!\end{varwidth}}\\
 
 After perceiving the Astronaut's response, once again, the Coping mechanism
-(using the same procedure as we discussed above) makes the Robot to negotiate
-with the Astronaut protecting the collaboration and the shared goal from
-failure.\\
+(using the same procedure as we discussed above) makes the Robot negotiate with
+the Astronaut, to protect the collaboration and the shared goal from failure.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{B8. Robot:}}} Okay. You want me
@@ -1284,30 +1286,27 @@ in the Robot's collaborative behavior (B9).\\
 have this problem and we should terminate the mission! We cannot continue
 without the measurement tool!\end{varwidth}}\\
 
-As shown in this example, ignoring the Astronaut's emotion, impacts the Robot's
+As shown in this example, ignoring the Astronaut's emotion impacts the Robot's
 perception and corresponding beliefs. The output of the Collaboration mechanism
 remains unchanged in comparison with the emotional-awareness example which is a
 crucial point in our first two examples. Although the collaboration mechanism
 provides the required structural details of collaboration between the Robot and
-the Astronaut, these structural details are not enough for saving a
-collaboration from a failure. As we continue, we can see that ignoring the
-actual emotion of the Astronaut causes misfunctioning of the processes in the
-Theory of Mind mechanism, i.e., reverse appraisal and user modeling. Comparing
-the result of these two processes with the results in the emotional-awareness
-example shows the importance of correctly perceiving a collaborator's emotion.
-This problem continues even with the Appraisal mechanism which maps the Robot's
-interpretation of the environment to a wrong emotion. Consequently, all
-sources of the motivation mechanism provide incorrect values which drastically
-influence the formation of the underlying motives of the required intentions.
-Finally, the coping mechanism operates based on wrong newly formed intentions
-which leads to a totally different behavior of the Robot in comparison with the
-same turn in the emotional-awareness example. The divergence of the Robot's
-collaborative behavior from its successful path continues among the Robot and
-the Astronaut's interaction which increases the required time for achieving the
-shared goal, and perpetuates the negative feeling of the Astronaut. The Robot
-also misses the right time to begin a negotiation process to save the
-collaboration from failure. Therefore, it causes the Astronaut to reject the
-Robot's proposal which again aggravates the Astronaut's negative emotion.
+the Astronaut, these structural details are not enough to save a collaboration
+from failure. As we continue, we can see that ignoring the actual emotion of the
+Astronaut causes misfunctioning of the processes in the Theory of Mind
+mechanism, i.e., reverse appraisal and user modeling. Comparing the result of
+these two processes with the results in the emotional-awareness example shows
+the importance of correctly perceiving a collaborator's emotion. This problem
+continues even with the Appraisal mechanism which maps the Robot's
+interpretation of the environment to a wrong emotion. Consequently, all sources
+of the motivation mechanism provide incorrect values which drastically influence
+the formation of the underlying motives of the required intentions. Finally, the
+coping mechanism operates based on wrong newly formed intentions which leads to
+a totally different behavior of the Robot in comparison with the same turn in
+the emotional-awareness example. The divergence of the Robot's collaborative
+behavior from its successful path continues throughout the Robot and the
+Astronaut's interaction which increases the required time for achieving the
+shared goal, and perpetuates the negative feeling of the Astronaut.
 Consequently, the same collaboration fails even though that the Robot uses the
 same computational mechanisms, as we showed above. In Section \ref{sec:wt-exp3},
 as another example of collaborative behavior, we are going to show the
@@ -1317,7 +1316,7 @@ a task delegation procedure.
 \subsection{Task Delegation (Emotion-Awareness vs. Emotion-ignorance)}
 \label{sec:wt-exp3}
 
-In this section, the last two walkthrough examples are focusing on the
+In this section, the last two walkthrough examples focus on the
 delegation of a task by the Astronaut during collaboration (see also the
 examples in Sections \ref{sec:exp3} and \ref{sec:exp4}). In one example, the
 Robot has emotional-awareness, while in the other example the Robot ignores the
@@ -1329,8 +1328,8 @@ ultimately causes unsuccessful termination of the task delegation process.
 
 Here, to avoid redundant explanations, these walkthrough examples are limited to
 the comparison of the key turns in each example to emphasize the crucial
-differences in the result of the underlying mechanisms. We also group some of
-the Astronaut and Robot's utterances which constitute the representation of
+differences in the results of the underlying mechanisms. We also group some of
+the Astronaut's and Robot's utterances which constitute the representation of
 repetitive interactions, and we refer to similar procedures in previous
 walkthrough examples.\\
 
@@ -1339,9 +1338,9 @@ walkthrough examples.\\
 have some problems with attaching the first panel! We do not have enough time. You
 should begin to install the second panel.\end{varwidth}}\\
 
-\noindent\textbf{(Perception)} As shown above, although the first Astronaut's
+\noindent\textbf{(Perception)} As shown above, although the Astronaut's first
 utterance is the same for both examples (C1 \& D1), in the second example the
-Perception mechnaism misses the Astronaut's expressed emotion, i.e., worry. The
+Perception mechanism misses the Astronaut's expressed emotion, i.e., worry. The
 Perception mechanism forms beliefs in both examples similar to what we discussed
 in Sections \ref{sec:wt-exp1} and \ref{sec:wt-exp2}.
 
@@ -1352,81 +1351,67 @@ Robot does not impact beliefs formed based on the output of the Collaboration
 mechanism.\\
 
 \noindent\textbf{(Theory of Mind: \textit{Reverse Appraisal \& User Modeling})}
-Similar to previous sections, in emotion-awareness example, the Robot uses
+Similar to previous sections, in the emotion-awareness example, the Robot uses
 reverse appraisal to understand the meaning of the Astronaut's emotion (i.e.,
 worry) with respect to the collaborative task status, and finds the anticipated
 appraisals as \textit{relevant}, \textit{undesirable}, \textit{uncontrollable},
-\textit{urgent} and \textit{unexpected}. However, in the emotion-ignorance
+\textit{urgent} and \textit{unexpected}. In the emotion-ignorance
 example, the Robot finds most of the anticipated appraisals the same, except
-that ignoring the Astroanut's negative emotion would cause interpreting the
-event as \textit{controllable} and \textit{expected}. As a result, the Robot
+that ignoring the Astroanut's negative emotion would cause an interpretation of
+the event as \textit{controllable} and \textit{expected}. As a result, the Robot
 updates the Astronaut's user model and forms beliefs that a) the Astronaut has
-\textit{low autonomy} in emotion-awareness example versus \textit{high autonomy}
-in emotion-ignorance example, and b) Astronaut is a highly communicative
-collaborator in both examples.\\
+\textit{low autonomy} in the emotion-awareness example versus \textit{high
+autonomy} in the emotion-ignorance example, and b) the Astronaut is a highly
+communicative collaborator in both examples.\\
 
 \noindent\textbf{(Appraisal)} The Robot appraises the Astronaut's utterances and
 emotion. Therefore, the Robot's interpretation of the current event leads to the
-same appriasal values in both examples as \textit{relevant},
+same appraisal values in both examples as \textit{relevant},
 \textit{unexpected}, \textit{undesirable}, \textit{urgent}, and
 \textit{controllable}.\\
 
 \noindent \textbf{(Motivation: \textit{Motive \& Intention Formation})}
-The Robot forms new motives in the same way to what we have discussed in Section
-\ref{sec:wt-exp1}. The motives in the emotion-awareness example are formed for
-acknowledging the Astronaut's negative emotion, and postponing any question
-regarding the required information (e.g., unsatisfied postcondition of the
+The Robot forms new motives in the same way as we discussed in Section
+\ref{sec:wt-exp1}. The motives in the emotion-awareness example are
+formed to acknowledge the Astronaut's negative emotion, and postpone any
+question regarding required information (e.g., unsatisfied postcondition of the
 current task) because of the Astronaut's perceived negative emotion. However, in
 the emotion-ignorance example one motive is formed based on the availability of
 a partial recipe for accepting the delegated task, and another motive is formed
 based on the unsatisfied precondition of the Robot's ongoing task. The Robot
-forms corresponsing intentions with respect to these motives. After all, the
+forms corresponding intentions with respect to these motives. After all, the
 Robot uses the coping mechanism to take actions based on the available
 intentions.\\
 
-\noindent \textbf{(Coping)} With respect to the current intentions and based on
-different beliefs, the Robot selects distinct coping strategies. Therefore,
-based on the Astronaut's perceived negative emotion, the Robot chooses the
-restraint coping strategy (an emotion-focused strategy) which causes the Robot
-to postpone asking about alternative solution. Then, because of the Astronaut's
-anticipated appraisals, e.g., undesirability of the event, the Robot chooses an
-active coping strategy (a problem-focused strategy) to acknowledge the
-Astronaut's negative emotion, which is an active step to remove the Astronaut's
-stressor within the collaboration. Finally, based on the current mental state,
-e.g., the Astronaut's blocked task, the Robot chooses a planning strategy
-(another problem-focused strategy) to provide an alternative solution to the
-Astronaut.\\
-
 \noindent\textbf{(Coping)} In the emotion-awareness example, the Robot chooses
 similar coping strategies as we discussed in Section \ref{sec:wt-exp1}, a) to
-acknowledge the Astronaut's negative emotion, b) to accpet the delegated task,
+acknowledge the Astronaut's negative emotion, b) to accept the delegated task,
 and c) to postpone asking questions about the delegation process. Hence, the
-Robot provides a proper response (C2) without asking any question about the
+Robot provides a proper response (C2) without asking any questions about the
 delegated task.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C2. Robot:}}} Okay. Don't worry.
 I can handle that.\end{varwidth}}\\
 
-In contrast, in the emotion-ignorance example, not only the Robot does not have
+In contrast, in the emotion-ignorance example, not only does the Robot not have
 any intention to acknowledge the Astronaut's emotion, but also selects an
-incorrect coping strategy to seek information about droping its own current
+incorrect coping strategy to seek information about dropping its own current
 unachieved task. Therefore, the Robot asks a related question (D2).\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{D2. Robot:}}} Okay. I can handle
 that. Is it okay if I leave the current task though? \end{varwidth}}\\
 
-After this point, in the emotion-awareness example, the Robot by choosing
-restraint coping strategy because of the similar prior processes (as we
-discussed above) waits till the appropriate opportunity (i.e., Astronaut's
-mitigated emotion) to ask required questions. Therefore, the Robot tries to
-mitigate the Astronaut's negative emotion which helps them to successfully
-achieve the goal of a task delegation. Notice that in utterance C4, since the
-Robot knows that the Astronaut is still worried (based on the Astronaut's
-utterance, C3), it only informs the Astronaut about some potential questions in
-the future. Consequently, the Robot's collaborative behavior also mitigates the
-Astronaut's negative emotion.\\
+After this point, in the emotion-awareness example, the Robot, by choosing
+restraint coping strategy waits till the appropriate opportunity (i.e.,
+Astronaut's mitigated emotion) to ask required questions. Therefore, the Robot
+tries to mitigate the Astronaut's negative emotion which helps them to
+successfully achieve the goal of a task delegation. Notice that in utterance C4,
+since the Robot knows that the Astronaut is still worried (based on the
+Astronaut's utterance, C3), it only informs the Astronaut about some potential
+questions in the future. Consequently, the Robot's collaborative behavior also
+mitigates the Astronaut's negative emotion.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C3. Astronaut:}}} I will try
@@ -1438,19 +1423,19 @@ ask some questions while I am installing the second panel.\\
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C5. Astronaut:}}} That's fine.
 Just let me know.\end{varwidth}}\\
 
-At last, the Astronaut finds the Robot's response appropriate for the delegated
-task. Therefore, the Robot's proper response mitigates the Astronaut's negative
-emotion which was caused by the lack of time for a successive installing
-procedure of the first and second panels. As a result, the Astronaut properly
-responds to the Robot's needs (C5).\\
+At the end, the Astronaut finds the Robot's response appropriate for the
+delegated task. Therefore, the Robot's proper response mitigates the Astronaut's
+negative emotion which was caused by the lack of time for a successive
+installation procedure of the first and second panels. As a result, the
+Astronaut properly responds to the Robot's needs (C5).\\
 
 In the emotion-ignorance example, the rest of the Robot's utterances from D4 to
 D10 shows that the Robot wants to do planning in the most efficient manner
 possible by asking many questions about missing information according to the
-shared plan. However, the Robot's improper collaborative behavior caused by
+shared plan. However, the Robot's improper collaborative behavior, caused by
 choosing inappropriate coping strategies diverges the task delegation
 process from achieving the goal. Finally, the Astronaut terminates the
-collaboration due to the lack of time and the Robot's failure in incorporating
+collaboration due to the lack of time and the Robot's failure to incorporate
 proper collaborative behavior (D11).\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
@@ -1534,7 +1519,7 @@ describing collaborative negotiation, and discourse planning and structures
 \cite{sidner:discourse-collaborative-negotiation}. There are other concepts such
 as joint actions and commitments \cite{grosz:intention-dynamics-collaboration},
 dynamics of intentions during collaboration \cite{levesque:acting-together}, and
-task-based planning providing more depth in the context of collaboration
+task-based planning, providing more depth in the context of collaboration
 \cite{burghart:cognitive-architecture-robot} \cite{rich:cea}. The concept of
 collaboration has also received attention in the industry and in research in
 robotic laboratories \cite{green:collaboration-literature-review}. Some of these
@@ -1576,7 +1561,7 @@ behaviors while performing a task in collaboration with humans. Mutlu et. al. in
 coordination toward informing the design of communication and coordination
 mechanisms for robots. They present two illustrative studies that explore how
 robot behavior might be designed to employ these mechanisms (particularly joint
-attention and action observation) to improve measure of task performance in
+attention and action observation) to improve a measure of task performance in
 human-robot collaboration. Their work uses Joint Intentions theory to develop
 shared task representations and strategies for task decomposition. The domain
 independent teamwork model, STEAM \cite{tambe:flexible-teamwork}, has also been
@@ -1637,7 +1622,7 @@ concepts of appraisal theory in INDIGO's emotion modeling. MAGGIE, a sociable
 robot, also applies the appraisal theory of emotions to consider fear in its
 decision making system \cite{castro:autonomous-robot-fear}. Velasquez developed
 Cathexis which is a distributed computational model for generation of emotions
-and their influence in the behavior of the autonomous agents
+and emotions' influence in the behavior of the autonomous agents
 \cite{velasquez:emotions-motivations-agents}. The emotion model in this work is
 based on Roseman's work on appraisal theory. Marinier and Laird in
 \cite{marinier:emotion-reinforcement} focus on the functional benefits of
@@ -1661,9 +1646,9 @@ collaboration. Then, we provided four hypothetical examples in two pairs. Each
 pair of examples was about a distinct collaborative behavior. The first pair was
 about agreeing on a shared goal between a robot and an astronaut, and the second
 pair was about delegation of a new task to the robot by the astronaut. Each pair
-of these examples contrasts a successful collaboration because the robot was
-aware of the astronaut's emotion, and a failure in collaboration as the
-consequence of the robot ignoring the astronaut's emotions. We provided a brief
+of these examples contrasts a successful collaboration, due to the robot's 
+awareness of the astronaut's emotion, with a failure in collaboration, due to
+the robot ignorance of the astronaut's emotions. We provided a brief
 description for each example as well as the utterances of both the robot and the
 astronaut during their collaboration. These examples illustrated the importance
 of emotional-awareness to attain successful collaborative behavior.
