@@ -78,14 +78,14 @@ grestore
 
 %\titlerunning{Short form of title}        % if too long for running head
 
-\author{Mohammad Shayganfar \and
+\author{Mahni Shayganfar \and
         Charles Rich \and
         Candace L. Sidner
 }
 
 %\authorrunning{Short form of author list} % if too long for running head
 
-\institute{Mohammad Shayganfar \and Charles Rich \and Candace L. Sidner \at
+\institute{Mahni Shayganfar \and Charles Rich \and Candace L. Sidner \at
               100 Institute Road, Worcester, MA, USA 01609-2280 \\
               Tel.: +1 508-831-5357\\
               Fax: +1 508-831-5776\\
@@ -103,7 +103,7 @@ grestore
 
 \begin{abstract}
 
-Current computational theories for human-robot collaboration specify the
+Current computational theories used for human-robot collaboration specify the
 structure of collaborative activities, but are weak on the underlying processes
 that generate and maintain these structures.  We argue that emotions are crucial
 to these underlying processes and have developed a new computational theory,
@@ -124,9 +124,9 @@ Motivational Collaboration Theory}
 \section{Introduction}
 \label{intro}
 
-A key aspect of the sociability of robots will be their ability to collaborate
-with humans in the same environment. Collaboration is a coordinated activity in
-which the participants work jointly to satisfy a shared goal
+A key aspect of the sociability of robots is their ability to collaborate with
+humans in the same environment. Collaboration is a coordinated activity in which
+the participants work jointly to satisfy a shared goal
 \cite{grosz:plans-discourse}. There are many challenges in achieving a
 successful collaboration between robots and humans. To meet these challenges, it
 is crucial to understand what makes a collaboration not only successful, but
@@ -252,21 +252,20 @@ installation of the remaining panels in collaboration with the robot.
 The Robot and the Astronaut will collaborate with each other to achieve their
 shared goal, which is to install two solar panels. They will face various
 difficulties, ranging from the task being unpleasant and challenging to
-conflicts of their private and/or shared goals because of a blocked or a
+conflicts between their private and/or shared goals because of a blocked or a
 protracted sub-task. The Robot and the Astronaut will go through a series of
 assessment processes to figure out a) how did the current blockage happen? b)
 why is the current task is blocked? and c) what is the next action they are
 going to take? The Robot uses its cognitive abilities and communication skills
 to overcome these problems, to motivate the Astronaut, and to propose
-alternative tasks. The following is part of an interaction between the Astronaut
-and the Robot during their collaboration on installing solar panels.
+alternative tasks.
 
 \subsection{Agreeing on Shared Goal (Emotion-Awareness)}
 \label{sec:exp1}
 
-This hypothetical example and the emotion-ignorant version in the next section
-demonstrate that agreeing on a shared goal requires the Robot to be aware of its
-collaborator's emotions (here, frustration). 
+This hypothetical interaction and the emotion-ignorant version in the next
+section demonstrate that agreeing on a shared goal demands that the Robot to be
+aware of its collaborator's emotions (here, frustration). 
 
 \begin{description}
   \item \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{A1. Astronaut:}}} Oh
@@ -293,47 +292,42 @@ collaborator's emotions (here, frustration).
 \end{description}
 
 The Astronaut's first turn (A1), shows her verbally conveying her frustration
-with respect to a malfunctioning measurement tool that is used for checking the
-quality of the installed panel. In reply, the Robot's first turn (A2) shows the
-Robot perceiving the Astronaut's frustration and acknowledging it verbally. The
-underlined section of the Robot's utterances (in turn A2) shows the influence of
-using emotion-driven processes which leads to acknowledgement of the Astronaut's
-emotion. See the absence of these utterances as the consequence of ignoring the
-Astronaut's emotions in the same turn in the next example (Section
-\ref{sec:exp2}). In Section \ref{sec:wt-exp1}, we will show how the
-computational mechanisms discussed in Section \ref{sec:AMCT} are involved in
-this process, specifically how these emotion-driven goal-directed mechanisms
-work together and lead to the Robot's behavior of acknowledging the perceived
-emotion of the Astronaut properly, thereby avoiding unsuccessful termination of
-the collaboration.
+with respect to a malfunctioning measurement tool. In reply, the Robot's first
+turn (A2) shows the Robot perceiving the Astronaut's frustration and
+acknowledging it verbally. The underlined section of the Robot's utterances (in
+turn A2) shows the influence of using emotion-driven processes which lead to
+acknowledgement of the Astronaut's emotion. Notice the absence of these
+utterances as the consequence of ignoring the Astronaut's emotions in the
+corresponding turn (B2) in the next example. In Section \ref{sec:wt-exp1}, we
+will show how the computational mechanisms discussed in Section \ref{sec:AMCT}
+are involved in this process, specifically how these emotion-driven
+goal-directed mechanisms work together and lead to the Robot's behavior of
+acknowledging the perceived emotion of the Astronaut properly, thereby avoiding
+unsuccessful termination of the collaboration.
 
 Continuing in turn A3, the Astronaut's utterance shows a change of underlying
 belief from termination of the collaboration to the possibility of seeking
 instrumental support by asking the Robot whether it is possible to fix the
 measurement tool. Notice that the proper acknowledgement of the Astronaut's
 emotion helps to change her emotion from frustration to neutral. Now that the
-Astronaut is no longer expressing a negative emotion in A3 (i.e., frustration),
-and is asking for help, the Robot can provide an alternative task as a potential
-solution (A4). This illustrates an advantage of emotional-awareness: Although
-the Robot, according to the shared plan, could have provided the same
-alternative task as a solution to the Astronaut immediately, it delayed instead,
-providing the potential solution after first dealing with the Astronaut's
-negative emotional state. Finally, since agreeing on a shared goal is a
-collaborative negotiation process, emotion-awareness plays a crucial role in
-providing a fair offer. As a result, the Astronaut's response in the last turn
-(A5) shows acceptance and contentment with the Robot's potential solution to
-continue collaboration and agreement on the shared goal.
-
-In the next example we show what happens in the same hypothetical situation when
-the Robot ignores the Astronaut's emotion and tries to save the collaboration
-process from failure.
+Astronaut is no longer expressing a negative emotion (i.e., frustration), and is
+instead asking for help, the Robot can provide an alternative task as a
+potential solution (A4). This fact illustrates an advantage of
+emotional-awareness: although the Robot, according to the shared plan, could
+have provided the same alternative task as a solution to the Astronaut
+immediately, it delayed instead, providing the potential solution after first
+dealing with the Astronaut's negative emotional state. Finally, since agreeing
+on a shared goal is a collaborative negotiation process, emotion-awareness plays
+a crucial role in providing a fair offer. As a result, the Astronaut's response
+in the last turn (A5) shows acceptance and contentment with the Robot's
+potential solution to continue collaboration and agreement on the shared goal.
 
 \subsection{Agreeing on Shared Goal (Emotion-Ignorance)}
 \label{sec:exp2}
 
-This example shows the same process of agreeing on a shared goal as in the
-previous section except that it diverges from reaching an agreement, despite the
-fact that it begins with the same utterance (B1) as the previous example (A1). 
+This example shows the beginning of the same process of agreeing on a shared
+goal as in the previous section, except that it diverges from reaching an
+agreement. It begins with the same utterance (B1) as the previous example (A1).
 
 \begin{description}
   \item \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{B1. Astronaut:}}} Oh no!
@@ -373,50 +367,49 @@ fact that it begins with the same utterance (B1) as the previous example (A1).
   continue without the measurement tool!
 \end{description}
 
-As mentioned earlier, emotional-awareness is beneficial in collaboration by
-channeling the collaboration process towards the shared goal. Without
-emotional-awareness a collaborative Robot will try to maintain the status of the
-shared goal and prevent it from failure without considering its collaborator's
-negative emotion which can be the result of the task failure. In this example,
-the emotionally-ignorant Robot does not acknowledge the Astronaut's frustration
-(compare B2 with A2 above), since it does not perceive that emotion. Then, while
-negotiating the shared goal the Robot fails to offer a potential solution with
-respect to the Astronaut's emotional state. As a result, it causes the failure
-of the negotiation procedure during collaboration.
+As mentioned earlier, emotional awareness is beneficial in collaboration by
+channeling the collaboration process towards the shared goal. Without emotional
+awareness a collaborative robot will try to maintain the status of the shared
+goal and protect it from failure without considering its collaborator's negative
+emotion. In this example, the emotionally ignorant Robot does not acknowledge
+the Astronaut's frustration (compare B2 with A2 above), since it does not
+perceive that emotion. Then, while negotiating the shared goal, the Robot fails
+to offer a potential solution with respect to the Astronaut's emotional state.
+As a result, it causes the failure of the negotiation process during
+collaboration.
 
-The Robot, in this example, does not perceive the Astronaut's emotion, and does
-not apply the Astronaut's emotion (frustration) as an influential factor in its
-computational mechanisms (see details in Section
+The Robot in this example does not perceive the Astronaut's emotion, and
+therefore does not include the Astronaut's emotion (frustration) as an
+influential factor in its computational mechanisms (see details in Section
 \ref{sec:computational-framework}). Hence, in the Robot's first response (B2),
 it does not acknowledge the Astronaut's emotion, and instead immediately conveys
 two available alternative actions according to the existing shared plan, and
 asks the Astronaut to select between them. As shown in the Astronaut's response
-(B3), the Robot's immediate proposal does not result in any progress in
-collaboration. As a result, the Astronaut repeats herself about the task status
-while still expressing frustration. The Astronaut's response does not change the
-Robot's mental state and this causes the Robot to try to repeat its own question
-while still missing the Astronaut's frustration (B4). The Robot's utterance
-creates an ambiguous assumption for the Astronaut about whether the Robot can
-fix the broken measurement tool for her. This ambiguity makes the Astronaut even
-more frustrated and causes her to ask a question to remove the ambiguity of the
+(B3), this immediate proposal does not result in any progress in collaboration.
+As a result, the Astronaut repeats herself about the task status while still
+expressing frustration. The Astronaut's response does not change the Robot's
+mental state and this causes the Robot to try to repeat its own question while
+still missing the Astronaut's frustration (B4). The Robot's utterance creates an
+ambiguous assumption for the Astronaut about whether the Robot can fix the
+broken measurement tool for her. This ambiguity makes the Astronaut even more
+frustrated and causes her to ask a question to remove the ambiguity of the
 Robot's proposal (B5). In return, the Robot not only misses the Astronaut's
 intensified frustration, but also nullifies the Astronaut's assumption about
-fixing the malfunctional measurement tool and proposes the potential solution of
-replacing the broken tool and asking whether the Astronaut agrees on that (B6).
+fixing the malfunctioning measurement tool and proposes the potential solution
+of replacing the tool, and asks whether the Astronaut agrees on that (B6).
 
 In B7, the Astronaut modifies its assumption and announces the shortage of time
 as justification for expressing her anger. At this point, the Robot's response
 becomes more crucial since its wrong method of interaction and
-emotionally-ignorant behavior shifted the Astronaut's emotional and mental
+emotionally ignorant behavior shifted the Astronaut's emotional and mental
 states into a noncollaborative status. Consequently, the Robot again attempts to
-revive the collaboration process; therefore it provides more information about
-the repercussions of terminating the collaboration process, to see whether the
+revive the collaboration process; it provides more information about the
+repercussions of terminating the collaboration process, to see whether the
 Astronaut can pursue another task (B8). Notice the underlined section of the
-Robot's turn B8 indicates its dissociated reasoning about the problem from the
+Robot's turn B8 indicates its reasoning about the problem dissociated from the
 Astronaut's mental state. Finally, the poor interaction of the Robot caused by
-its emotionally-ignorant behavior which developed from the Robot's very first
-response and has continued till the end, leads to an unsuccessful termination of
-their collaboration (B9).\\
+its emotionally ignorant behavior leads to an unsuccessful termination of their
+collaboration (B9).
 
 \subsection{Task Delegation (Emotion-Awareness)}
 \label{sec:exp3}
@@ -426,8 +419,7 @@ delegation, is used to illustrate how collaboration critically depends on
 understanding how worried the other collaborator is. This example shows that
 when the Robot is aware of the Astronaut's worry, it can use its own Motivation
 mechanism driven by emotions to come up with a way to alleviate her worry. Its
-solution is to postpone all questions until such time as they are
-critical. 
+solution is to postpone all questions as long as possible. 
 
 \begin{description}
   \item \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C1. Astronaut:}}} I
@@ -439,7 +431,7 @@ critical.
   \underline{Don't worry.} I can handle that.\end{varwidth}}\\
 
   \item \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C3. Astronaut:}}} I will
-  try to fix it asap.\\
+  try to fix it ASAP.\\
 
   \item \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C4. Robot:}}} I might
   need to ask some questions while I am installing the second panel.\\
@@ -449,45 +441,40 @@ critical.
   
 \end{description}
 
-At the beginning of this example Astronaut (C1) is worried because of the lack
-of time to achieve the shared goal (finishing installation of solar panels). She
-proposes that the Robot begin installing the second panel, since the first one
-still has some problems. The Robot in its first turn (C2), perceives the
-Astronaut's emotion (i.e., worry) and, using the same cognitive mechanisms (see
-Section \ref{sec:AMCT}), acknowledges the Astronaut's emotion just as it did in
-the first example in Section \ref{sec:exp1}. The underlined utterance in the
+At the beginning of this example the Astronaut (C1) is worried because of the
+lack of time to achieve the shared goal (finishing installation of solar
+panels). She proposes that the Robot begin installing the second panel, since
+the first one still has some problems. The Robot in its first turn (C2),
+perceives the Astronaut's emotion (i.e., worry) and, using the same cognitive
+mechanisms (see Section \ref{sec:AMCT}), acknowledges the Astronaut's emotion
+just as it did in Section \ref{sec:exp1}. The underlined utterance in the
 Robot's turn C2, shows the Robot's awareness of the Astronaut's emotion. Also,
-the Robot does not ask the Astronaut (because of perceiving her worry) if it is
-okay to leave the current task, which was helping the Astronaut to install the
-first panel, because the Robot knows that redirecting the Astronaut's attention
-away from the object of worry will create frustration, as the function of worry
-is to resolve the object of worry.
+because of perceiving the Astronaut's worry the Robot does not ask her if it is
+okay to leave the current task (which was helping the Astronaut to install the
+first panel). The reason is that the Robot knows redirecting the Astronaut's
+attention away from the object of worry will create frustration, as the function
+of worry is to resolve the object of worry.
 
 After acknowledging the Astronaut's emotion (C2), the Robot infers that it needs
-to postpone asking questions about the missing parts of the shared plan since
+to postpone asking questions about the missing parts of the shared plan, since
 installing a panel is a collaborative task and some of the primitive tasks need
 to be done by the Astronaut. Then, the Astronaut perceives the Robot's response
 as a proper acceptance of the task delegation and tries to communicate the
 status of her own task, even though she is still worried about finishing the
 overall task (C3). Now, the Robot perceives the Astronaut's worry and without
-asking actual detailed questions about the delegated task, declares the
-possibility of asking some follow-up questions whenever the Astronaut's answers
-are required to make progress in executing some primitive tasks while installing
-the second panel (C4). Thus, the Robot not only prevents overwhelming the
-Astronaut with several questions related to executing the next steps in the
-future, but its utterance implicitly reveals its knowledge of tasks'
-requirements to the Astronaut. As a result, the Robot's approach to acceptance
-of the delegated task mitigates the Astronaut's negative emotion (i.e., worry)
-which makes her to respond positively to the Robot's proposal.
-
-The next section shows the same task delegation situation with the negative
-impact of the Robot ignoring the Astronaut's emotion.
+asking detailed questions about the delegated task, declares the possibility of
+asking some follow-up questions later (C4). Thus, the Robot not only prevents
+overwhelming the Astronaut with many questions, but its utterance implicitly
+reveals its knowledge of the tasks' requirements to the Astronaut. As a result,
+the Robot's approach to acceptance of the delegated task mitigates the
+Astronaut's negative emotion (i.e., worry) which makes her to respond positively
+to the Robot's proposal.
 
 \subsection{Task Delegation (Emotion-Ignorance)}
 \label{sec:exp4}
 
 This last example illustrates how ignoring the collaborator's emotions in a task
-delegation procedure can negatively impact the progress of a collaboration. In
+delegation situation can negatively impact the progress of a collaboration. In
 this example, the emotionally-ignorant Robot is planning in its most efficient
 manner (because time is short) and therefore asking a lot of questions so that
 it can work out the plan. But asking questions exacerbates the Astronaut's worry
@@ -538,7 +525,7 @@ which leads to an unsuccessful collaboration due to the lack of time.
   
 \end{description}
 
-The very first utterance of the Astronaut above (D1) is the same as the first
+The very first Astronaut's utterance above (D1) is the same as the first
 utterance in the previous example (C1). The Astronaut is worried and expresses
 her worry. However, the Robot does not perceive and consequently does not
 acknowledge the Astronaut's emotion. As a result, the Robot responds to the
@@ -554,7 +541,7 @@ This absence of emotion-awareness is the beginning of the failure of the task
 delegation process. As we can see, the Robot's response does not mitigate the
 Astronaut's worry about the future of the collaboration. The underlined
 section in D2 shows the Robot's need for confirmation of leaving an unfinished
-task. Next, the Astronaut tries to help the Robot to select the proper action by
+task. Next, the Astronaut tries to help the Robot select the proper action by
 responding positively about the Robot leaving the current task (D3). Now, the
 Robot shifts its focus of attention to the new task and uses the Collaboration
 mechanism (see Section \ref{sec:AMCT}) to obtain required information such as
@@ -1415,7 +1402,7 @@ mitigates the Astronaut's negative emotion.\\
 
 \noindent\fbox{\begin{varwidth}{0.98\textwidth}
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C3. Astronaut:}}} I will try
-to fix it asap.\\
+to fix it ASAP.\\
 
 \textit{\textbf{\fontsize{9pt}{12pt}\selectfont{C4. Robot:}}} I might need to
 ask some questions while I am installing the second panel.\\
