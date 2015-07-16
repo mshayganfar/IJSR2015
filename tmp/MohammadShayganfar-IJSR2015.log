@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  16 JUL 2015 18:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  16 JUL 2015 18:17
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -392,9 +392,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 913--918
 
  []
 
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 935--937
 
@@ -744,7 +741,7 @@ lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (31 pages, 276924 bytes).
+Output written on MohammadShayganfar-IJSR2015.pdf (31 pages, 276923 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
