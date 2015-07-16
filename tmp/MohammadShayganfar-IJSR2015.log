@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  16 JUL 2015 12:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  16 JUL 2015 15:44
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -691,47 +691,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 1372--1375
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1416--1446
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1455
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1471--1486
+Underfull \hbox (badness 10000) in paragraph at lines 1456--1461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1492
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1477
 
  []
 
+[27] (./MohammadShayganfar-IJSR2015.bbl [28]
+! Misplaced alignment tab character &.
+l.12 \newblock Cassell &
+                         Co., 1960.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1513
-
- []
-
-[27] [28] (./MohammadShayganfar-IJSR2015.bbl [29]
 Missing character: There is no â in font cmti8!
 Missing character: There is no € in font cmti8!
 Missing character: There is no ™ in font cmti8!
- [30] [31]
+[29] [30]
 Missing character: There is no â in font cmti8!
 Missing character: There is no € in font cmti8!
 Missing character: There is no ™ in font cmti8!
-) [32]
-(./MohammadShayganfar-IJSR2015.aux)
+) [31] (./MohammadShayganfar-IJSR2015.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2431 strings out of 495028
- 37408 string characters out of 6181497
- 91490 words of memory out of 5000000
- 5616 multiletter control sequences out of 15000+600000
+ 2428 strings out of 495028
+ 37276 string characters out of 6181497
+ 91478 words of memory out of 5000000
+ 5613 multiletter control sequences out of 15000+600000
  10550 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,23p,277b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,277b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
@@ -744,10 +748,10 @@ c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8
 .pfb>
-Output written on MohammadShayganfar-IJSR2015.pdf (32 pages, 272834 bytes).
+Output written on MohammadShayganfar-IJSR2015.pdf (31 pages, 268917 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 162 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,12 +6,10 @@ C.~Adam and E.~Lorini.
 \newblock In {\em Workshop on Agents and multi-agent Systems for AAL and
   e-HEALTH (PAAMS)}, volume 430, pages 66--78. Springer, 2014.
 
-\bibitem{andriessen:disourse-planning}
-J.~Andriessen, K.~de~Smedt, and M.~Zock.
-\newblock Discourse planning: {E}mpirical research and computer models.
-\newblock In A.~Dijkstra and K.~de~Smedt, editors, {\em Computational
-  psycholinguistics: AI and connectionist models of human language processing},
-  pages 247--278. Taylor \& Francis, 1996.
+\bibitem{arnold:emotion-personality}
+M.~B. Arnold.
+\newblock {\em Emotion and personality}.
+\newblock Cassell & Co., 1960.
 
 \bibitem{bratman:intentions-plans}
 M.~E. Bratman.
@@ -29,21 +27,6 @@ C.~Breazeal, A.~Brooks, J.~Gray, G.~Hoffman, C.~Kidd, H.~Lee, J.~Lieberman,
   A.~Lockerd, and D.~Mulanda.
 \newblock Humanoid robots as cooperative partners for people.
 \newblock {\em Journal of Humanoid Robots}, 1(2):1--34, 2004.
-
-\bibitem{burghart:cognitive-architecture-robot}
-C.~Burghart, R.~Mikut, R.~Stiefelhagen, T.~Asfour, H.~Holzapfel, P.~Steinhaus,
-  and R.~Dillmann.
-\newblock A cognitive architecture for a humanoid robot: {A} first approach.
-\newblock In {\em 5th IEEE-RAS International Conference on Humanoid Robots},
-  pages 357--362, 2005.
-
-\bibitem{clair:action-intention-collaboraiton}
-A.~B.~S. Clair and M.~J. Matari$\acute{c}$.
-\newblock Modeling action and intention for the production of coordinating
-  communication in human-robot task collaborations.
-\newblock In {\em 21st IEEE International Symposium on Robot and Human
-  Interactive Communication: Workshop on Robot Feedback in HRI}, Paris, France,
-  2012.
 
 \bibitem{clancey:agent-assistants-collaboration}
 W.~J. Clancey.
@@ -93,13 +76,6 @@ J.~Gratch, S.~Marsella, N.~Wang, and B.~Stankovic.
 \newblock Assessing the validity of appraisal-based models of emotion.
 \newblock In {\em International Conference on Affective Computing and
   Intelligent Interaction}. IEEE, 2009.
-
-\bibitem{green:collaboration-literature-review}
-S.~A. Green, M.~Billinghurst, X.~Chen, and J.~G. Chase.
-\newblock Human-robot collaboration: {A} literature review and augmented
-  reality approach in design.
-\newblock {\em International Journal of Advanced Robotic Systems}, 5(1):1--18,
-  2008.
 
 \bibitem{grosz:intention-dynamics-collaboration}
 B.~J. Grosz and L.~Hunsberger.
@@ -164,6 +140,11 @@ H.~Kitano, M.~Asada, Y.~Kuniyoshi, I.~Noda, E.~Osawai, and H.~Matsubara.
 \newblock Robocup: {A} challenge problem for {AI}.
 \newblock {\em {AI} Magazine}, 18(1):73--85, 1997.
 
+\bibitem{lazarus:emotion-adaptation}
+R.~S. Lazarus.
+\newblock {\em Emotion and Adaptation}.
+\newblock OXFORD University Press, 1991.
+
 \bibitem{levesque:acting-together}
 H.~J. Levesque, P.~R. Cohen, and J.~H.~T. Nunes.
 \newblock On acting together.
@@ -210,11 +191,6 @@ S.~Marsella, J.~Adibi, Y.~Al-Onaizan, A.~Erdem, R.~Hill, G.~A. Kaminka, Z.~Qiu,
 S.~C. Marsella and J.~Gratch.
 \newblock {EMA}: A process model of appraisal dynamics.
 \newblock {\em Cognitive Systems Research}, 10(1):70--90, March 2009.
-
-\bibitem{matignon:verbal-nonverbal-collaboration}
-L.~Matignon, A.~B. Karami, and A.-I. Mouaddib.
-\newblock A model for verbal and non-verbal human-robot collaboration.
-\newblock In {\em AAAI Fall Symposium Series}, pages 62--67, 2010.
 
 \bibitem{scott:modeling-empathy-agent}
 S.~W. McQuiggan and J.~C. Lester.
@@ -271,11 +247,6 @@ I.~Ravenscroft.
 \newblock {\em Folk Psychology as a Theory}.
 \newblock Stanford Encyclopedia of Philosophy, 2004.
 
-\bibitem{rich:cea}
-C.~Rich.
-\newblock Building task-based user interfaces with {ANSI/CEA}-2018.
-\newblock {\em IEEE Computer}, 42(8):20--27, July 2009.
-
 \bibitem{rich:collaboration-manager}
 C.~Rich and C.~L. Sidner.
 \newblock {COLLAGEN}: A collaboration manager for software interface agents.
@@ -293,10 +264,24 @@ J.~Rickel, N.~Lesh, C.~Rich, C.~L. Sidner, and A.~Gertner.
 \newblock In {\em Proceedings Sixth International Conference on Intelligent
   Tutoring Systems}, 2002.
 
+\bibitem{roseman:appraisal-theory}
+I.~J. Roseman and C.~A. Smith.
+\newblock Appraisal theory:overview, assumptions, varieties, controversies.
+\newblock In K.~R. Scherer, A.~Schorr, and T.~Johnstone, editors, {\em
+  Appraisal process in emotion}, pages 3--34. NY: Oxford University Press,
+  2001.
+
 \bibitem{sander:systems-approach-appraisal}
 D.~Sander, D.~Grandjean, and K.~R. Scherer.
 \newblock A systems approach to appraisal mechanisms in emotion.
 \newblock {\em Neural Networks}, 18(4):317--352, 2005.
+
+\bibitem{scerri:robot-agent-person}
+P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
+  M.~Tambe.
+\newblock A prototype infrastructure for distributed robot-agent-person teams.
+\newblock In {\em The Second International Joint Conference on Autonomous
+  Agents and Multiagent Systems}, 2003.
 
 \bibitem{scerri:prototype-distributed-teams}
 P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
@@ -306,18 +291,18 @@ P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
   Autonomous Agents and Multiagent Systems}, AAMAS '03, pages 433--440, New
   York, NY, USA, 2003. ACM.
 
-\bibitem{scerri:robot-agent-person}
-P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
-  M.~Tambe.
-\newblock A prototype infrastructure for distributed robot-agent-person teams.
-\newblock In {\em The Second International Joint Conference on Autonomous
-  Agents and Multiagent Systems}, 2003.
-
 \bibitem{scherer:nature-function-emotion}
 K.~R. Scherer.
 \newblock On the nature and function of emotion: A component process approach.
 \newblock In K.~R. Scherer and P.~Ekman, editors, {\em Approaches To Emotion},
   pages 293--317. Lawrence Erlbaum, Hillsdale, NJ, 1984.
+
+\bibitem{scherer:emotions-emergent}
+K.~R. Scherer.
+\newblock Emotions are emergent processes: they require a dynamic computational
+  architecture.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological
+  Sciences}, 364(1535):3459--3474, 2009.
 
 \bibitem{scherer:appraisal-processes}
 K.~R. Scherer, A.~Schorr, and T.~Johnstone.
@@ -328,12 +313,6 @@ K.~R. Scherer, A.~Schorr, and T.~Johnstone.
 M.~Shayganfar, C.~Rich, and C.~L. Sidner.
 \newblock A design methodology for expressing emotion on robot faces.
 \newblock In {\em IROS}, pages 4577--4583. IEEE, 2012.
-
-\bibitem{sidner:discourse-collaborative-negotiation}
-C.~Sidner.
-\newblock An artificial discourse language for collaborative negotiation.
-\newblock In {\em Proceedings of the Twelfth National Conference on Artificial
-  Intelligence}, pages 814--819. MIT Press, 1994.
 
 \bibitem{sidner:enagagement-robot}
 C.~L. Sidner and M.~Dzikovska.

@@ -6,45 +6,45 @@ Database file #1: mshayganfar.bib.bib
 Warning--can't use both volume and number fields in hudlicka:emotinos-reasons
 Too many commas in name 1 of "Rafael A. Calvo, Sidney D'Mello, Jonathan Gratch, Arvid Kappas" for entry paiva:emotion-modeling
 while executing---line 1090 of file abbrv.bst
-You've used 68 entries,
+You've used 65 entries,
             2118 wiz_defined-function locations,
-            889 strings with 17321 characters,
-and the built_in function-call counts, 26905 in all, are:
-= -- 2611
-> -- 1314
-< -- 31
-+ -- 529
-- -- 444
-* -- 1851
-:= -- 4269
-add.period$ -- 221
-call.type$ -- 68
-change.case$ -- 413
+            870 strings with 16198 characters,
+and the built_in function-call counts, 25166 in all, are:
+= -- 2433
+> -- 1227
+< -- 28
++ -- 492
+- -- 413
+* -- 1726
+:= -- 4018
+add.period$ -- 211
+call.type$ -- 65
+change.case$ -- 386
 chr.to.int$ -- 0
-cite$ -- 69
-duplicate$ -- 1098
-empty$ -- 2143
-format.name$ -- 444
-if$ -- 5826
+cite$ -- 66
+duplicate$ -- 1026
+empty$ -- 2016
+format.name$ -- 413
+if$ -- 5437
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 74
-newline$ -- 342
-num.names$ -- 148
-pop$ -- 508
+int.to.str$ -- 65
+missing$ -- 73
+newline$ -- 327
+num.names$ -- 142
+pop$ -- 481
 preamble$ -- 1
-purify$ -- 352
+purify$ -- 330
 quote$ -- 0
-skip$ -- 789
+skip$ -- 726
 stack$ -- 0
-substring$ -- 1596
-swap$ -- 328
-text.length$ -- 31
+substring$ -- 1477
+swap$ -- 293
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 258
+type$ -- 242
 warning$ -- 1
-while$ -- 250
-width$ -- 70
-write$ -- 758
+while$ -- 234
+width$ -- 67
+write$ -- 722
 (There was 1 error message)
