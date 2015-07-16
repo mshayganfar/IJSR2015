@@ -11,6 +11,30 @@ M.~B. Arnold.
 \newblock {\em Emotion and personality}.
 \newblock Cassell & Co., 1960.
 
+\bibitem{bach:micropsi-agent-architecture}
+J.~Bach.
+\newblock {The MicroPsi Agent Architecture}.
+\newblock {\em In Proceeding of ICCM-5}, pages 15--20, 2003.
+
+\bibitem{bach:psi}
+J.~Bach.
+\newblock {\em Principles of Synthetic Intelligence PSI: An Architecture of
+  Motivated Cognition}.
+\newblock Oxford University Press, Inc., 2009.
+
+\bibitem{bach:motivaitional-system-ai}
+J.~Bach.
+\newblock A motivational system for cognitive ai.
+\newblock In J.~Schmidhuber, K.~R. Th$\acute{o}$risson, and M.~Looks, editors,
+  {\em Artificial General Intelligence}, volume 6830 of {\em Lecture Notes in
+  Computer Science}, pages 232--242. Springer Berlin Heidelberg, 2011.
+
+\bibitem{bach:next-generation-micropsi}
+J.~Bach.
+\newblock Micropsi 2: The next generation of the micropsi framework.
+\newblock In {\em Proceedings of the 5th International Conference on Artificial
+  General Intelligence}, AGI'12, pages 11--20. Springer-Verlag, 2012.
+
 \bibitem{bratman:intentions-plans}
 M.~E. Bratman.
 \newblock {\em Intention, Plans, and Practical Reason}.
